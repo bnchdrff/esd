@@ -3,19 +3,19 @@
 /**
  * @file
  * Template overrides as well as (pre-)process and alter hooks for the
- * WD Theme.
+ * Excellent Schools Detroit theme.
  */
 
 /**
  * Implements hook_omega_theme_libraries_info().
  */
-function wd_theme_omega_theme_libraries_info($theme) {
-  $path = drupal_get_path('theme', 'wd_theme');
+function esd_omega_theme_libraries_info($theme) {
+  $path = drupal_get_path('theme', 'esd');
 
   $libraries['selectnav'] = array(
     'name' => t('Selectnav'),
     'description' => t("selectnav.js library"),
-    'package' => t('wd_theme'),
+    'package' => t('esd'),
     'files' => array(
       'js' => array(
         $path . '/js/selectnav/selectnav.min.js' => array(
@@ -30,7 +30,7 @@ function wd_theme_omega_theme_libraries_info($theme) {
   $libraries['responsive'] = array(
     'name' => t('Responsive Libs'),
     'description' => t('Responsive libraries and plugins'),
-    'package' => t('wd_theme'),
+    'package' => t('esd'),
     'files' => array(
       'js' => array(
         $path . '/js/jquery.resizeend.js' => array(
@@ -47,13 +47,13 @@ function wd_theme_omega_theme_libraries_info($theme) {
     ),
   );
 
-  $libraries['wd_theme_frontend'] = array(
-    'name' => t('WD Theme Frontend'),
-    'description' => t('wd_theme frontend magic'),
-    'package' => t('wd_theme'),
+  $libraries['esd_frontend'] = array(
+    'name' => t('Excellent Schools Detroit Frontend'),
+    'description' => t('esd frontend magic'),
+    'package' => t('esd'),
     'files' => array(
       'js' => array(
-        $path . '/js/wd_theme_frontend.js' => array(
+        $path . '/js/esd_frontend.js' => array(
           'group' => JS_THEME,
           'weight' => 100,
           'every_page' => TRUE,
@@ -65,7 +65,7 @@ function wd_theme_omega_theme_libraries_info($theme) {
   $libraries['imgsizer'] = array(
     'name' => t('ImgSizer'),
     'description' => t('Image sizer plugin'),
-    'package' => t('wd_theme'),
+    'package' => t('esd'),
     'files' => array(
       'js' => array(
         $path . '/js/imgsizer.js' => array(
@@ -80,7 +80,7 @@ function wd_theme_omega_theme_libraries_info($theme) {
   $libraries['superfish'] = array(
     'name' => t('Superfish'),
     'description' => t('Superfish dropdown menus'),
-    'package' => t('wd_theme'),
+    'package' => t('esd'),
     'files' => array(
       'js' => array(
         $path . '/js/superfish.js' => array(
@@ -99,6 +99,6 @@ function wd_theme_omega_theme_libraries_info($theme) {
 /**
  * Implements template_preprocess_page
  */
-function wd_theme_preprocess_page(&$vars) {
+function esd_preprocess_page(&$vars) {
   drupal_add_js('jQuery.extend(Drupal.settings, { "pathToTheme": "/' . path_to_theme() . '/" });', 'inline');
 }
