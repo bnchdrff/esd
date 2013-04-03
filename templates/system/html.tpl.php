@@ -49,7 +49,7 @@
   <!--[if (gte IE 9)|(gt IEMobile 7)]><html class="ie" lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>"<?php print $rdf_namespaces; ?>><![endif]-->
   <![if !IE]><html lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>"<?php print $rdf_namespaces; ?>><![endif]>
 <?php else: ?>
-  <html lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>"<?php print $rdf_namespaces; ?>>
+  <html lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>"<?php print $rdf_namespaces; ?> xmlns:fb="http://www.facebook.com/2008/fbml">
 <?php endif; ?>
 <head profile="<?php print $grddl_profile; ?>">
   <title><?php print $head_title; ?></title>
