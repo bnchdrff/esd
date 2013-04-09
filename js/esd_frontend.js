@@ -55,4 +55,49 @@ var query = 'all and (max-width: 770px)';
   }
 };*/
 
+Drupal.behaviors.vimeoReady = {
+  attach: function (context, settings) {
+    $('.media-vimeo-player', context).each(function() {
+      $(this).load(function() {
+        console.log('vimeo');
+        var vimeo = $f($(this).attr('id'));
+        vimeo.addEvent('ready', function() {
+          vimeo.addEvent('pause', vm_onPause);
+          vimeo.addEvent('finish', vm_onFinish);
+          vimeo.addEvent('playProgress', vm_onPlayProgress);
+        });
+      });
+    });
+  }
+};
+
 })(jQuery);
+
+// via http://drupal.org/node/1667660
+var youtube_tag = document.createElement('script');
+youtube_tag.src = "//www.youtube.com/iframe_api";
+var vimeo_tag = document.createElement('script');
+vimeo_tag.src = "//a.vimeocdn.com/js/froogaloop2.min.js";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(youtube_tag, firstScriptTag);
+firstScriptTag.parentNode.insertBefore(vimeo_tag, firstScriptTag);
+function onYouTubeIframeAPIReady() {
+  var iframes = document.getElementsByTagName('iframe');
+  var i, players;
+  for (i = 0; i < iframes.length; i += 1) {
+    if (iframes[i].className == 'media-youtube-player') {
+      var playerId = iframes[i].id;
+      players[i] = new YT.Player(playerId, {
+        events: {
+          'onStateChange': yt_onStateChange
+        }
+      });
+    }
+  }
+}
+
+// global event handlers
+yt_onStateChange = vm_onPause = vm_onFinish = vm_onPlayProgress = function(ev) {
+  console.log('ev');
+  console.log(ev);
+}
