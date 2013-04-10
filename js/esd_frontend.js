@@ -59,12 +59,11 @@ Drupal.behaviors.vimeoReady = {
   attach: function (context, settings) {
     $('.media-vimeo-player', context).each(function() {
       $(this).load(function() {
-        console.log('vimeo');
         var vimeo = $f($(this).attr('id'));
         vimeo.addEvent('ready', function() {
-          vimeo.addEvent('pause', vm_onPause);
-          vimeo.addEvent('finish', vm_onFinish);
-          vimeo.addEvent('playProgress', vm_onPlayProgress);
+          vimeo.addEvent('play', vm_play);
+          vimeo.addEvent('pause', vm_pause);
+          vimeo.addEvent('finish', vm_finish);
         });
       });
     });
@@ -96,8 +95,93 @@ function onYouTubeIframeAPIReady() {
   }
 }
 
-// global event handlers
-yt_onStateChange = vm_onPause = vm_onFinish = vm_onPlayProgress = function(ev) {
-  console.log('ev');
-  console.log(ev);
+/**
+ * Control video overlay
+ *
+ * @param (object) state
+ *   string action: played | paused | finished
+ *   string id: player id
+ */
+player_ctl = function(state) {
+  var $player = jQuery('#' + state.id);
+  if (document.getElementById('fade') === null) {
+    jQuery('body').append('<div id="fade" />');
+  }
+  if (state.action == 'played') {
+    jQuery('#fade').height(jQuery('body').height()+'px').fadeIn();
+    $player.addClass('overlay');
+  } else if (state.action == 'paused' || state.action == 'finished') {
+    jQuery('#fade').fadeOut();
+    $player.removeClass('overlay');
+  }
+}
+
+/**
+ * Event handler for YouTube video interactions
+ *
+ * @param ev
+ * @return object
+ *   string action: played | paused | finished
+ *   string id: player id
+ */
+yt_onStateChange = function(ev) {
+  var action;
+  var id = ev.target.a.id;
+  if (ev.data === 1) {
+    // play
+    action = 'played';
+  } else if (ev.data === 2) {
+    action = 'paused';
+  } else if (ev.data === 0) {
+    action = 'finished';
+  }
+  player_ctl({
+    action: action,
+    id: id
+  });
+}
+
+/**
+ * Event handler for Vimeo play action
+ *
+ * @param ev
+ * @return object
+ *   string action: played | paused | finished
+ *   string id: player id
+ */
+vm_play = function(id) {
+  player_ctl({
+    action: 'played',
+    id: id
+  });
+}
+
+/**
+ * Event handler for Vimeo pause action
+ *
+ * @param ev
+ * @return object
+ *   string action: played | paused | finished
+ *   string id: player id
+ */
+vm_pause = function(id) {
+  player_ctl({
+    action: 'paused',
+    id: id
+  });
+}
+
+/**
+ * Event handler for Vimeo finish action
+ *
+ * @param ev
+ * @return object
+ *   string action: played | paused | finished
+ *   string id: player id
+ */
+vm_finish = function(id) {
+  player_ctl({
+    action: 'finished',
+    id: id
+  });
 }
