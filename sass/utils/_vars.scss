@@ -1,20 +1,33 @@
-// responsive bits
-//$hide_in_mobile: "";
-//$show_in_mobile: "";
+@import "susy";
 
 // colors
-$darktext: #4c5a52;
-$lighttext: #ffffff;
-$verylightbg: #ffffff;
-$highlight: #f47735;
-$lightbg: #e5e5e5;
-$quicklinksbg: #c1eae9;
+$orange: #f05A28;
+$green: #29b473;
+$darkblue: #134370;
+$lightblue: #00Aff0;
+$yellow: #ffd300;
 
 // margins and paddings
 $internal_block_margin: 10px;
 $paragraph_padding: 8px;
 
 // Susy Media Layouts @see http://susy.oddbird.net/guides/reference/#ref-media-layouts
-$tab: 770px 12;
-$desk: 980px 16;
+$tab: 44em 12; // At 44em use 12 columns.
+$desk: 70em 16; // At 70em use 16 columns.
 
+// responsive bits
+$hide_in_mobile: "#block-menu-block-1 .selectnav-processed, #block-menu-block-2 .selectnav-processed";
+$show_in_mobile: "#block-menu-block-1 .selectnav, #block-menu-block-2 .selectnav";
+
+#{$hide_in_mobile} {
+  display: none;
+}
+
+@include at-breakpoint($tab) {
+  #{$hide_in_mobile} {
+    display: block;
+  }
+  #{$show_in_mobile} {
+    display: none;
+  }
+}
