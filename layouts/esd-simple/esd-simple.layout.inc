@@ -1,7 +1,7 @@
-name = Simple
+name = Simple - ESD custom layout
 description = A simple 3 column layout demonstrating mobile first and Susy.
 preview = preview.png
-template = simple-layout
+template = esd-simple-layout
 
 ; Regions
 regions[header]         = Header
@@ -14,4 +14,4 @@ regions[sidebar_second] = Second sidebar
 regions[footer]         = Footer
 
 ; Stylesheets
-stylesheets[all][] = css/layouts/simple/simple.layout.css
+stylesheets[all][] = css/layouts/esd-simple/esd-simple.layout.css
