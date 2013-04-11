@@ -1,7 +1,18 @@
 (function($) {
 
 // Used by $.matchmedia() in various behaviors.
-var query = 'all and (max-width: 770px)';
+var query = 'all and (max-width: 44em)';
+
+/**
+ * changes the dom for different layout sizes.
+ */
+Drupal.theme.prototype.equalColumns = function() {
+  // Ensure Content Height equals Sidebar.
+  var headerHeight = $('.l-header').outerHeight();
+  var sidebarHeight = $('.l-region--sidebar-first').outerHeight();
+  var totalSideHeight = headerHeight + sidebarHeight;
+  $('.l-content').css('min-height', totalSideHeight);
+};
 
 /**
  * Build a selectnav given a Drupal menu ul, and append it after the ul
@@ -11,29 +22,36 @@ var query = 'all and (max-width: 770px)';
  *
  * @return nothing
  */
-/* Drupal.theme.prototype.buildSelectnav = function($menuUl) {
-  $menuUl.attr('id', 'navtoselect');
-  selectnav('navtoselect');
-}; */
+Drupal.theme.prototype.buildSelectnav = function($menuUl, $menuNum) {
+  $menuID = 'navtoselect-' + $menuNum;
+  $menuUl.attr('id', $menuID);
+  selectnav($menuID, {label:false});
+  // Hide the label...
+  $('#selectnav' + $menuNum + ' option:eq(0)').remove();
+};
 
 /**
- * Changes the DOM for different layout sizes.
+ * changes the dom for different layout sizes.
  */
-/* Drupal.theme.prototype.layoutResizeChanges = function($quicklinks) {
+Drupal.theme.prototype.layoutResizeChanges = function() {
   if ($.matchmedia(query)) {
+    $('.l-content').css('min-height','');
   } else {
+    Drupal.theme('equalColumns');
   }
-};*/
+};
 
 /**
  * COH resize event for switching between layouts.
  */
-/*Drupal.behaviors.resizeEnd = {
+Drupal.behaviors.resizeEnd = {
   attach: function (context, settings) {
+    Drupal.theme('layoutResizeChanges');
     $(window).bind('resizeend', function() {
+      Drupal.theme('layoutResizeChanges');
     });
   }
-};*/
+};
 
 /**
  * Do imgsizer and captions on some images
@@ -54,6 +72,21 @@ var query = 'all and (max-width: 770px)';
     });
   }
 };*/
+
+/**
+ * Apply initial design tweaks
+ */
+Drupal.behaviors.esdInit = {
+  attach: function (context, settings) {
+    // Add the navigation select.
+    $('#block-menu-block-1 .menu-block-wrapper > ul.menu', context).once('selectnav', function () {
+      Drupal.theme('buildSelectnav', $(this), 1);
+    });
+    $('#block-menu-block-2 .menu-block-wrapper > ul.menu', context).once('selectnav', function () {
+      Drupal.theme('buildSelectnav', $(this), 2);
+    });
+  }
+};
 
 Drupal.behaviors.vimeoReady = {
   attach: function (context, settings) {
