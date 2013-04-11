@@ -5,6 +5,7 @@
  * and building mobile first layouts.
  ******************************************************************************/
 @import "susy";
+@import "../../utils/vars";
 
 // Susy Variables
 
@@ -21,11 +22,7 @@ $grid-padding: 5px;
 $container-style: magic;
 $container-width: 1200px;
 
-// Susy Media Layouts @see http://susy.oddbird.net/guides/reference/#ref-media-layouts
-$tab: 44em 12; // At 44em use 12 columns.
-$desk: 70em 16; // At 70em use 16 columns.
 
-.l-header,
 .l-main,
 .l-footer {
   @include container; // Define these elements as the grid containers.
@@ -41,60 +38,28 @@ $desk: 70em 16; // At 70em use 16 columns.
 }
 
 @include at-breakpoint($tab) { // At a given Susy Media Layout, use a given amount of columns.
-  .l-header,
   .l-main,
   .l-footer {
     @include set-container-width; // Reset only the container width (elements have already been declared as containers).
     // @include susy-grid-background; // Show the columns for debugging.
   }
 
-  .l-branding {
-    @include span-columns(4, 12); // Span 4 out of 12 columns.
+  .l-header {
+    @include span-columns(6, 16); // Span 4 out of 12 columns.
   }
   .l-region--header{
-    @include span-columns(8 omega, 12); // Span the last (omega) 8 columns of 12.
+    @include span-columns(6 omega, 16); // Span the last (omega) 8 columns of 12.
   }
   .l-region--navigation {
     clear: both;
   }
 
-  .sidebar-first,
-  .sidebar-second,
-  .two-sidebars {
-    .l-content {
-      @include span-columns(8, 12); // Span 8 out of 12 columns.
-    }
-    .l-region--sidebar-first,
-    .l-region--sidebar-second {
-      @include span-columns(4 omega, 12); // Span the last (omega) 4 columns of 12.
-    }
-    .l-region--sidebar-second {
-      clear: right;
-    }
-  }
-}
-
-@include at-breakpoint($desk) {
-  .l-header,
-  .l-main,
-  .l-footer {
-    @include set-container-width; // Reset only the container width (elements have already been declared as containers).
-    // @include susy-grid-background; // Show the columns for debugging.
-  }
-
-  .l-branding {
-    @include span-columns(6, 16); // Span 6 out of 16 columns.
-  }
-  .l-region--header{
-    @include span-columns(10 omega, 16); // Span the last (omega) 10 columns of 16.
-  }
-
   .sidebar-first {
     .l-content {
-      @include span-columns(12 omega, 16); // Span the last (omega) 12 columns of 16.
+      @include span-columns(10 omega, 16); // Span the last (omega) 12 columns of 16.
     }
     .l-region--sidebar-first {
-      @include span-columns(4, 16); // Span 4 out of 16 columns.
+      @include span-columns(6, 16); // Span 4 out of 16 columns.
     }
   }
   .sidebar-second {
@@ -123,5 +88,27 @@ $desk: 70em 16; // At 70em use 16 columns.
       @include omega; // This element spans the last (omega) column.
       clear: none;
     }
+  }
+
+  .l-region--footer-first {
+    @include span-columns(6, 16); // Span 4 out of 16 columns.
+    margin-right: 0;
+  }
+  .l-region--footer-second,
+  .l-region--footer-third {
+    @include span-columns(5, 16); // Span 4 out of 16 columns.
+    margin-right: 0;
+  }
+}
+
+@include at-breakpoint($desk) {
+  .l-main,
+  .l-footer {
+    @include set-container-width; // Reset only the container width (elements have already been declared as containers).
+    // @include susy-grid-background; // Show the columns for debugging.
+  }
+
+  .l-region--header{
+    @include span-columns(6 omega, 16); // Span the last (omega) 10 columns of 16.
   }
 }

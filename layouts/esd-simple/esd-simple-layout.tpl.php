@@ -1,30 +1,30 @@
 <div class="l-page">
-  <header class="l-header" role="banner">
-    <div class="l-branding">
-      <?php if ($logo): ?>
-        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
-      <?php endif; ?>
-
-      <?php if ($site_name || $site_slogan): ?>
-        <hgroup>
-          <?php if ($site_name): ?>
-            <h1 class="site-name">
-              <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-            </h1>
-          <?php endif; ?>
-
-          <?php if ($site_slogan): ?>
-            <h2 class="site-slogan"><?php print $site_slogan; ?></h2>
-          <?php endif; ?>
-        </hgroup>
-      <?php endif; ?>
-    </div>
-
-    <?php print render($page['header']); ?>
-    <?php print render($page['navigation']); ?>
-  </header>
-
   <div class="l-main">
+    <header class="l-header" role="banner">
+      <div class="l-branding">
+        <?php if ($logo): ?>
+          <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
+        <?php endif; ?>
+
+        <?php if ($site_name || $site_slogan): ?>
+          <hgroup>
+            <?php if ($site_name): ?>
+              <h1 class="site-name">
+                <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
+              </h1>
+            <?php endif; ?>
+
+            <?php if ($site_slogan): ?>
+              <h2 class="site-slogan"><?php print $site_slogan; ?></h2>
+            <?php endif; ?>
+          </hgroup>
+        <?php endif; ?>
+      </div>
+
+      <?php print render($page['header']); ?>
+      <?php print render($page['navigation']); ?>
+    </header>
+
     <div class="l-content" role="main">
       <?php print render($page['highlighted']); ?>
       <?php print $breadcrumb; ?>
@@ -49,6 +49,8 @@
   </div>
 
   <footer class="l-footer" role="contentinfo">
-    <?php print render($page['footer']); ?>
+    <?php print render($page['footer_first']); ?>
+    <?php print render($page['footer_second']); ?>
+    <?php print render($page['footer_third']); ?>
   </footer>
 </div>
