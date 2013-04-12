@@ -45,13 +45,28 @@ h1 {
   background: {
     color: $lightblue;
   }
+}
+h2, h3, h4, h5, h6 {
+  color: $darkblue;
+  a {
+    color: $darkblue;
+  }
+  a:hover, a:focus {
+    color: $orange;
+  }
+}
+h2 {
 
+}
+h3 {
+  margin: 0;
 }
 
 .l-branding .site-logo img {
   margin: 50px 0 25px;
 }
 
+#search-form,
 #search-block-form {
   @include arrowLinkSmall;
   div {
@@ -336,6 +351,46 @@ h1 {
         font-size: 25px;
       }
 
+    }
+  }
+}
+
+/* Search Results Page */
+.search-results {
+  .search-result {
+    margin: 0 0 35px;
+    .search-result__snippet {
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+
+/* Pagers */
+ul.pager {
+  text-align: left;
+  li a {
+    padding: 2px 3px;
+    color: black;
+    font: {
+      size: 18px;
+    }
+  }
+  a:hover, a:focus {
+    color: white;
+    background-color: $darkergrey;
+  }
+  .pager__item--pager-next,
+  .pager__item--pager-previous,
+  .pager__item--first,
+  .pager__item--last {
+    .pager__item--current,
+    a {
+      color: white;
+      background-color: black;
+      font: {
+        size: 14px;
+      }
     }
   }
 }
