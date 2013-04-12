@@ -48,9 +48,11 @@
     <?php print render($page['sidebar_second']); ?>
   </div>
 
-  <footer class="l-footer" role="contentinfo">
-    <?php print render($page['footer_first']); ?>
-    <?php print render($page['footer_second']); ?>
-    <?php print render($page['footer_third']); ?>
-  </footer>
+  <div class="l-footer-wrapper">
+    <footer class="l-footer" role="contentinfo">
+      <?php print render($page['footer_first']); ?>
+      <?php print render($page['footer_second']); ?>
+      <?php print render($page['footer_third']); ?>
+    </footer>
+  </div>
 </div>

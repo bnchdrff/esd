@@ -35,15 +35,15 @@
 <div class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <div class="content"<?php print $content_attributes; ?>>
     <?php if (isset($image)): ?>
-      <div class="dyk_image">
+      <div class="dyk-image">
         <?php print $image; ?>
       </div>
     <?php endif;?>
-    <div class="dyk_body">
+    <div class="dyk-body">
       <?php print $field_dyk_body[0]['safe_value']; ?>
     </div>
     <?php if (isset($field_dyk_link[0])): ?>
-      <div class="dyk_link_wrap"><a class="dyk_link arrow_link" href="<?php print $field_dyk_link[0]['value']; ?>"></a></div>
+      <div class="dyk-link-wrap"><a class="dyk-link arrow-link" href="<?php print $field_dyk_link[0]['value']; ?>"></a></div>
     <?php endif; ?>
   </div>
 </div>
