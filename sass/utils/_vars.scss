@@ -12,13 +12,14 @@ $yellow: #ffd300;
 $lightgrey: #e6e6e6;
 $grey: #ccc;
 $darkgrey: #666;
+$darkergrey: #4b4e54;
 
 // margins and paddings
 $internal_block_margin: 10px;
 $paragraph_padding: 8px;
 
 // Susy Media Layouts @see http://susy.oddbird.net/guides/reference/#ref-media-layouts
-$tab: 44em 12; // At 44em use 12 columns.
+$tab: 44em 16; // At 44em use 12 columns.
 $desk: 70em 16; // At 70em use 16 columns.
 
 // responsive bits
@@ -35,5 +36,102 @@ $show_in_mobile: "#block-menu-block-1 .selectnav, #block-menu-block-2 .selectnav
   }
   #{$show_in_mobile} {
     display: none;
+  }
+  .l-footer-wrapper .l-region--footer-first {
+    margin: 0px;
+    border-right: 1px dotted $grey;
+  }
+}
+
+/* MIXin Mingle */
+@mixin clearListStyles {
+  ul {
+    list-style:none !important;
+    margin: 0;
+    padding: 0;
+    li {
+      list-style-type: none !important;
+      list-style-image: none !important;
+    }
+  }
+}
+
+@mixin linkBlockStyle {
+  display: block;
+}
+
+@mixin arrowLink {
+  a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: {
+      image: url(../images/big_arrow_sprite.png);
+      repeat: no-repeat;
+      position: 0 0;
+    }
+  }
+  a:hover, a:focus {
+    background-position: 0 -90px;
+  }
+}
+
+@mixin imageLink {
+  text-indent: -999px;
+  display:inline-block;
+  border: 0 none;
+  background: {
+    repeat: no-repeat;
+    position: 0 0;
+  }
+}
+
+@mixin arrowLinkSmall {
+  input[type=submit],
+  a {
+    @include imageLink;
+    display: block;
+    width: 19px;
+    height: 19px;
+    background: {
+      image: url(../images/small_arrow_sprite.png);
+      repeat: no-repeat;
+      position: 0 0;
+    }
+  }
+  input[type=submit]:hover,
+  a:hover, a:focus {
+    background-position: 0 -69px;
+  }
+}
+
+@mixin blackButton {
+  a,
+  input[type=submit] {
+    padding: 2px 3px;
+    border: 1px solid black;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+  }
+  a:hover, a:focus,
+  input[type=submit]:hover {
+    color: $darkgrey;
+  }
+}
+@mixin blueMenu {
+  a {
+    @include linkBlockStyle;
+    padding: 10px;
+    color: black;
+    background: {
+      color: $lighterblue;
+    }
+  }
+  a.active-trail,
+  a.active,
+  a:hover,
+  a:focus {
+    background-color: $lightblue;
   }
 }
