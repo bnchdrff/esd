@@ -417,3 +417,16 @@ ul.pager {
     }
   }
 }
+
+/* Blogs */
+.field--blog-tags {
+  display:inline-block;
+  a {
+    padding: 4px;
+    color: $darkblue;
+    background-color: black;
+    font: {
+      size: 25px;
+    }
+  }
+}
