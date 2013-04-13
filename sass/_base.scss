@@ -356,12 +356,29 @@ h3 {
 }
 
 /* Search Results Page */
-.search-results {
-  .search-result {
-    margin: 0 0 35px;
-    .search-result__snippet {
-      padding: 0;
-      margin: 0;
+.page-search {
+  .search-form {
+    div , input {
+      display:inline-block !important;
+    }
+    label {
+      display: none;
+    }
+  }
+  .search-results {
+    .search-result {
+      margin: 0 0 35px;
+      .search-result__snippet {
+        color: $darkergrey;
+        padding: 0;
+        margin: 0;
+        strong {
+          color:black;
+        }
+      }
+      .search-result__info {
+        display:none;
+      }
     }
   }
 }
@@ -369,28 +386,34 @@ h3 {
 /* Pagers */
 ul.pager {
   text-align: left;
-  li a {
-    padding: 2px 3px;
-    color: black;
+  li {
     font: {
       size: 18px;
     }
+    a {
+      padding: 2px 3px;
+      color: black;
+    }
+    a:hover, a:focus {
+      color: white;
+      background-color: $darkergrey;
+    }
   }
-  a:hover, a:focus {
+  .pager__item--current {
+    padding: 2px 3px;
     color: white;
-    background-color: $darkergrey;
+    background-color: black;
   }
   .pager__item--pager-next,
-  .pager__item--pager-previous,
+  .pager__item--previous,
   .pager__item--first,
   .pager__item--last {
-    .pager__item--current,
+    font: {
+      size: 14px;
+    }
     a {
-      color: white;
-      background-color: black;
-      font: {
-        size: 14px;
-      }
+      @extend .pager__item--current;
+      text-transform: capitalize;
     }
   }
 }
