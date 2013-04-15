@@ -124,7 +124,8 @@ $show_in_mobile: "#block-menu-block-1 .selectnav, #block-menu-block-2 .selectnav
 @mixin blueMenu {
   a {
     @include linkBlockStyle;
-    padding: 10px;
+    @include rightWhiteArrow;
+    padding: 10px 40px 10px 10px;
     color: black;
     background: {
       color: $lighterblue;
@@ -136,26 +137,50 @@ $show_in_mobile: "#block-menu-block-1 .selectnav, #block-menu-block-2 .selectnav
   a:focus {
     background-color: $lightblue;
   }
+  a.active-trail, a.active {
+    @include downBlackArrow;
+  }
 }
 
-.esd-sprite {
+.icon-sprite {
   background: {
-    image: url(../images/esd_sprite.png);
+    image: url(../images/icon_sprite.png);
     repeat: no-repeat;
   }
 }
-.sprite-big_black_right_arrow { background-position: 0 0; width: 16px; height: 26px; }
-.sprite-big_down_black_arrow { background-position: 0 -76px; width: 26px; height: 17px; }
-.sprite-big_right_white_arrow { background-position: 0 -143px; width: 16px; height: 26px; }
-.sprite-down_black_arrow { background-position: 0 -219px; width: 21px; height: 13px; }
-.sprite-esd_learn { background-position: 0 -282px; width: 33px; height: 53px; }
-.sprite-esd_takeaction { background-position: 0 -385px; width: 50px; height: 47px; }
-.sprite-newsletter { background-position: 0 -482px; width: 72px; height: 56px; }
-.sprite-right_left_arrow { background-position: 0 -588px; width: 13px; height: 21px; }
-.sprite-right_white_arrow { background-position: 0 -659px; width: 13px; height: 21px; }
-.sprite-schoolresources { background-position: 0 -730px; width: 223px; height: 24px; }
-
 @mixin bgLightbulb {
-  @extend .esd-sprite;
-  background-position: right -282px;
+  @extend .icon-sprite;
+  background-position: 102% 15px;
+}
+@mixin bgEnvelope {
+  @extend .icon-sprite;
+  background-position: right -200px;
+}
+@mixin bgActionArrow {
+  @extend .icon-sprite;
+  background-position: right -85px;
+}
+
+.arrow-sprite {
+  background: {
+    image: url(../images/arrows_sprite.png);
+    repeat: no-repeat;
+  }
+}
+
+@mixin rightWhiteArrow {
+  @extend .arrow-sprite;
+  background-position: right -342px;
+}
+@mixin rightWhiteArrowBig {
+  @extend .arrow-sprite;
+  background-position: 99% -120px;
+}
+@mixin downBlackArrow {
+  @extend .arrow-sprite;
+  background-position: 98% -205px;
+}
+@mixin downBlackArrowBig {
+  @extend .arrow-sprite;
+  background-position: 97% -45px;
 }

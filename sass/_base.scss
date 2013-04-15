@@ -95,7 +95,7 @@ a {
           padding: 5px 10px;
           background: {
             color: $lightgrey;
-            image: '';
+            image: none;
           }
         }
         a.active,
@@ -117,6 +117,7 @@ a {
   }
   // Learn & Take Action  menu items
   .menu-block-wrapper > ul.menu > li > a {
+    @include rightWhiteArrowBig;
     padding: 10px 10px;
     font: {
       size: 45px;
@@ -131,6 +132,9 @@ a {
   .menu-block-wrapper > ul.menu > li > a:focus {
     background-color: $lightorange;
   }
+  .menu-block-wrapper > ul.menu > li > a.active-trail {
+    @include downBlackArrowBig;
+  }
   .block {
     margin: 0 0 10px 0;
   }
@@ -138,11 +142,14 @@ a {
 
 #block-boxes-school-leaders {
   float: right;
-  margin: 10px 0;
+  margin: 12px 0;
   .boxes-box-content {
     a {
+      padding: 15px 25px 14px;
       background: {
-        color: blue;
+        image: url(../images/schoolresources.png);
+        repeat: no-repeat;
+        position: 0;
       }
       color: white;
       font-size: 14px;
@@ -285,6 +292,7 @@ a {
   background-color: $yellow;
   padding: 10px;
   #edit-mailchimp-lists-mailchimp-get-email-updates-title {
+    @include bgEnvelope;
     padding: 0 80px 5px 0;
     margin: 0 0 10px;
     border-bottom: 2px solid black;
@@ -366,13 +374,18 @@ a {
 .section-learn .l-content h1 {
   @include bgLightbulb;
 }
+.section-take-action .l-content h1 {
+  @include bgActionArrow;
+}
 
 /* Search */
 #search-form,
 #search-block-form {
   @include arrowLinkSmall;
+  margin: 10px 0 0;
   div {
     display: inline-block;
+    margin: 0;
     .form-type-textfield {
       padding: 0 0 0 20px;
       background: {
