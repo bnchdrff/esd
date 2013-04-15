@@ -1,0 +1,55 @@
+
+@mixin overlapCaptionPosition {
+  position: relative;
+  top: -45px;
+}
+
+.view-frontpage-slideshow {
+  .slide {
+    .slide-image {
+
+    }
+    .slide-title {
+      @include overlapCaptionPosition;
+      display: inline-block;
+      padding: 5px 15px;
+      margin: 0;
+      font-size: 25px;
+      color: white;
+      background-color: $lightblue;
+    }
+    .slide-caption {
+      @include overlapCaptionPosition;
+      a {
+        @include linkBlockStyle;
+        padding: 20px;
+        color: black;
+        background-color: $lighterblue;
+      }
+      a:hover, a:focus {
+        background-color: $lightblue;
+
+      }
+      .col1 {
+        position: relative;
+        top: -16px; // I don't know why this column is dropping down.
+            }
+      .col1, .col2, .col3 {
+        display: inline-block;
+        width: 33%;
+        height: 120px;
+        z-index: 1;
+        margin: 0;
+        text-align: center;
+        p {
+          padding: 0 10px;
+          margin: 0;
+        }
+      }
+      .col1, .col2 {
+        border-right: 2px dotted white;
+      }
+
+    }
+  }
+}

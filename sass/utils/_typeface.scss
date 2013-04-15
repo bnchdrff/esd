@@ -1,5 +1,8 @@
 @import 'museo_slab';
 
 body {
-  font-family: MuseoSlab, Arial;
+  font: {
+    family: MuseoSlab;
+    weight: normal;
+  }
 }
