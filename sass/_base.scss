@@ -449,6 +449,23 @@ ul.pager {
 
 /* Blogs */
 .node--blog-entry {
+  .field--blog-date {
+    color: $darkergrey;
+  }
+  .node__title {
+    margin: 5px 0;
+  }
+  .submitted {
+    display: inline;
+    color: $darkgrey;
+    .field--author {
+      display: inline;
+      text-transform: uppercase;
+      a {
+        color: $darkergrey;
+      }
+    }
+  }
   .field--blog-tags {
     display:inline-block;
     a {

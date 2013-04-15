@@ -101,4 +101,10 @@ function esd_omega_theme_libraries_info($theme) {
  */
 function esd_preprocess_page(&$vars) {
   drupal_add_js('jQuery.extend(Drupal.settings, { "pathToTheme": "/' . path_to_theme() . '/" });', 'inline');
+  if (is_object($vars['node'])) {
+    if ($vars['node']->type == 'blog_entry') {
+      // Set Page title to Blog on blog nodes.
+      $vars['title'] = 'Blog';
+    }
+  }
 }
