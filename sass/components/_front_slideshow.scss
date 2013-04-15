@@ -30,10 +30,6 @@
         background-color: $lightblue;
 
       }
-      .col1 {
-        position: relative;
-        top: -16px; // I don't know why this column is dropping down.
-            }
       .col1, .col2, .col3 {
         display: inline-block;
         width: 33%;
@@ -50,6 +46,20 @@
         border-right: 2px dotted white;
       }
 
+    }
+  }
+  .views-slideshow-controls-top {
+    position:relative;
+    top: 150px;
+    z-index: 10;
+    #views_slideshow_controls_text_previous_frontpage_slideshow-page {
+      float:left;
+    }
+    #views_slideshow_controls_text_pause_frontpage_slideshow-page {
+      display: none;
+    }
+    #views_slideshow_controls_text_next_frontpage_slideshow-page {
+      float:right;
     }
   }
 }
