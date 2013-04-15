@@ -77,7 +77,7 @@ $show_in_mobile: "#block-menu-block-1 .selectnav, #block-menu-block-2 .selectnav
 }
 
 @mixin imageLink {
-  text-indent: -999px;
+  text-indent: -9999px;
   display:inline-block;
   border: 0 none;
   background: {
@@ -93,6 +93,7 @@ $show_in_mobile: "#block-menu-block-1 .selectnav, #block-menu-block-2 .selectnav
     display: block;
     width: 19px;
     height: 19px;
+    cursor: pointer;
     background: {
       image: url(../images/small_arrow_sprite.png);
       repeat: no-repeat;
@@ -134,4 +135,26 @@ $show_in_mobile: "#block-menu-block-1 .selectnav, #block-menu-block-2 .selectnav
   a:focus {
     background-color: $lightblue;
   }
+}
+
+.esd-sprite {
+  background: {
+    image: url(../images/esd_sprite.png);
+    repeat: no-repeat;
+  }
+}
+.sprite-big_black_right_arrow { background-position: 0 0; width: 16px; height: 26px; }
+.sprite-big_down_black_arrow { background-position: 0 -76px; width: 26px; height: 17px; }
+.sprite-big_right_white_arrow { background-position: 0 -143px; width: 16px; height: 26px; }
+.sprite-down_black_arrow { background-position: 0 -219px; width: 21px; height: 13px; }
+.sprite-esd_learn { background-position: 0 -282px; width: 33px; height: 53px; }
+.sprite-esd_takeaction { background-position: 0 -385px; width: 50px; height: 47px; }
+.sprite-newsletter { background-position: 0 -482px; width: 72px; height: 56px; }
+.sprite-right_left_arrow { background-position: 0 -588px; width: 13px; height: 21px; }
+.sprite-right_white_arrow { background-position: 0 -659px; width: 13px; height: 21px; }
+.sprite-schoolresources { background-position: 0 -730px; width: 223px; height: 24px; }
+
+@mixin bgLightbulb {
+  @extend .esd-sprite;
+  background-position: right -282px;
 }

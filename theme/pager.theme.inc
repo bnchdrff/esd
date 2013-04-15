@@ -18,7 +18,7 @@
  *
  * @ingroup themeable
  */
-function omega_pager($variables) {
+function esd_pager($variables) {
   $tags = $variables['tags'];
   $element = $variables['element'];
   $parameters = $variables['parameters'];

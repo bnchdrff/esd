@@ -35,57 +35,51 @@ a {
   text-decoration: none;
 }
 
-h1 {
-  margin: 0;
-  padding: 15px 10px;
-  color: white;
-  font: {
-    size: 45px;
+.l-main {
+  h1 {
+    margin: 0;
+    padding: 15px 10px;
+    color: white;
+    font: {
+      size: 45px;
+      weight: normal;
+    }
+    background: {
+      color: $lightblue;
+    }
   }
-  background: {
-    color: $lightblue;
-  }
-}
-h2, h3, h4, h5, h6 {
-  color: $darkblue;
-  a {
+  h2, h3, h4, h5, h6 {
     color: $darkblue;
+    font-weight: normal;
+    a {
+      color: $darkblue;
+    }
+    a:hover, a:focus {
+      color: $orange;
+    }
   }
-  a:hover, a:focus {
-    color: $orange;
-  }
-}
-h2 {
+  h2 {
 
-}
-h3 {
-  margin: 0;
+  }
+  h3 {
+    margin: 0;
+  }
 }
 
 .l-branding .site-logo img {
   margin: 50px 0 25px;
 }
 
-#search-form,
-#search-block-form {
-  @include arrowLinkSmall;
-  div {
+.l-region--highlighted {
+  .block, .block__content {
     display: inline-block;
-    .form-type-textfield {
-      padding: 0 0 0 20px;
-      background: {
-        image: url(../images/search_icon.png);
-        repeat: no-repeat;
-        position: 0 4px;
-      }
-    }
   }
-
 }
 
 /* Navigation */
 .l-region--navigation {
   @include clearListStyles;
+  margin-bottom: 20px;
   ul.menu li {
     margin-bottom: 5px;
     a {
@@ -112,7 +106,7 @@ h3 {
       }
     }
   }
-  // Weird magic to hide non-active menu
+  // Magic to hide non-active menu
   .menu-block-wrapper > ul.menu > li ul.menu > li ul.menu,
   .menu-block-wrapper > ul.menu > li ul.menu {
     display: none;
@@ -139,6 +133,20 @@ h3 {
   }
   .block {
     margin: 0 0 10px 0;
+  }
+}
+
+#block-boxes-school-leaders {
+  float: right;
+  margin: 10px 0;
+  .boxes-box-content {
+    a {
+      background: {
+        color: blue;
+      }
+      color: white;
+      font-size: 14px;
+    }
   }
 }
 
@@ -216,7 +224,7 @@ h3 {
   }
 }
 
-#block-boxes-ask-us {
+#block-boxes-ask-us .boxes-box-content {
   text-align: center;
   a {
     @include imageLink;
@@ -288,6 +296,7 @@ h3 {
 
 }
 
+/* Footer */
 @mixin footerHeadLink {
   font: {
     size: 16px;
@@ -333,7 +342,7 @@ h3 {
   }
 }
 
-/* Learn Page */
+/* Take ACtion & Learn Pages */
 
 .section-take-action,
 .section-learn {
@@ -351,6 +360,26 @@ h3 {
         font-size: 25px;
       }
 
+    }
+  }
+}
+.section-learn .l-content h1 {
+  @include bgLightbulb;
+}
+
+/* Search */
+#search-form,
+#search-block-form {
+  @include arrowLinkSmall;
+  div {
+    display: inline-block;
+    .form-type-textfield {
+      padding: 0 0 0 20px;
+      background: {
+        image: url(../images/search_icon.png);
+        repeat: no-repeat;
+        position: 0 4px;
+      }
     }
   }
 }
@@ -419,14 +448,22 @@ ul.pager {
 }
 
 /* Blogs */
-.field--blog-tags {
-  display:inline-block;
-  a {
-    padding: 4px;
-    color: $darkblue;
-    background-color: black;
-    font: {
-      size: 25px;
+.node--blog-entry {
+  .field--blog-tags {
+    display:inline-block;
+    a {
+      padding: 4px;
+      color: $lightblue;
+      background-color: black;
+      font: {
+        size: 25px;
+      }
     }
+    a:hover, a:focus {
+      background-color: $darkergrey;
+    }
+  }
+  .field-label {
+    margin: 10px 0;
   }
 }
