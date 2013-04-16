@@ -13,6 +13,7 @@ $lightgrey: #e6e6e6;
 $grey: #ccc;
 $darkgrey: #666;
 $darkergrey: #4d4d4d;
+$greyblack: #1a1a1a;
 $red: #d82e31;
 
 // margins and paddings
@@ -20,8 +21,8 @@ $internal_block_margin: 10px;
 $paragraph_padding: 8px;
 
 // Susy Media Layouts @see http://susy.oddbird.net/guides/reference/#ref-media-layouts
-$tab: 44em 16; // At 44em use 12 columns.
-$desk: 70em 16; // At 70em use 16 columns.
+$tab: 54em 16; // At 44em use 12 columns.
+$desk: 80em 16; // At 70em use 16 columns.
 
 // responsive bits
 $hide_in_mobile: "#block-menu-block-1 .selectnav-processed, #block-menu-block-2 .selectnav-processed";
@@ -68,6 +69,22 @@ $show_in_mobile: "#block-menu-block-1 .selectnav, #block-menu-block-2 .selectnav
     height: 40px;
     background: {
       image: url(../images/big_arrow_sprite.png);
+      repeat: no-repeat;
+      position: 0 0;
+    }
+  }
+  a:hover, a:focus {
+    background-position: 0 -90px;
+  }
+}
+
+@mixin arrowLinkLeft {
+  a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: {
+      image: url(../images/big_arrow_sprite_left.png);
       repeat: no-repeat;
       position: 0 0;
     }

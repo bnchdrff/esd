@@ -108,3 +108,33 @@ function esd_preprocess_page(&$vars) {
     }
   }
 }
+
+/**
+ * Implements template_preprocess_node
+ */
+function esd_preprocess_node(&$vars) {
+  // Re-order the links.
+  $vars['content']['links'] = array_reverse($vars['content']['links']);
+  // Add wrapper & "from" to media outlet field
+  if (isset($vars['content']['field_media_outlet'])) {
+    $vars['content']['field_media_outlet']['#prefix'] = '<div class="media-hit-outlet-wrapper"><span class="italic">from</span>';
+    $vars['content']['field_media_outlet']['#suffix'] = '</div>';
+  }
+}
+
+/**
+ * Implements theme_file_icon().
+ */
+function esd_file_icon($variables) {
+  $file = $variables['file'];
+  if ($file->filemime == 'application/pdf') {
+    // Override PDF icon
+    $icon_directory = drupal_get_path('theme', 'esd') . '/images/file-icons';
+  } else {
+    $icon_directory = $variables['icon_directory'];
+  }
+
+  $mime = check_plain($file->filemime);
+  $icon_url = file_icon_url($file, $icon_directory);
+  return '<img alt="" class="file-icon" src="' . $icon_url . '" title="' . $mime . '" />';
+}

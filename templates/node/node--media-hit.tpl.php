@@ -79,7 +79,8 @@
  */
 ?>
 <article<?php print $attributes; ?>>
-    <?php print render($content['field_blog_date']); ?>
+    <?php print render($content['field_media_hit_date']); ?>
+    <?php print render($content['field_media_outlet']); ?>
     <header>
       <?php print render($title_prefix); ?>
         <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>" rel="bookmark"><?php print $title; ?></a></h2>
@@ -88,7 +89,7 @@
 
   <?php if(!$teaser): ?>
     <footer class="node__submitted">
-      <div class="submitted">by <?php print render($content['field_author']);  ?></div>
+      <div class="submitted">by <?php print render($content['field_media_author']);  ?></div>
     </footer>
   <?php endif; ?>
 

@@ -5,6 +5,7 @@
 }
 
 .view-frontpage-slideshow {
+  margin: 0;
   .slide {
     .slide-image {
 
@@ -50,16 +51,21 @@
   }
   .views-slideshow-controls-top {
     position:relative;
-    top: 150px;
+    top: 180px;
     z-index: 10;
+    a {
+      @include imageLink;
+    }
     #views_slideshow_controls_text_previous_frontpage_slideshow-page {
       float:left;
+      @include arrowLinkLeft;
     }
     #views_slideshow_controls_text_pause_frontpage_slideshow-page {
       display: none;
     }
     #views_slideshow_controls_text_next_frontpage_slideshow-page {
       float:right;
+      @include arrowLink;
     }
   }
 }
