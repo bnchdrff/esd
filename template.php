@@ -104,7 +104,11 @@ function esd_preprocess_page(&$vars) {
   if (is_object($vars['node'])) {
     if ($vars['node']->type == 'blog_entry') {
       // Set Page title to Blog on blog nodes.
-      $vars['title'] = 'Blog';
+      $vars['title'] = l('Blog', 'blog');
+    }
+    if ($vars['node']->type == 'media_hit') {
+      // Set Page title to Media Archive on media hit nodes.
+      $vars['title'] = l('Media Archive', 'media');
     }
   }
 }
