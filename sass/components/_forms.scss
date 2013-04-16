@@ -42,7 +42,7 @@
     }
   }
   .action,
-  .edit-actions {
+  #edit-actions {
     @include blackButton;
   }
   textarea.error,

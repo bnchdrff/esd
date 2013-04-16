@@ -68,9 +68,17 @@ a {
   h3 {
     margin: 0;
   }
-
-  p {
-    margin: 0 0 20px;
+}
+.page-node {
+  .l-content .field--body {
+    p {
+      font-size: 14px;
+      margin: 0 0 20px;
+    }
+    a {
+      color: black;
+      border-bottom: 2px solid $yellow;
+    }
   }
 }
 
@@ -509,6 +517,9 @@ ul.pager {
 
 
 /* Nodes */
+.page-node .node--full {
+  margin-top: 20px;
+}
 .node--media-hit,
 .node--blog-entry {
   .field--media-hit-date,

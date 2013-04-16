@@ -80,16 +80,22 @@
 ?>
 <article<?php print $attributes; ?>>
     <?php print render($content['field_blog_date']); ?>
+  <?php if(!$teaser): ?>
+    <header>
+      <?php print render($title_prefix); ?>
+        <h2<?php print $title_attributes; ?>><?php print $title; ?></h2>
+      <?php print render($title_suffix); ?>
+    </header>
+
+    <footer class="node__submitted">
+      <div class="submitted">by <?php print render($content['field_author']);  ?></div>
+    </footer>
+  <?php else: ?>
     <header>
       <?php print render($title_prefix); ?>
         <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>" rel="bookmark"><?php print $title; ?></a></h2>
       <?php print render($title_suffix); ?>
     </header>
-
-  <?php if(!$teaser): ?>
-    <footer class="node__submitted">
-      <div class="submitted">by <?php print render($content['field_author']);  ?></div>
-    </footer>
   <?php endif; ?>
 
   <div<?php print $content_attributes; ?>>
