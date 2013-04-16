@@ -425,7 +425,7 @@ a {
 }
 
 /* Search */
-#search-form,
+#search-form #edit-basic,
 #search-block-form {
   @include arrowLinkSmall;
   margin: 10px 0 0;
@@ -445,7 +445,7 @@ a {
 
 /* Search Results Page */
 .page-search {
-  .search-form {
+  .search-form #edit-basic {
     div , input {
       display:inline-block !important;
     }
