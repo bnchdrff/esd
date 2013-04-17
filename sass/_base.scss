@@ -42,7 +42,7 @@ a {
   }
 }
 
-.l-main {
+.l-content {
   h1 {
     margin: 0;
     padding: 15px 10px;
@@ -103,6 +103,7 @@ a {
 }
 .mollom-privacy {
   @include yellowUnderlineLink;
+  font-size: 14px;
 }
 .feed-icon {
   float: right;
@@ -114,14 +115,14 @@ a {
   margin: 50px 0 25px;
 }
 
-.l-region--highlighted {
+.l-header {
   .block, .block__content {
     display: inline-block;
   }
 }
 
 /* Navigation */
-.l-region--navigation {
+.l-region--branding {
   @include clearListStyles;
   margin-bottom: 20px;
   ul.menu li {
@@ -251,12 +252,12 @@ a {
 .section-aprenda,
 .section-take-action,
 .section-learn {
-  .l-region--navigation {
+  .l-region--branding {
     ul.menu ul.menu {
       display: none !important;
     }
   }
-  .l-content {
+  .l-content-right {
     @include clearListStyles;
     ul.menu li {
       margin-bottom: 5px;
@@ -268,10 +269,10 @@ a {
     }
   }
 }
-.section-learn .l-content h1 {
+.section-learn .l-content-right h1 {
   @include bgLightbulb;
 }
-.section-take-action .l-content h1 {
+.section-take-action .l-content-right h1 {
   @include bgActionArrow;
 }
 

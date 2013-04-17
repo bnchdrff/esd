@@ -1,10 +1,10 @@
-<header class="header">
+<header class="l-header">
   <!-- intentionally left empty for progressive enhancement elements -->
 </header>
 
-<div class="content">
+<div class="l-content">
 
-<aside class="content-left">
+<aside class="l-content-left">
   <div class="branding" role="banner">
     <?php if ($logo): ?>
       <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
@@ -27,9 +27,9 @@
   </div>
 </aside>
 
-<section class="content-right">
+<section class="l-content-right">
   <?php print render($page['pre_content']); ?>
-  <div class="l-content" role="main">
+  <div class="l-content-main" role="main">
     <a id="main-content"></a>
     <?php print render($title_prefix); ?>
     <?php if ($title): ?>
@@ -46,19 +46,23 @@
     <?php print $feed_icons; ?>
   </div>
   <?php print render($page['post_content']); ?>
+  <?php print render($page['actions']); ?>
+
 </section>
 
 </div>
 
-<div class="footer">
-  <footer class="footer-left" role="contentinfo">
-    <?php print render($page['footer_first']); ?>
-  </footer>
-  <footer class="footer-middle">
-    <?php print render($page['footer_second']); ?>
-  </footer>
-  <footer class="footer-right">
-    <?php print render($page['footer_third']); ?>
-    <?php print render($page['footer_fourth']); ?>
-  </footer>
+<div class="l-footer-wrapper">
+  <div class="l-footer">
+    <footer class="l-footer-left" role="contentinfo">
+      <?php print render($page['footer_first']); ?>
+    </footer>
+    <footer class="l-footer-middle">
+      <?php print render($page['footer_second']); ?>
+    </footer>
+    <footer class="l-footer-right">
+      <?php print render($page['footer_third']); ?>
+      <?php print render($page['footer_fourth']); ?>
+    </footer>
+  </div>
 </div>

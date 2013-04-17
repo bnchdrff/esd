@@ -36,7 +36,9 @@ Drupal.theme.prototype.buildSelectnav = function($menuUl, $menuNum) {
 Drupal.theme.prototype.layoutResizeChanges = function() {
   if ($.matchmedia(query)) {
     $('.l-content').css('min-height','');
+    $('.l-region--footer-fourth').appendTo($('.l-footer-right'));
   } else {
+    $('.l-region--footer-fourth').appendTo($('.l-header'));
     Drupal.theme('equalColumns');
   }
 };

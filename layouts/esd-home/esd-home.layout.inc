@@ -4,7 +4,7 @@ preview = preview.png
 template = esd-home
 
 ; Regions
-regions[branding]       = Below branding
+regions[branding]       = Post branding
 regions[help]           = Help
 regions[pre_content]    = Pre-Content
 regions[content]        = Content

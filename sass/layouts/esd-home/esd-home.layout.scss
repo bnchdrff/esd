@@ -23,78 +23,80 @@ $grid-padding: $gutter-width;
 
 $container-style: magic;
 
-.header,
-.content,
-.footer {
+.l-header,
+.l-content,
+.l-footer {
   @include container; // Define these elements as the grid containers.
-  @include susy-grid-background; // Show the columns for debugging.
+  //@include susy-grid-background; // Show the columns for debugging.
   margin-bottom: $vert-spacing-unit;
+  width: auto;
+  max-width: none;
 }
 
 @include at-breakpoint($tab_break) {
-  .header,
-  .content,
-  .footer {
+  .l-header,
+  .l-content,
+  .l-footer {
     @include set-container-width;
     @include susy-grid-background;
     width: $tab_width; // static width
   }
 
-  .topbar {
+  .l-topbar {
     @include span-columns(12, 12);
   }
 
-  .content-right {
+  .l-content-right {
     @include span-columns(6 omega, 12);
   }
 
-  .content-left {
+  .l-content-left {
     @include span-columns(6, 12);
   }
 
-  .footer-left {
+  .l-footer-left {
     @include span-columns(4, 12);
   }
 
-  .footer-middle {
-    @include span-columns(3, 12);
+  .l-footer-middle {
+    @include span-columns(4, 12);
   }
 
-  .footer-right {
-    @include span-columns(3 omega, 12);
+  .l-footer-right {
+    @include span-columns(4 omega, 12);
   }
 }
 
 @include at-breakpoint($desk_break) {
-  .header,
-  .content,
-  .footer {
+  .l-header,
+  .l-content,
+  .l-footer {
     @include set-container-width;
     @include susy-grid-background;
     width: $desk_width; // static width
   }
 
-  .topbar {
+  .l-topbar {
     @include span-columns(16, 16);
   }
 
-  .content-right {
+  .l-content-right {
     @include span-columns(10 omega, 16);
   }
 
-  .content-left {
+  .l-content-left {
     @include span-columns(6, 16);
   }
 
-  .footer-left {
+  .l-footer-left {
     @include span-columns(6, 16);
   }
 
-  .footer-middle {
+  .l-footer-middle {
     @include span-columns(5, 16);
   }
 
-  .footer-right {
+  .l-footer-right {
     @include span-columns(5 omega, 16);
   }
 

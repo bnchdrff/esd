@@ -45,6 +45,16 @@ $show_in_mobile: "#block-menu-block-1 .selectnav, #block-menu-block-2 .selectnav
     margin: 0px;
     border-right: 1px dotted $grey;
   }
+  .l-region--footer-fourth {
+    @include push(4);
+  }
+}
+
+@include at-breakpoint($desk_break) {
+  .l-region--footer-fourth {
+    @include push(6);
+  }
+
 }
 
 /* MIXin Mingle */
@@ -184,27 +194,27 @@ $show_in_mobile: "#block-menu-block-1 .selectnav, #block-menu-block-2 .selectnav
   background: {
     image: url(../images/whiteArrowRight.png);
     repeat: no-repeat;
-    position: 99% center;
+    position: 98% center;
   }
 }
 @mixin rightWhiteArrowBig {
   background: {
     image: url(../images/heavyWhiteArrowRight.png);
     repeat: no-repeat;
-    position: 99% center;
+    position: 98% center;
   }
 }
 @mixin downBlackArrow {
   background: {
     image: url(../images/blackArrowDown.png);
     repeat: no-repeat;
-    position: 99% center;
+    position: 98% center;
   }
 }
 @mixin downBlackArrowBig {
   background: {
     image: url(../images/heavyBlackArrowRight.png);
     repeat: no-repeat;
-    position: 99% center;
+    position: 98% center;
   }
 }
