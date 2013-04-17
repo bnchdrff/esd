@@ -110,6 +110,7 @@ a {
 }
 
 .l-branding .site-logo img {
+  width: 100%;
   margin: 50px 0 25px;
 }
 
@@ -180,23 +181,6 @@ a {
   }
   .block {
     margin: 0 0 10px 0;
-  }
-}
-
-#block-boxes-school-leaders {
-  float: right;
-  margin: 12px 0;
-  .boxes-box-content {
-    a {
-      padding: 15px 25px 14px;
-      background: {
-        image: url(../images/schoolresources.png);
-        repeat: no-repeat;
-        position: 0;
-      }
-      color: white;
-      font-size: 14px;
-    }
   }
 }
 

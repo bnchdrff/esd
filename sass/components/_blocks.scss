@@ -1,4 +1,51 @@
 
+/* Language Switcher */
+#block-locale-language {
+  @include clearListStyles;
+  ul.language-switcher-locale-url {
+    li.active {
+      display:none;
+    }
+    li a {
+      padding: 15px 10px 5px;
+      color: $lightblue;
+      background-color: $darkblue;
+    }
+    li a:hover, li a:focus {
+      background-color: black;
+    }
+  }
+
+}
+
+#block-search-form {
+  margin: 0 0 0 20px;
+  form {
+    margin: 0;
+
+  }
+}
+
+#block-boxes-school-leaders {
+  float: right;
+  margin: 0;
+  .boxes-box-content {
+    p {
+      margin: 10px 0;
+      a {
+        padding: 15px 25px 14px;
+        background: {
+          image: url(../images/schoolresources.png);
+          repeat: no-repeat;
+          position: 0;
+        }
+        color: white;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
 #block-boxes-learn-more {
   .boxes-box-content {
     padding: 5px 20px;
