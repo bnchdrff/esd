@@ -21,10 +21,10 @@ $internal_block_margin: 10px;
 $paragraph_padding: 8px;
 
 // Susy Media Layouts @see http://susy.oddbird.net/guides/reference/#ref-media-layouts
-$tab_width: 600px;
-$tab_break: 600px 12;
-$desk_width: 900px;
-$desk_break: 900px 16;
+$tab_width: 720px;
+$tab_break: 720px 12;
+$desk_width: 960px;
+$desk_break: 960px 16;
 
 // responsive bits
 $hide_in_mobile: "#block-menu-block-1 .selectnav-processed, #block-menu-block-2 .selectnav-processed";
@@ -180,26 +180,31 @@ $show_in_mobile: "#block-menu-block-1 .selectnav, #block-menu-block-2 .selectnav
   background-position: right -85px;
 }
 
-.arrow-sprite {
+@mixin rightWhiteArrow {
   background: {
-    image: url(../images/arrows_sprite.png);
+    image: url(../images/whiteArrowRight.png);
     repeat: no-repeat;
+    position: 99% center;
   }
 }
-
-@mixin rightWhiteArrow {
-  @extend .arrow-sprite;
-  background-position: right -342px;
-}
 @mixin rightWhiteArrowBig {
-  @extend .arrow-sprite;
-  background-position: 99% -120px;
+  background: {
+    image: url(../images/heavyWhiteArrowRight.png);
+    repeat: no-repeat;
+    position: 99% center;
+  }
 }
 @mixin downBlackArrow {
-  @extend .arrow-sprite;
-  background-position: 98% -205px;
+  background: {
+    image: url(../images/blackArrowDown.png);
+    repeat: no-repeat;
+    position: 99% center;
+  }
 }
 @mixin downBlackArrowBig {
-  @extend .arrow-sprite;
-  background-position: 97% -45px;
+  background: {
+    image: url(../images/heavyBlackArrowRight.png);
+    repeat: no-repeat;
+    position: 99% center;
+  }
 }

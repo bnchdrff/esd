@@ -23,79 +23,79 @@ $grid-padding: $gutter-width;
 
 $container-style: magic;
 
-.l-footer,
-.l-main {
+.header,
+.content,
+.footer {
   @include container; // Define these elements as the grid containers.
   @include susy-grid-background; // Show the columns for debugging.
   margin-bottom: $vert-spacing-unit;
 }
-body .l-footer-wrapper {
-  width: 100%;
-  margin: 0;
-}
-
-.l-region--highlighted,
-.l-region--help,
-.l-region--sidebar-first,
-.l-region--sidebar-second {
-  margin-bottom: $vert-spacing-unit;
-}
 
 @include at-breakpoint($tab_break) {
-  .l-footer,
-  .l-main {
+  .header,
+  .content,
+  .footer {
     @include set-container-width;
     @include susy-grid-background;
     width: $tab_width; // static width
   }
 
-  .l-header {
-    @include span-columns(6, 12);
-  }
-  .l-region--header{
-    @include span-columns(6 omega, 12);
-  }
-  .l-region--navigation {
-    clear: both;
+  .topbar {
+    @include span-columns(12, 12);
   }
 
-  .sidebar-first {
-    .l-content {
-      @include span-columns(10 omega, 12);
-    }
-    .l-region--sidebar-first {
-      @include span-columns(6, 12);
-    }
+  .content-right {
+    @include span-columns(6 omega, 12);
   }
-  .sidebar-second {
-    .l-content {
-      @include span-columns(6, 12);
-    }
-    .l-region--sidebar-second {
-      @include span-columns(6, 12);
-      clear: none;
-    }
-  }
-  .l-region--footer-first {
+
+  .content-left {
     @include span-columns(6, 12);
-    margin-right: 0;
   }
-  .l-region--footer-second,
-  .l-region--footer-third {
-    @include span-columns(5, 12);
-    margin-right: 0;
+
+  .footer-left {
+    @include span-columns(4, 12);
+  }
+
+  .footer-middle {
+    @include span-columns(3, 12);
+  }
+
+  .footer-right {
+    @include span-columns(3 omega, 12);
   }
 }
 
 @include at-breakpoint($desk_break) {
-  .l-footer,
-  .l-main {
+  .header,
+  .content,
+  .footer {
     @include set-container-width;
     @include susy-grid-background;
     width: $desk_width; // static width
   }
 
-  .l-region--header{
-    @include span-columns(6 omega, 16);
+  .topbar {
+    @include span-columns(16, 16);
   }
+
+  .content-right {
+    @include span-columns(10 omega, 16);
+  }
+
+  .content-left {
+    @include span-columns(6, 16);
+  }
+
+  .footer-left {
+    @include span-columns(6, 16);
+  }
+
+  .footer-middle {
+    @include span-columns(5, 16);
+  }
+
+  .footer-right {
+    @include span-columns(5 omega, 16);
+  }
+
 }
