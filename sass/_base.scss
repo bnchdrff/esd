@@ -35,6 +35,12 @@ a {
   text-decoration: none;
 }
 
+@mixin yellowUnderlineLink {
+  a {
+    color: black;
+    border-bottom: 2px solid $yellow;
+  }
+}
 
 .l-main {
   h1 {
@@ -71,13 +77,10 @@ a {
 }
 .page-node {
   .l-content .field--body {
+    @include yellowUnderlineLink;
     p {
       font-size: 14px;
       margin: 0 0 20px;
-    }
-    a {
-      color: black;
-      border-bottom: 2px solid $yellow;
     }
   }
 }
@@ -97,6 +100,9 @@ a {
 }
 .disqus_comments_num {
   padding: 0 0 10px;
+}
+.mollom-privacy {
+  @include yellowUnderlineLink;
 }
 .feed-icon {
   float: right;

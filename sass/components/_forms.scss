@@ -25,9 +25,11 @@
   .form-type-radio {
     input, label {
       display: inline-block;
+      vertical-align: top;
     }
     label {
       max-width: 85%;
+      padding-top:1px;
       vertical-align: top;
     }
   }
@@ -44,6 +46,7 @@
   .action,
   #edit-actions {
     @include blackButton;
+    margin: 10px 0 0;
   }
   textarea.error,
   input.error {
@@ -79,6 +82,6 @@
     max-width: 305px;
   }
   .grippie {
-    width: 303px;
+    width: 305px;
   }
 }
