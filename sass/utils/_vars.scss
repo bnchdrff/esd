@@ -21,8 +21,10 @@ $internal_block_margin: 10px;
 $paragraph_padding: 8px;
 
 // Susy Media Layouts @see http://susy.oddbird.net/guides/reference/#ref-media-layouts
-$tab: 54em 16; // At 44em use 12 columns.
-$desk: 80em 16; // At 70em use 16 columns.
+$tab_width: 600px;
+$tab_break: 600px 12;
+$desk_width: 900px;
+$desk_break: 900px 16;
 
 // responsive bits
 $hide_in_mobile: "#block-menu-block-1 .selectnav-processed, #block-menu-block-2 .selectnav-processed";
@@ -32,7 +34,7 @@ $show_in_mobile: "#block-menu-block-1 .selectnav, #block-menu-block-2 .selectnav
   display: none;
 }
 
-@include at-breakpoint($tab) {
+@include at-breakpoint($tab_break) {
   #{$hide_in_mobile} {
     display: block;
   }
