@@ -124,6 +124,17 @@ function esd_preprocess_node(&$vars) {
     $vars['content']['field_media_outlet']['#prefix'] = '<div class="media-hit-outlet-wrapper"><span class="italic">from</span>';
     $vars['content']['field_media_outlet']['#suffix'] = '</div>';
   }
+  if (isset($vars['content']['links']['translation'])) {
+    // Remove the language link on nodes.
+    unset($vars['content']['links']['translation']);
+  }
+}
+
+/**
+ * Implements template_preprocess_search_result().
+ */
+function esd_preprocess_search_result(&$vars) {
+  $vars['lang_indicator'] = ($vars['result']['language'] == 'es') ? t('Spanish') : t('English');
 }
 
 /**

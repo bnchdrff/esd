@@ -65,6 +65,9 @@
  */
 ?>
 <article class="<?php print $classes; ?>"<?php print $attributes; ?>>
+  <?php if ($lang_indicator): ?>
+    <div class="lang-indicator"><?php print $lang_indicator; ?></div>
+  <?php endif; ?>
   <?php print render($title_prefix); ?>
     <h3 <?php print $title_attributes; ?>><a href="<?php print $url; ?>"><?php print $title; ?></a></h3>
   <?php print render($title_suffix); ?>
