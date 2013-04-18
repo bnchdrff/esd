@@ -46,7 +46,7 @@ $show_in_mobile: "#block-menu-block-1 .selectnav, #block-menu-block-2 .selectnav
     border-right: 1px dotted $grey;
   }
   .l-region--footer-fourth {
-    @include push(4);
+    @include push(0);
   }
 }
 

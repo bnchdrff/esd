@@ -29,7 +29,7 @@
 
 <section class="l-content-right">
   <?php print render($page['pre_content']); ?>
-  <div class="l-content-main" role="main">
+  <div class="l-region l-content-main" role="main">
     <a id="main-content"></a>
     <?php print render($title_prefix); ?>
     <?php if ($title): ?>

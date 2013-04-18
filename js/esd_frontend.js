@@ -1,7 +1,10 @@
 (function($) {
 
+// Breakpoints
+// via sass/utils/_vars.scss
 // Used by $.matchmedia() in various behaviors.
-var query = 'all and (max-width: 44em)';
+var bp_tablet = 'all and (min-width: 740px)';
+var bp_desktop = 'all and (min-width: 980px)';
 
 /**
  * changes the dom for different layout sizes.
@@ -34,12 +37,30 @@ Drupal.theme.prototype.buildSelectnav = function($menuUl, $menuNum) {
  * changes the dom for different layout sizes.
  */
 Drupal.theme.prototype.layoutResizeChanges = function() {
-  if ($.matchmedia(query)) {
-    $('.l-content').css('min-height','');
-    $('.l-region--footer-fourth').appendTo($('.l-footer-right'));
-  } else {
-    $('.l-region--footer-fourth').appendTo($('.l-header'));
+  var isFront = $('body').hasClass('front');
+  // tablet or larger
+  if ($.matchmedia(bp_tablet)) {
+    if (isFront) {
+      // content-right ordering for front page
+      $('.l-content-main').prependTo('.l-content-right');
+    }
+    if ($('.l-footer-right .l-region--footer-fourth').length > 0) {
+      $('.l-region--footer-fourth').appendTo($('.l-header'));
+    }
+    // equal col heights
     Drupal.theme('equalColumns');
+  }
+  // mobile (i.e. restore source order to original)
+  else {
+    if (isFront) {
+      // content-right ordering for front page
+      $('.l-region--pre-content').prependTo('.l-content-right');
+    }
+    if ($('.l-header .l-region--footer-fourth').length > 0) {
+      $('.l-region--footer-fourth').appendTo($('.l-footer-right'));
+    }
+    // equal col heights
+    $('.l-content').css('min-height','');
   }
 };
 
