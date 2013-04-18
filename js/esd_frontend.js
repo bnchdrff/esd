@@ -3,18 +3,31 @@
 // Breakpoints
 // via sass/utils/_vars.scss
 // Used by $.matchmedia() in various behaviors.
-var bp_tablet = 'all and (min-width: 740px)';
-var bp_desktop = 'all and (min-width: 980px)';
+Drupal.settings.breakpoints = {
+  tablet: 'all and (min-width: 740px)',
+  desktop: 'all and (min-width: 980px)'
+};
+
+Drupal.settings.imgstyles = [
+  //slideshow
+  {
+    tablet: '340w211h',
+    desktop: '580w360h'
+  },
+  //contentright
+  {
+    tablet: '340wNh',
+    desktop: '580wNh'
+  }
+];
 
 /**
  * changes the dom for different layout sizes.
  */
 Drupal.theme.prototype.equalColumns = function() {
   // Ensure Content Height equals Sidebar.
-  var headerHeight = $('.l-header').outerHeight();
-  var sidebarHeight = $('.l-region--sidebar-first').outerHeight();
-  var totalSideHeight = headerHeight + sidebarHeight;
-  $('.l-content').css('min-height', totalSideHeight);
+  var brandingHeight = $('.branding').outerHeight();
+  $('.l-content').css('min-height', brandingHeight);
 };
 
 /**
@@ -23,14 +36,43 @@ Drupal.theme.prototype.equalColumns = function() {
  * @param $menuUl
  *   jQuery menu ul object
  *
+ * @param int menuNum
+ *   identifier for navtoselect
+ *
  * @return nothing
  */
-Drupal.theme.prototype.buildSelectnav = function($menuUl, $menuNum) {
-  $menuID = 'navtoselect-' + $menuNum;
-  $menuUl.attr('id', $menuID);
-  selectnav($menuID, {label:false});
+Drupal.theme.prototype.buildSelectnav = function($menuUl, menuNum) {
+  var menuID = 'navtoselect-' + menuNum;
+  $menuUl.attr('id', menuID);
+  selectnav(menuID, {label:false});
   // Hide the label...
-  $('#selectnav' + $menuNum + ' option:eq(0)').remove();
+  $('#selectnav' + menuNum + ' option:eq(0)').remove();
+};
+
+/**
+ * Replace image style settings for new breakpoint
+ *
+ * @param array imgstyles
+ *   Objects of image styles in the format:
+ *   [ { breakpoint: 'size', breakpoint: 'size' }, { ... } ]
+ *
+ * @param string breakpoint
+ *   Target breakpoint
+ *
+ * @param domobject img
+ *   Image DOM object
+ *
+ */
+Drupal.theme.prototype.respondImg = function(imgstyles, breakpoint, img) {
+  var ii, ll;
+  for (ii = 0, ll = imgstyles.length; ii < ll; ii += 1) {
+    var new_style = imgstyles[ii][breakpoint];
+    $.each(imgstyles[ii], function(idx, val) {
+      if (idx != breakpoint) {
+        img.src = img.src.replace(val, new_style);
+      }
+    });
+  }
 };
 
 /**
@@ -38,8 +80,22 @@ Drupal.theme.prototype.buildSelectnav = function($menuUl, $menuNum) {
  */
 Drupal.theme.prototype.layoutResizeChanges = function() {
   var isFront = $('body').hasClass('front');
+  var images = document.getElementsByTagName('img')
+  // desktop or larger
+  if ($.matchmedia(Drupal.settings.breakpoints.desktop)) {
+    // switch images
+    var i, l;
+    for (i = 0, l = images.length; i < l; i += 1) {
+      Drupal.theme('respondImg', Drupal.settings.imgstyles, 'desktop', images[i]);
+    }
+  }
   // tablet or larger
-  if ($.matchmedia(bp_tablet)) {
+  else if ($.matchmedia(Drupal.settings.breakpoints.tablet)) {
+    // switch images
+    var i, l;
+    for (i = 0, l = images.length; i < l; i += 1) {
+      Drupal.theme('respondImg', Drupal.settings.imgstyles, 'tablet', images[i]);
+    }
     if (isFront) {
       // content-right ordering for front page
       $('.l-content-main').prependTo('.l-content-right');
