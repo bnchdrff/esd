@@ -81,16 +81,8 @@ Drupal.theme.prototype.respondImg = function(imgstyles, breakpoint, img) {
 Drupal.theme.prototype.layoutResizeChanges = function() {
   var isFront = $('body').hasClass('front');
   var images = document.getElementsByTagName('img')
-  // desktop or larger
-  if ($.matchmedia(Drupal.settings.breakpoints.desktop)) {
-    // switch images
-    var i, l;
-    for (i = 0, l = images.length; i < l; i += 1) {
-      Drupal.theme('respondImg', Drupal.settings.imgstyles, 'desktop', images[i]);
-    }
-  }
   // tablet or larger
-  else if ($.matchmedia(Drupal.settings.breakpoints.tablet)) {
+  if ($.matchmedia(Drupal.settings.breakpoints.tablet)) {
     // switch images
     var i, l;
     for (i = 0, l = images.length; i < l; i += 1) {
@@ -103,8 +95,21 @@ Drupal.theme.prototype.layoutResizeChanges = function() {
     if ($('.l-footer-right .l-region--footer-fourth').length > 0) {
       $('.l-region--footer-fourth').appendTo($('.l-header'));
     }
+    $('#block-boxes-social-share').appendTo($('.l-region--footer-first'));
+    $('#block-menu-block-3').appendTo($('.l-region--footer-second'));
+    $('#block-menu-block-4').appendTo($('.l-region--footer-second'));
+    $('#block-menu-block-5').appendTo($('.l-region--footer-third'));
+    $('.l-region--actions').appendTo($('.l-content-left'));
     // equal col heights
     Drupal.theme('equalColumns');
+  }
+  // desktop or larger
+  else if ($.matchmedia(Drupal.settings.breakpoints.desktop)) {
+    // switch images
+    var i, l;
+    for (i = 0, l = images.length; i < l; i += 1) {
+      Drupal.theme('respondImg', Drupal.settings.imgstyles, 'desktop', images[i]);
+    }
   }
   // mobile (i.e. restore source order to original)
   else {
@@ -115,13 +120,18 @@ Drupal.theme.prototype.layoutResizeChanges = function() {
     if ($('.l-header .l-region--footer-fourth').length > 0) {
       $('.l-region--footer-fourth').appendTo($('.l-footer-right'));
     }
+    $('#block-boxes-social-share').appendTo($('.l-region--footer-third'));
+    $('#block-menu-block-3').appendTo($('.l-region--footer-first'));
+    $('#block-menu-block-4').appendTo($('.l-region--footer-first'));
+    $('#block-menu-block-5').appendTo($('.l-region--footer-second'));
+    $('.l-region--actions').appendTo($('.l-content-right'));
     // equal col heights
     $('.l-content').css('min-height','');
   }
 };
 
 /**
- * COH resize event for switching between layouts.
+ * Resize event for switching between layouts.
  */
 Drupal.behaviors.resizeEnd = {
   attach: function (context, settings) {

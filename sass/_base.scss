@@ -214,14 +214,16 @@ a {
   background-color: $lightgrey;
   padding: 20px 0;
   .l-region--footer-first {
-    margin: 0 20px;
     h4 {
       margin-top: 0;
     }
   }
+  #block-menu-block-3,
+  #block-menu-block-4,
+  #block-menu-block-5,
   .l-region--footer-third .block,
   .l-region--footer-second .block {
-    margin: 0 20px 20px;
+    margin: 0 0 20px;
     @include clearListStyles;
     .menu-block-wrapper > ul.menu > li > a {
       @include footerHeadLink;
@@ -239,7 +241,7 @@ a {
       }
     }
   }
-  .l-region--footer-third .block {
+  #block-menu-block-5 {
     ul.menu li {
       margin: 0 0 20px;
     }
