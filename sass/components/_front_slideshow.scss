@@ -5,12 +5,22 @@ $slideshow_frontpage_negativemargin: -45px;
   top: $slideshow_frontpage_negativemargin;
 }
 
-#flexslider_views_slideshow_frontpage_slideshow-page {
-  margin: 0 0 $slideshow_frontpage_negativemargin 0;
-  li {
-    .slide-image {
-
+#flexslider_views_slideshow_main_frontpage_slideshow-page {
+  .flexslider {
+    border: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+    .flex-control-nav {
+      bottom: 0;
     }
+  }
+  li {
     .slide-title {
       @include overlapCaptionPosition;
       display: inline-block;
