@@ -145,22 +145,17 @@ Drupal.behaviors.resizeEnd = {
 /**
  * Do imgsizer and captions on some images
  */
-/*Drupal.behaviors.imgBits = {
+Drupal.behaviors.imgBits = {
   attach: function (context, settings) {
     // imgresize
     if (document.getElementById && document.getElementsByTagName) {
       imgSizer.collate($('img', context));
     }
-    // captions
-    $(".l-content img", context).each(function() {
-      var title = this.alt;
+    $(".l-content-right img", context).each(function() {
       $(this).removeAttr('height'); // make resizing work
-      if (title.length > 0) {
-        $(this).after('<div class="caption">'+ title +'</div>');
-      }
     });
   }
-};*/
+};
 
 /**
  * Apply initial design tweaks

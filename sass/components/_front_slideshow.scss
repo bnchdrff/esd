@@ -6,7 +6,7 @@
 
 .view-frontpage-slideshow {
   margin: 0;
-  .slide {
+  ul.slides > li {
     .slide-image {
 
     }
@@ -46,7 +46,10 @@
       .col1, .col2 {
         border-right: 2px dotted white;
       }
-
+      img {
+        width: auto;
+        display: inline;
+      }
     }
   }
   .views-slideshow-controls-top {
