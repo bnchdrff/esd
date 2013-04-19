@@ -1,12 +1,13 @@
+$slideshow_frontpage_negativemargin: -45px;
 
 @mixin overlapCaptionPosition {
   position: relative;
-  top: -45px;
+  top: $slideshow_frontpage_negativemargin;
 }
 
-.view-frontpage-slideshow {
-  margin: 0;
-  ul.slides > li {
+#flexslider_views_slideshow_frontpage_slideshow-page {
+  margin: 0 0 $slideshow_frontpage_negativemargin 0;
+  li {
     .slide-image {
 
     }
@@ -26,15 +27,18 @@
         padding: 20px;
         color: black;
         background-color: $lighterblue;
+        > p {
+          @include clearfix;
+          clear: both;
+        }
       }
       a:hover, a:focus {
         background-color: $lightblue;
 
       }
       .col1, .col2, .col3 {
-        display: inline-block;
-        width: 33%;
-        height: 120px;
+        float: left;
+        width: 32.5%;
         z-index: 1;
         margin: 0;
         text-align: center;
@@ -47,28 +51,14 @@
         border-right: 2px dotted white;
       }
       img {
-        width: auto;
-        display: inline;
+        display: none;
       }
     }
   }
-  .views-slideshow-controls-top {
-    position:relative;
-    top: 180px;
-    z-index: 10;
-    a {
-      @include imageLink;
-    }
-    #views_slideshow_controls_text_previous_frontpage_slideshow-page {
-      float:left;
-      @include arrowLinkLeft;
-    }
-    #views_slideshow_controls_text_pause_frontpage_slideshow-page {
-      display: none;
-    }
-    #views_slideshow_controls_text_next_frontpage_slideshow-page {
-      float:right;
-      @include arrowLink;
+  @include at-breakpoint($desk_break) {
+    li .slide-caption img {
+      width: auto;
+      display: inline;
     }
   }
 }
