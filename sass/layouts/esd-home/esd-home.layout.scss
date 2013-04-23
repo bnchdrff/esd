@@ -38,7 +38,7 @@ $container-style: magic;
   .l-content,
   .l-footer {
     @include set-container-width;
-    @include susy-grid-background;
+    //@include susy-grid-background;
     width: $tab_width; // static width
   }
 
@@ -72,7 +72,7 @@ $container-style: magic;
   .l-content,
   .l-footer {
     @include set-container-width;
-    @include susy-grid-background;
+    //@include susy-grid-background;
     width: $desk_width; // static width
   }
 
