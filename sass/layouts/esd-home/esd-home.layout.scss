@@ -33,6 +33,10 @@ $container-style: magic;
   max-width: none;
 }
 
+.l-content-right img {
+  width: 100%; // responsivize
+}
+
 @include at-breakpoint($tab_break) {
   .l-header,
   .l-content,
