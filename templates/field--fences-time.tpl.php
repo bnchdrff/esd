@@ -16,7 +16,7 @@
 <?php endif; ?>
 
 <?php foreach ($items as $delta => $item): ?>
-  <time datetime="<?php print $element['#items'][0]['value']; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
+  <time datetime="<?php print date_format_date($element['#items'][$delta]['value'], 'custom', DATE_W3C); ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
     <?php print render($item); ?>
   </time>
 <?php endforeach; ?>
