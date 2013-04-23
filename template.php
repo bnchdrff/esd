@@ -134,7 +134,17 @@ function esd_preprocess_node(&$vars) {
  * Implements template_preprocess_search_result().
  */
 function esd_preprocess_search_result(&$vars) {
-  $vars['lang_indicator'] = ($vars['result']['language'] == 'es') ? t('Spanish') : t('English');
+  if ($vars['result']['language'] == 'es') {
+    $vars['lang_indicator'] = '<span class="es" title="' . t('Spanish') . '">ES</span>';
+  } else {
+    $vars['lang_indicator'] = '<span class="en" title="' . t('English') . '">EN</span>';
+  }
+  // Adds lang_path variable to search result.
+  if ($vars['result']['language'] != 'und') {
+    $vars['lang_path'] = '/' . $vars['result']['language'] . '/' . drupal_get_path_alias('node/' . $vars['result']['node']->nid, $vars['result']['language']);
+  } else {
+    $vars['lang_path'] = $vars['result']['link'];
+  }
 }
 
 /**

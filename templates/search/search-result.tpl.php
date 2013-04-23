@@ -65,14 +65,16 @@
  */
 ?>
 <article class="<?php print $classes; ?>"<?php print $attributes; ?>>
-  <?php if ($lang_indicator): ?>
-    <div class="lang-indicator"><?php print $lang_indicator; ?></div>
-  <?php endif; ?>
   <?php print render($title_prefix); ?>
-    <h3 <?php print $title_attributes; ?>><a href="<?php print $url; ?>"><?php print $title; ?></a></h3>
+    <h3 <?php print $title_attributes; ?>><a href="<?php print $lang_path; ?>"><?php print $title; ?></a></h3>
   <?php print render($title_suffix); ?>
   <?php if ($snippet): ?>
-    <p class="search-result__snippet" <?php print $content_attributes; ?>><?php print $snippet; ?></p>
+    <p class="search-result__snippet" <?php print $content_attributes; ?>>
+      <?php if ($lang_indicator): ?>
+        <span class="lang-indicator"><?php print $lang_indicator; ?></span>
+      <?php endif; ?>
+      <?php print $snippet; ?>
+    </p>
   <?php endif; ?>
   <?php if ($info): ?>
     <footer class="search-result__info"><?php print $info; ?></footer>
