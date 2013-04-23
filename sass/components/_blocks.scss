@@ -62,6 +62,7 @@
   }
 }
 
+#block-boxes-did-you-know-es,
 #block-boxes-did-you-know {
   h2 {
     margin: 0;
@@ -138,6 +139,23 @@
     }
   }
 }
+#block-boxes-ask-us-es .boxes-box-content {
+  text-align: center;
+  a {
+    @include imageLink;
+    background: {
+      image: url('../images/esd_preguntenos.png');
+    }
+    width: 329px;
+    height: 269px;
+  }
+  a:hover, a:focus {
+    background: {
+      image: url('../images/esd_preguntenos_hover.png');
+    }
+  }
+}
+
 
 #block-boxes-social-share {
   margin: 40px 0;

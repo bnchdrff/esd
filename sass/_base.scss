@@ -110,9 +110,8 @@ a {
   padding: 10px 0;
 }
 
-.l-branding .site-logo img {
-  width: 100%;
-  margin: 50px 0 25px;
+.branding {
+  text-align: center;
 }
 
 .l-header {
@@ -322,6 +321,19 @@ a {
         display:none;
       }
     }
+  }
+}
+
+.lang-indicator {
+  span {
+    padding: 1px 2px 0;
+    font-size: 13px;
+  }
+  .es {
+    background-color: $yellow;
+  }
+  .en {
+    background-color: $green;
   }
 }
 
