@@ -45,6 +45,7 @@
   }
 }
 
+#block-boxes-learn-more-es,
 #block-boxes-learn-more {
   .boxes-box-content {
     padding: 5px 20px;
@@ -99,6 +100,7 @@
 }
 
 #block-views-blog-block-1 {
+  display:none;
   .blog-entry {
     margin-bottom: 20px;
     .field--blog-date {
@@ -215,4 +217,8 @@
 
 #block-connector-one-click-block {
   @include blackButton;
+}
+
+#block-boxes-gcal-embed {
+  display:none;
 }

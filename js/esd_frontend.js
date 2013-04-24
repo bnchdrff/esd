@@ -91,14 +91,23 @@ Drupal.theme.prototype.layoutResizeChanges = function() {
     if (isFront) {
       // content-right ordering for front page
       $('.l-content-main').prependTo('.l-content-right');
+      if ($('#block-boxes-gcal-embed .boxes-box-content').length > 0) {
+        if ($('#block-boxes-gcal-embed .boxes-box-content iframe').length == 0) {
+          // Load the gCal embed for the first time.
+          var embed = '<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=400&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=excellentschoolsdetroit.org_1l30m4dgnk8eml5pv8df9r8eh0%40group.calendar.google.com&amp;color=%235F6B02&amp;ctz=America%2FNew_York" style=" border-width:0 " width="100%" height="400" frameborder="0" scrolling="no"></iframe>';
+          $('#block-boxes-gcal-embed .boxes-box-content').append(embed);
+        }
+        $('#block-boxes-gcal-embed').show();
+      }
+      $('#block-views-blog-block-1').show();
     }
     if ($('.l-footer-right .l-region--footer-fourth').length > 0) {
       $('.l-region--footer-fourth').appendTo($('.l-header'));
     }
-    $('#block-boxes-social-share').appendTo($('.l-region--footer-first'));
-    $('#block-menu-block-3').appendTo($('.l-region--footer-second'));
-    $('#block-menu-block-4').appendTo($('.l-region--footer-second'));
-    $('#block-menu-block-5').appendTo($('.l-region--footer-third'));
+    $('#block-boxes-social-share').appendTo($('.l-footer-left'));
+    $('#block-menu-block-3').appendTo($('.l-footer-middle'));
+    $('#block-menu-block-4').appendTo($('.l-footer-middle'));
+    $('#block-menu-block-5').appendTo($('.l-footer-right'));
     $('.l-region--actions').appendTo($('.l-content-left'));
     // equal col heights
     Drupal.theme('equalColumns');
@@ -116,6 +125,8 @@ Drupal.theme.prototype.layoutResizeChanges = function() {
     if (isFront) {
       // content-right ordering for front page
       $('.l-region--pre-content').prependTo('.l-content-right');
+      $('#block-boxes-gcal-embed').hide();
+      $('#block-views-blog-block-1').hide();
     }
     if ($('.l-header .l-region--footer-fourth').length > 0) {
       $('.l-region--footer-fourth').appendTo($('.l-footer-right'));
