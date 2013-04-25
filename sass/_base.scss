@@ -80,7 +80,7 @@ a {
     @include yellowUnderlineLink;
     p {
       font-size: 14px;
-      margin: 0 0 20px;
+      margin: 10px 0;
     }
   }
 }
@@ -120,6 +120,21 @@ a {
   }
 }
 
+
+@mixin orangeBlockLink {
+  @include rightWhiteArrowBig;
+  padding: 10px 10px;
+  font: {
+    size: 45px;
+
+  }
+  color: white;
+  background: {
+    color: $orange;
+  }
+}
+
+
 /* Navigation */
 .l-region--branding {
   @include clearListStyles;
@@ -128,7 +143,6 @@ a {
     margin-bottom: 5px;
     a {
       @include linkBlockStyle;
-
     }
     ul.menu li {
       @include blueMenu;
@@ -161,16 +175,7 @@ a {
   }
   // Learn & Take Action  menu items
   .menu-block-wrapper > ul.menu > li > a {
-    @include rightWhiteArrowBig;
-    padding: 10px 10px;
-    font: {
-      size: 45px;
-
-    }
-    color: white;
-    background: {
-      color: $orange;
-    }
+    @include orangeBlockLink;
   }
   .menu-block-wrapper > ul.menu > li > a:hover,
   .menu-block-wrapper > ul.menu > li > a:focus {
@@ -178,6 +183,18 @@ a {
   }
   .menu-block-wrapper > ul.menu > li > a.active-trail {
     @include downBlackArrowBig;
+  }
+  select {
+    @include orangeBlockLink;
+    -webkit-appearance: none;
+    width: 320px;
+    border: 0 none;
+    cursor: pointer;
+    font-size: 16px;
+    option {
+      background-color: $lightorange;
+      color: black;
+    }
   }
   .block {
     margin: 0 0 10px 0;
@@ -376,7 +393,6 @@ ul.pager {
 
 /* Nodes */
 .page-node .node--full {
-  margin-top: 20px;
 }
 .node--media-hit,
 .node--blog-entry {

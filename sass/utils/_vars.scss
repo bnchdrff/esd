@@ -75,16 +75,23 @@ $show_in_mobile: "#block-menu-block-1 .selectnav, #block-menu-block-2 .selectnav
 }
 
 @mixin arrowLink {
+  input[type=submit] {
+    text-indent: -9999px;
+  }
+  input[type=submit],
   a {
     display: block;
     width: 40px;
     height: 40px;
+    border: 0 none;
     background: {
       image: url(../images/big_arrow_sprite.png);
       repeat: no-repeat;
       position: 0 0;
     }
   }
+  input[type=submit]:hover,
+  input[type=submit]:focus,
   a:hover, a:focus {
     background-position: 0 -90px;
   }
@@ -131,6 +138,7 @@ $show_in_mobile: "#block-menu-block-1 .selectnav, #block-menu-block-2 .selectnav
     }
   }
   input[type=submit]:hover,
+  input[type=submit]:focus,
   a:hover, a:focus {
     background-position: 0 -69px;
   }
@@ -146,6 +154,7 @@ $show_in_mobile: "#block-menu-block-1 .selectnav, #block-menu-block-2 .selectnav
     cursor: pointer;
   }
   a:hover, a:focus,
+  input[type=submit]:focus,
   input[type=submit]:hover {
     color: $darkgrey;
   }
