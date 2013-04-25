@@ -89,7 +89,7 @@
           color: black;
         }
         input[type=text] {
-          width: 240px;
+          width: 220px;
           margin: 0 10px 0 0;
         }
         input[type=submit] {
@@ -198,10 +198,11 @@
 
 
 #block-boxes-social-share {
-  margin: 40px 0;
+  margin: 40px 0 10px;
   .boxes-box-content a {
     @include imageLink;
     padding: 10px;
+    margin: 0 10px 0 0;
   }
   .sprite-twitter {
     background-image: url('../images/twitter_sprite.png');

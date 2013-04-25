@@ -226,12 +226,41 @@ a {
 
 }
 
+.i18n-es .l-footer-wrapper {
+  #block-locale-language {
+    top: 0;
+  }
+}
 .l-footer-wrapper {
   background-color: $lightgrey;
   padding: 20px 0;
   .l-region--footer-first {
     h4 {
       margin-top: 0;
+    }
+  }
+  #block-boxes-school-leaders {
+    display: none;
+  }
+  #block-locale-language {
+    position: relative;
+    float:right;
+    top: -40px;
+    ul.language-switcher-locale-url li a {
+      padding: 5px 10px;
+    }
+    margin-bottom: 20px;
+  }
+  #block-search-form {
+    margin: 0;
+    .block__content {
+      margin-left: 50%;
+      form {
+        margin-left: -50%;
+        input[type=text] {
+          min-width: 170px;
+        }
+      }
     }
   }
   #block-menu-block-3,

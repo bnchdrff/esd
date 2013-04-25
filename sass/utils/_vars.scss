@@ -48,6 +48,11 @@ $show_in_mobile: "#block-menu-block-1 .selectnav, #block-menu-block-2 .selectnav
   .l-region--footer-fourth {
     @include push(0);
   }
+  #block-locale-language {
+    position: relative;
+    float:none;
+    top: 0;
+  }
 }
 
 @include at-breakpoint($desk_break) {
