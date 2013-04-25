@@ -1,12 +1,12 @@
-$slideshow_frontpage_negativemargin: -45px;
+$slideshow_frontpage_negativemargin: -40px;
 
 @mixin overlapCaptionPosition {
-  position: relative;
-  top: $slideshow_frontpage_negativemargin;
+  margin-bottom: $slideshow_frontpage_negativemargin;
 }
 
 #flexslider_views_slideshow_main_frontpage_slideshow-page {
   .flexslider {
+    margin: 0;
     border: 0;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
@@ -16,13 +16,17 @@ $slideshow_frontpage_negativemargin: -45px;
     -moz-box-shadow: none;
     -o-box-shadow: none;
     box-shadow: none;
+    bottom: 0;
     .flex-control-nav {
       bottom: 0;
     }
+    background-color: $lighterblue;
   }
   li {
-    .slide-title {
+    .slide-image {
       @include overlapCaptionPosition;
+    }
+    .slide-title {
       display: inline-block;
       padding: 5px 15px;
       margin: 0;
@@ -31,7 +35,7 @@ $slideshow_frontpage_negativemargin: -45px;
       background-color: $lightblue;
     }
     .slide-caption {
-      @include overlapCaptionPosition;
+      margin: 0;
       a {
         @include linkBlockStyle;
         padding: 20px;

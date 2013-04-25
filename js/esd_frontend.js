@@ -75,12 +75,34 @@ Drupal.theme.prototype.respondImg = function(imgstyles, breakpoint, img) {
   }
 };
 
+function fixFlexsliderHeight() {
+  // Set fixed height based on the tallest slide
+  $('.flexslider').each(function(){
+    var sliderHeight = 0;
+    $(this).find('.slides > li').each(function(){
+      slideHeight = $(this).height();
+      if (sliderHeight < slideHeight) {
+        sliderHeight = slideHeight;
+      }
+    });
+    $(this).find('ul.slides').css({'height' : sliderHeight});
+  });
+}
+
+$('.flexislider').change( function() {
+  console.log('changesd');
+});
+
 /**
  * changes the dom for different layout sizes.
  */
 Drupal.theme.prototype.layoutResizeChanges = function() {
   var isFront = $('body').hasClass('front');
   var images = document.getElementsByTagName('img')
+  if (isFront) {
+      //Flexislider
+      fixFlexsliderHeight();
+  }
   // tablet or larger
   if ($.matchmedia(Drupal.settings.breakpoints.tablet)) {
     // switch images
