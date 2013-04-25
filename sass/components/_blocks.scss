@@ -63,6 +63,25 @@
   }
 }
 
+#block-boxes-school-score-widget {
+  margin: 0 0 30px;
+  h2 {
+    margin: 0;
+    padding: 10px;
+    display: inline-block;
+    background-color: $orange;
+    font: {
+      size: 18px;
+    }
+    color: white;
+  }
+  .block__content {
+    padding: 20px;
+    background-color: $lightorange;
+    @include arrowLink;
+  }
+}
+
 #block-boxes-did-you-know-es,
 #block-boxes-did-you-know {
   h2 {
@@ -222,3 +241,4 @@
 #block-boxes-gcal-embed {
   display:none;
 }
+
