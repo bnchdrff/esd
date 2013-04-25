@@ -64,11 +64,10 @@
 }
 
 #block-boxes-school-score-widget {
-  margin: 0 0 30px;
+  margin: 30px 0 30px;
   h2 {
     margin: 0;
     padding: 10px;
-    display: inline-block;
     background-color: $orange;
     font: {
       size: 18px;
@@ -79,6 +78,30 @@
     padding: 20px;
     background-color: $lightorange;
     @include arrowLink;
+    .score-right {
+      form {
+        padding: 0 0 10px;
+        margin: 0 0 20px;
+        label {
+          display: block;
+          margin: 0 0 5px;
+          font-size: 15px;
+          color: black;
+        }
+        input[type=text] {
+          width: 240px;
+          margin: 0 10px 0 0;
+        }
+        input[type=submit] {
+          margin-top: 5px;
+          float:right;
+        }
+      }
+      #school-zip-code-form {
+        padding: 0 0 20px;
+        border-bottom: 1px solid white;
+      }
+    }
   }
 }
 
@@ -87,7 +110,6 @@
   h2 {
     margin: 0;
     padding: 10px;
-    display: inline-block;
     background-color: $green;
     font: {
       size: 18px;
@@ -98,16 +120,13 @@
     padding: 20px;
     background-color: $lightgreen;
     .dyk-image {
-      width: 160px;
-      float: left;
-      margin-top: -10px;
+      display: none;
     }
     .dyk-link-wrap {
       float: right;
       @include arrowLink;
     }
     .dyk-body {
-      margin: 0 20px 0 160px;
       font: {
         size: 25px;
       }

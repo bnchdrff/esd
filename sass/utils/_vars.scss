@@ -55,6 +55,38 @@ $show_in_mobile: "#block-menu-block-1 .selectnav, #block-menu-block-2 .selectnav
     @include push(6);
   }
 
+  #block-boxes-school-score-widget {
+    margin-top: 0;
+    h2 {
+      display: inline-block;
+    }
+    .block__content {
+      .score-right {
+        padding: 0 0 0 180px;
+        background: {
+          image: url('../images/schoolscore_icon.png');
+          repeat: no-repeat;
+        }
+      }
+    }
+  }
+
+  #block-boxes-did-you-know-es,
+  #block-boxes-did-you-know {
+    h2 {
+      display: inline-block;
+    }
+    .block__content {
+      .dyk-image {
+        width: 160px;
+        float: left;
+        margin-top: -10px;
+      }
+      .dyk-body {
+        margin: 0 20px 0 160px;
+      }
+    }
+  }
 }
 
 /* MIXin Mingle */
@@ -84,6 +116,7 @@ $show_in_mobile: "#block-menu-block-1 .selectnav, #block-menu-block-2 .selectnav
     width: 40px;
     height: 40px;
     border: 0 none;
+    cursor: pointer;
     background: {
       image: url(../images/big_arrow_sprite.png);
       repeat: no-repeat;

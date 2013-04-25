@@ -31,6 +31,26 @@ Drupal.theme.prototype.equalColumns = function() {
 };
 
 /**
+ * School Score forms
+ */
+Drupal.theme.prototype.schoolScoreForms = function() {
+  $('#school-zip-code-form').submit(function(ev) {
+    ev.preventDefault();
+    var action = $(this).attr('action');
+    var zip = $('#school-zip-code').val();
+    var url = action + '?loc=' + zip;
+    window.open(url, '_blank');
+  });
+  $('#school-name-form').submit(function(ev) {
+    ev.preventDefault();
+    var action = $(this).attr('action');
+    var name = $('#school-name').val();
+    var url = action + '?name=' + name;
+    window.open(url, '_blank');
+  });
+};
+
+/**
  * Build a selectnav given a Drupal menu ul, and append it after the ul
  *
  * @param $menuUl
@@ -89,10 +109,6 @@ function fixFlexsliderHeight() {
   });
 }
 
-$('.flexislider').change( function() {
-  console.log('changesd');
-});
-
 /**
  * changes the dom for different layout sizes.
  */
@@ -102,6 +118,7 @@ Drupal.theme.prototype.layoutResizeChanges = function() {
   if (isFront) {
       //Flexislider
       fixFlexsliderHeight();
+      Drupal.theme('schoolScoreForms');
   }
   // tablet or larger
   if ($.matchmedia(Drupal.settings.breakpoints.tablet)) {
