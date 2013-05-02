@@ -201,8 +201,13 @@ Drupal.behaviors.imgBits = {
     if (document.getElementById && document.getElementsByTagName) {
       imgSizer.collate($('img', context));
     }
+      // captions
     $(".l-content-right img", context).each(function() {
+      var title = this.alt;
       $(this).removeAttr('height'); // make resizing work
+      if (title.length > 0) {
+        $(this).after('<div class="caption">'+ title +'</div>');
+      }
     });
   }
 };
