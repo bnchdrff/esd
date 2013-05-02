@@ -245,8 +245,10 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .i18n-es .l-footer-wrapper {
+  #block-block-2,
   #block-locale-language {
     top: 0;
+    float:none;
   }
 }
 .l-footer-wrapper {
@@ -260,11 +262,12 @@ h1,h2,h3,h4,h5,h6 {
   #block-boxes-school-leaders {
     display: none;
   }
+  #block-block-2,
   #block-locale-language {
     position: relative;
     float:right;
     top: -40px;
-    ul.language-switcher-locale-url li a {
+    a {
       padding: 5px 10px;
     }
     margin-bottom: 20px;

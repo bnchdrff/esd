@@ -15,7 +15,18 @@
       background-color: black;
     }
   }
+}
 
+/* Language homepage block */
+#block-block-2 {
+  a {
+    padding: 15px 10px 5px;
+    color: $lightblue;
+    background-color: $darkblue;
+  }
+  a:hover, a:focus {
+    background-color: black;
+  }
 }
 
 #block-search-form {
@@ -181,7 +192,7 @@
       position: -12px 0;
     }
     width: 305px;
-    height: 262px;
+    height: 275px;
   }
   a:hover, a:focus {
     background: {
