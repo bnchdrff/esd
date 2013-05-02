@@ -33,8 +33,10 @@ $container-style: magic;
   max-width: none;
 }
 
-.l-content-right .l-content-main img {
-  width: 100%; // responsivize
+.l-content-right .l-content-main {
+  embed, object, iframe, img {
+    width: 100%; // responsivize
+  }
 }
 
 @include at-breakpoint($tab_break) {

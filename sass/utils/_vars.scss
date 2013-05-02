@@ -83,6 +83,7 @@ $show_in_mobile: "#block-menu-block-1 .selectnav, #block-menu-block-2 .selectnav
     }
     .block__content {
       .dyk-image {
+        display: block !important;
         width: 160px;
         float: left;
         margin-top: -10px;
