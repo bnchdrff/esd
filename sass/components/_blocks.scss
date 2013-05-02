@@ -27,7 +27,6 @@
 }
 
 #block-boxes-school-leaders {
-  margin: 0 0 0 30px;
   .boxes-box-content {
     p {
       margin: 0;
@@ -179,6 +178,7 @@
     @include imageLink;
     background: {
       image: url('../images/esd_ASK.png');
+      position: -12px 0;
     }
     width: 305px;
     height: 262px;
@@ -186,6 +186,7 @@
   a:hover, a:focus {
     background: {
       image: url('../images/esd_ASK_hover.png');
+      position: -12px 0;
     }
   }
 }

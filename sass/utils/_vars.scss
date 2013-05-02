@@ -1,4 +1,6 @@
 @import "susy";
+@include border-box-sizing;
+@include border-box-sizing;
 
 // colors
 $orange: #f05A28;
@@ -26,6 +28,20 @@ $tab_break: 740px 12;
 $desk_width: 980px;
 $desk_break: 980px 16;
 
+// Susy Variables
+
+// Set consistent vertical and horizontal spacing units.
+$vert-spacing-unit: 20px;
+$horz-spacing-unit: 20px;
+
+// Define Susy grid variables mobile first.
+$total-columns: 4;
+$column-width: 40px;
+$gutter-width: $horz-spacing-unit;
+$grid-padding: $gutter-width;
+
+$container-style: magic;
+
 // responsive bits
 $hide_in_mobile: "#block-menu-block-1 .selectnav-processed, #block-menu-block-2 .selectnav-processed";
 $show_in_mobile: "#block-menu-block-1 .selectnav, #block-menu-block-2 .selectnav";
@@ -44,20 +60,31 @@ $show_in_mobile: "#block-menu-block-1 .selectnav, #block-menu-block-2 .selectnav
   .l-footer-wrapper .l-region--footer-first {
     margin: 0px;
     border-right: 1px dotted $grey;
-  }
-  .l-region--footer-fourth {
-    @include push(0);
+    > div {
+      margin-right: $vert-spacing-unit;
+    }
   }
   #block-locale-language {
     position: relative;
     float:none;
     top: 0;
   }
+  .l-region--footer-fourth {
+    position: relative;
+    #block-boxes-school-leaders {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
 }
 
 @include at-breakpoint($desk_break) {
   .l-region--footer-fourth {
     @include push(6);
+    > div {
+      margin-left: 3px;
+    }
   }
 
   #block-boxes-school-score-widget {
@@ -164,7 +191,8 @@ $show_in_mobile: "#block-menu-block-1 .selectnav, #block-menu-block-2 .selectnav
 
 @mixin arrowLinkSmall {
   input[type=submit],
-  a {
+  a:link, a:active {
+    border: 0 !important;
     @include imageLink;
     display: block;
     width: 19px;
@@ -173,18 +201,19 @@ $show_in_mobile: "#block-menu-block-1 .selectnav, #block-menu-block-2 .selectnav
     background: {
       image: url(../images/small_arrow_sprite.png);
       repeat: no-repeat;
-      position: 0 0;
+      position: -1px -1px;
     }
   }
   input[type=submit]:hover,
   input[type=submit]:focus,
   a:hover, a:focus {
-    background-position: 0 -69px;
+    border: 0 !important;
+    background-position: -1px -70px;
   }
 }
 
 @mixin blackButton {
-  a,
+  a:link, a:visited,
   input[type=submit] {
     padding: 2px 3px;
     border: 1px solid black;

@@ -4,24 +4,7 @@
  * Styling of the "simple" layout demonstrating the Compass grid extension Susy
  * and building mobile first layouts.
  ******************************************************************************/
-@import "susy";
 @import "../../utils/vars";
-
-@include border-box-sizing;
-
-// Susy Variables
-
-// Set consistent vertical and horizontal spacing units.
-$vert-spacing-unit: 20px;
-$horz-spacing-unit: 20px;
-
-// Define Susy grid variables mobile first.
-$total-columns: 4;
-$column-width: 40px;
-$gutter-width: $horz-spacing-unit;
-$grid-padding: $gutter-width;
-
-$container-style: magic;
 
 .l-header,
 .l-content,
