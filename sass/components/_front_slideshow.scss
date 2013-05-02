@@ -75,6 +75,8 @@ $slideshow_frontpage_negativemargin: -40px;
   @include at-breakpoint($desk_break) {
     li .slide-caption img {
       display: inline;
+      height: auto;
+      width: auto;
     }
   }
 }
