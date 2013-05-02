@@ -95,18 +95,28 @@ Drupal.theme.prototype.respondImg = function(imgstyles, breakpoint, img) {
   }
 };
 
-function fixFlexsliderHeight() {
+Drupal.theme.prototype.fixFlexsliderHeight = function($slider) {
   // Set fixed height based on the tallest slide
-  $('.flexslider').each(function(){
-    var sliderHeight = 0;
-    $(this).find('.slides > li').each(function(){
-      slideHeight = $(this).height();
-      if (sliderHeight < slideHeight) {
-        sliderHeight = slideHeight;
-      }
-    });
-    $(this).find('ul.slides').css({'height' : sliderHeight});
+  var slideHeight = 0;
+  var captionHeight = 0;
+  var maxSlideHeight = 0;
+  var maxCaptionHeight = 0;
+  // total height
+  $slider.find('.slides > li').each(function(){
+    slideHeight = $(this).height();
+    if (maxSlideHeight < slideHeight) {
+      maxSlideHeight = slideHeight;
+    }
   });
+  // caption height
+  $slider.find('.slides > li .slide-caption > a').each(function(){
+    captionHeight = $(this).outerHeight();
+    if (maxCaptionHeight < captionHeight) {
+      maxCaptionHeight = captionHeight;
+    }
+  });
+  $slider.find('ul.slides').css({'height' : maxSlideHeight});
+  $slider.find('ul.slides .slide-caption > a').css({'height' : maxCaptionHeight});
 }
 
 /**
@@ -116,8 +126,8 @@ Drupal.theme.prototype.layoutResizeChanges = function() {
   var isFront = $('body').hasClass('front');
   var images = document.getElementsByTagName('img')
   if (isFront) {
-      //Flexislider
-      fixFlexsliderHeight();
+      //Flexslider
+      Drupal.theme('fixFlexsliderHeight', $('#flexslider_views_slideshow_main_frontpage_slideshow-page'));
       Drupal.theme('schoolScoreForms');
   }
   // tablet or larger
@@ -150,13 +160,13 @@ Drupal.theme.prototype.layoutResizeChanges = function() {
     $('.l-region--actions').appendTo($('.l-content-left'));
     // equal col heights
     Drupal.theme('equalColumns');
-  }
-  // desktop or larger
-  else if ($.matchmedia(Drupal.settings.breakpoints.desktop)) {
-    // switch images
-    var i, l;
-    for (i = 0, l = images.length; i < l; i += 1) {
-      Drupal.theme('respondImg', Drupal.settings.imgstyles, 'desktop', images[i]);
+    // desktop or larger
+    if ($.matchmedia(Drupal.settings.breakpoints.desktop)) {
+      // switch images
+      var i, l;
+      for (i = 0, l = images.length; i < l; i += 1) {
+        Drupal.theme('respondImg', Drupal.settings.imgstyles, 'desktop', images[i]);
+      }
     }
   }
   // mobile (i.e. restore source order to original)
@@ -185,9 +195,11 @@ Drupal.theme.prototype.layoutResizeChanges = function() {
  */
 Drupal.behaviors.resizeEnd = {
   attach: function (context, settings) {
-    Drupal.theme('layoutResizeChanges');
-    $(window).bind('resizeend', function() {
+    $(window).load(function() {
       Drupal.theme('layoutResizeChanges');
+      $(window).bind('resizeend', function() {
+        Drupal.theme('layoutResizeChanges');
+      });
     });
   }
 };

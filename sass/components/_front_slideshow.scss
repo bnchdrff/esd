@@ -36,9 +36,9 @@ $slideshow_frontpage_negativemargin: -40px;
     }
     .slide-caption {
       margin: 0;
-      a {
+      a:link, a:visited {
         @include linkBlockStyle;
-        padding: 20px;
+        padding: 10px;
         color: black;
         background-color: $lighterblue;
         > p {
@@ -46,13 +46,16 @@ $slideshow_frontpage_negativemargin: -40px;
           clear: both;
         }
       }
-      a:hover, a:focus {
+      a:active, a:hover, a:focus {
         background-color: $lightblue;
 
       }
       .col1, .col2, .col3 {
-        float: left;
+        vertical-align: top;
+        display: inline-block;
         width: 32.5%;
+        height: 90%;
+        margin-bottom: 20px;
         z-index: 1;
         margin: 0;
         text-align: center;
@@ -71,7 +74,6 @@ $slideshow_frontpage_negativemargin: -40px;
   }
   @include at-breakpoint($desk_break) {
     li .slide-caption img {
-      width: auto;
       display: inline;
     }
   }
