@@ -89,6 +89,8 @@ Drupal.theme.prototype.respondImg = function(imgstyles, breakpoint, img) {
     var new_style = imgstyles[ii][breakpoint];
     $.each(imgstyles[ii], function(idx, val) {
       if (idx != breakpoint) {
+        img.removeAttribute('height');
+        img.removeAttribute('width');
         img.src = img.src.replace(val, new_style);
       }
     });
@@ -216,7 +218,6 @@ Drupal.behaviors.imgBits = {
       // captions
     $(".l-content-right img", context).each(function() {
       var title = this.alt;
-      $(this).removeAttr('height'); // make resizing work
       if (title.length > 0) {
         $(this).after('<div class="caption">'+ title +'</div>');
       }
