@@ -94,7 +94,7 @@
     }
     color: white;
   }
-  .block__content {
+  .boxes-box-content {
     padding: 20px;
     background-color: $lightorange;
     @include arrowLink;
@@ -119,7 +119,6 @@
       }
       #school-zip-code-form {
         padding: 0 0 20px;
-        border-bottom: 1px solid white;
       }
     }
   }
