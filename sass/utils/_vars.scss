@@ -244,11 +244,7 @@ $show_in_mobile: "#block-menu-block-1 .selectnav, #block-menu-block-2 .selectnav
   a:focus {
     background-color: $lightblue;
   }
-  a.active-trail, a.active {
-    @include downBlackArrow;
-  }
 }
-
 .icon-sprite {
   background: {
     image: url(../images/icon_sprite.png);
@@ -282,16 +278,9 @@ $show_in_mobile: "#block-menu-block-1 .selectnav, #block-menu-block-2 .selectnav
     position: 98% center;
   }
 }
-@mixin downBlackArrow {
-  background: {
-    image: url(../images/blackArrowDown.png);
-    repeat: no-repeat;
-    position: 98% center;
-  }
-}
 @mixin downBlackArrowBig {
   background: {
-    image: url(../images/heavyBlackArrowRight.png);
+    image: url(../images/heavyBlackArrowDown.png);
     repeat: no-repeat;
     position: 98% center;
   }

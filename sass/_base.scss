@@ -162,7 +162,7 @@ h1,h2,h3,h4,h5,h6 {
     a {
       @include linkBlockStyle;
     }
-    ul.menu li {
+    > ul.menu li {
       @include blueMenu;
       ul.menu li {
         margin: 0;
@@ -218,6 +218,11 @@ h1,h2,h3,h4,h5,h6 {
     margin: 0 0 10px 0;
   }
 }
+
+.l-region--branding ul.menu li > ul.menu > li.expanded.active-trail > a {
+  background: $lightblue url(../images/blackArrowDown.png) no-repeat 98% center !important;
+}
+
 
 // overrides
 .node-type-weekly-update #block-menu-block-1 ul.menu,
