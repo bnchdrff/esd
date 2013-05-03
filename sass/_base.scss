@@ -551,9 +551,10 @@ ul.pager {
   }
 }
 
-/* Blog View */
+/* Blog and Weekly Updates Views */
+.view-weekly-email-updates,
 .view-blog.view-display-id-page_2 {
-  .blog-entry {
+  article {
     @include viewRow;
     .links li {
       display: block;
