@@ -79,8 +79,9 @@
  */
 ?>
 <article<?php print $attributes; ?>>
-    <?php print render($content['field_blog_date']); ?>
   <?php if(!$teaser): ?>
+    <?php print render($content['field_blog_media']); ?>
+    <?php print render($content['field_blog_date']); ?>
     <header>
       <?php print render($title_prefix); ?>
         <h2<?php print $title_attributes; ?>><?php print $title; ?></h2>

@@ -16,12 +16,6 @@
   max-width: none;
 }
 
-.l-content-right .l-content-main {
-  embed, object, iframe {
-    width: 100%; // responsivize
-  }
-}
-
 @include at-breakpoint($tab_break) {
   .l-header,
   .l-content,
