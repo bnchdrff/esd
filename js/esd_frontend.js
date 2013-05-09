@@ -217,7 +217,7 @@ Drupal.behaviors.imgBits = {
     }
       // captions
     $(".l-content-right img", context).each(function() {
-      var title = this.alt;
+      var title = $(this).attr('title');
       if (title.length > 0) {
         $(this).after('<div class="caption">'+ title +'</div>');
       }
