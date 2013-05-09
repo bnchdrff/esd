@@ -1,6 +1,5 @@
 @import "susy";
 @include border-box-sizing;
-@include border-box-sizing;
 
 // colors
 $orange: #f05A28;
@@ -88,6 +87,7 @@ $show_in_mobile: "#block-menu-block-1 .selectnav, #block-menu-block-2 .selectnav
     }
   }
 
+  #block-boxes-school-score-es,
   #block-boxes-school-score-widget {
     margin-top: 0;
     h2 {
