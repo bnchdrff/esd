@@ -216,7 +216,7 @@ Drupal.behaviors.imgBits = {
       imgSizer.collate($('img', context));
     }
       // captions
-    $(".l-content-right img", context).each(function() {
+    $(".l-content-right .l-content-main img[src*='/580w']", context).each(function() {
       var title = $(this).attr('title');
       if (title.length > 0) {
         $(this).after('<div class="caption">'+ title +'</div>');

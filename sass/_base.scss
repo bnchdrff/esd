@@ -40,9 +40,13 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 @mixin yellowUnderlineLink {
-  a {
+  a:link, a:visited {
     color: black;
     border-bottom: 2px solid $yellow;
+  }
+  a:active, a:hover {
+    color: black;
+    border-bottom: 2px solid $darkblue;
   }
 }
 
@@ -80,7 +84,11 @@ h1,h2,h3,h4,h5,h6 {
 }
 .page-node {
   .l-content {
-    .field--body {
+    > p:first-child img {
+      margin-top: -1em;
+      margin-bottom: -1em;
+    }
+    .node__content {
       @include yellowUnderlineLink;
       p {
         margin: 10px 0;

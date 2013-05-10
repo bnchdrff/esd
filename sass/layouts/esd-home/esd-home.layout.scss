@@ -16,7 +16,16 @@
   max-width: none;
 }
 
+#{$resp_imgs} {
+  width: 100%;
+  height: auto;
+}
+
 @include at-breakpoint($tab_break) {
+  #{$resp_imgs} {
+    width: 340px;
+    height: auto;
+  }
   .l-header,
   .l-content,
   .l-footer {
@@ -51,6 +60,10 @@
 }
 
 @include at-breakpoint($desk_break) {
+  #{$resp_imgs} {
+    width: 580px;
+    height: auto;
+  }
   .l-header,
   .l-content,
   .l-footer {
