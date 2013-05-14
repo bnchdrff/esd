@@ -267,7 +267,8 @@ firstScriptTag.parentNode.insertBefore(youtube_tag, firstScriptTag);
 firstScriptTag.parentNode.insertBefore(vimeo_tag, firstScriptTag);
 function onYouTubeIframeAPIReady() {
   var iframes = document.getElementsByTagName('iframe');
-  var i, players;
+  var i;
+  var players = new Array();
   for (i = 0; i < iframes.length; i += 1) {
     if (iframes[i].className == 'media-youtube-player') {
       var playerId = iframes[i].id;

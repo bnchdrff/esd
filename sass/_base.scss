@@ -213,6 +213,7 @@ h1,h2,h3,h4,h5,h6 {
   select {
     @include orangeBlockLink;
     -webkit-appearance: none;
+    -moz-appearance: none;
     width: 320px;
     border: 0 none;
     cursor: pointer;
@@ -481,28 +482,32 @@ ul.pager {
     font-style: italic;
     .field--media-author,
     .field--author,
-    .field--author a {
+    .field--author a:link,
+    .field--author a:visited,
+    .field--author a:active,
+    .field--author a:hover {
       display: inline;
       text-transform: uppercase;
-      font-style:normal;
+      font-style: normal;
       color: $darkergrey;
     }
   }
   .node__content {
     margin: 20px 0;
-  }
-  .field--blog-tags {
-    display:inline-block;
-    a {
-      padding: 4px;
-      color: $lightblue;
-      background-color: black;
-      font: {
-        size: 25px;
+    .field--blog-tags {
+      display:inline-block;
+      a:link, a:visited {
+        padding: 4px;
+        color: $lightblue;
+        background-color: black;
+        font: {
+          size: 25px;
+        }
+        border-bottom: 0 none;
       }
-    }
-    a:hover, a:focus {
-      background-color: $darkergrey;
+      a:active, a:hover, a:focus {
+        background-color: $darkergrey;
+      }
     }
   }
   .field--external-url {

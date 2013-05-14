@@ -18,7 +18,10 @@ $slideshow_frontpage_negativemargin: -40px;
     box-shadow: none;
     bottom: 0;
     .flex-control-nav {
-      bottom: 0;
+      bottom:20px;
+      position:relative !important;
+      float:left;
+      clear:both;
     }
     background-color: $lighterblue;
   }

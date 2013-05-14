@@ -124,6 +124,11 @@ $resp_imgs: ".l-content-right .l-content-main img[src*='/580w']";
       }
     }
   }
+  .l-region--pre-content {
+    clear: both;
+    top: -20px;
+    position:relative;
+  }
 }
 
 /* MIXin Mingle */
