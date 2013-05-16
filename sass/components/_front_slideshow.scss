@@ -26,6 +26,9 @@ $slideshow_frontpage_negativemargin: -40px;
     background-color: $lighterblue;
   }
   li {
+    &.flexslider_views_slideshow_slide {
+      float:left;
+    }
     .slide-image {
       @include overlapCaptionPosition;
     }
