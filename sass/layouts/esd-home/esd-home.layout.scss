@@ -110,4 +110,20 @@
     @include span-columns(5 omega, 16);
   }
 
+  // maintenance mode!
+  body.maintenance-page {
+    padding-top: $vert-spacing-unit;
+    .l-header,
+    .l-content,
+    .l-footer {
+      width: 580px;
+    }
+  }
+}
+
+body.maintenance-page {
+  text-align: center;
+  h1 {
+    padding-bottom: $vert-spacing-unit;
+  }
 }
