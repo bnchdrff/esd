@@ -53,11 +53,11 @@
   }
 
   .l-content-right {
-    @include span-columns(6 omega, 12);
+    @include span-columns(8 omega, 12);
   }
 
   .l-content-left {
-    @include span-columns(6, 12);
+    @include span-columns(4, 12);
   }
 
   .l-footer-left {
@@ -91,11 +91,11 @@
   }
 
   .l-content-right {
-    @include span-columns(10 omega, 16);
+    @include span-columns(12 omega, 16);
   }
 
   .l-content-left {
-    @include span-columns(6, 16);
+    @include span-columns(4, 16);
   }
 
   .l-footer-left {
