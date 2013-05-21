@@ -225,11 +225,25 @@ h1,h2,h3,h4,h5,h6 {
   .block {
     margin: 0 0 10px 0;
   }
+  // learn-specific
+  .block--menu {
+    > h2 {
+      @include linkBlockStyle;
+      @include orangeBlockLink;
+      background-image: none;
+      font-size: 19px;
+    }
+    > ul > li {
+      @include blueMenu;
+    }
+  }
 }
 
 .l-region--branding ul.menu li > ul.menu > li.expanded.active-trail > a {
   background: $lightblue url(../images/blackArrowDown.png) no-repeat 98% center !important;
 }
+
+
 
 
 // overrides
@@ -372,7 +386,7 @@ h1,h2,h3,h4,h5,h6 {
     display: inline-block;
     margin: 0;
     input.form-text {
-      width: 190px;
+      width: 158px;
       padding: 1px 2px 0 20px;
       background: {
         image: url(../images/search_icon.png);
