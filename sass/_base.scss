@@ -135,7 +135,7 @@ h1,h2,h3,h4,h5,h6 {
 .branding {
   .site-logo {
     display: block;
-    padding-bottom: $horz-spacing-unit
+
   }
 }
 
@@ -224,9 +224,6 @@ h1,h2,h3,h4,h5,h6 {
   }
   .block {
     margin: 0 0 10px 0;
-  }
-  // learn-specific
-  .block--menu {
     > h2 {
       @include linkBlockStyle;
       @include orangeBlockLink;
@@ -591,5 +588,12 @@ ul.pager {
       display: block;
       clear:both;
     }
+  }
+}
+
+// generic field styles
+.node--school-profile {
+  .field {
+    padding: .5em 0;
   }
 }
