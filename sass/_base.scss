@@ -597,3 +597,30 @@ ul.pager {
     padding: .5em 0;
   }
 }
+
+// messages
+.messages {
+  min-height: 50px;
+  background: transparent url(../images/esd_message.png) 5px 50% no-repeat;
+  border-width: 2px;
+  padding: 14px 10px 10px 66px;
+}
+
+.messages.status {
+  border-color: $lightblue;
+}
+
+.messages--warning, .messages.warning {
+  border-color: $yellow;
+  background-image: url(../images/esd_warning.png);
+}
+
+.messages.error {
+  border-color: $red;
+  background-image: url(../images/esd_error.png);
+}
+
+.messages.instruction {
+  border-color: $lightblue;
+  background-image: url(../images/esd_review.png);
+}
