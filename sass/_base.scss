@@ -606,7 +606,7 @@ ul.pager {
   padding: 14px 10px 10px 66px;
 }
 
-.messages.status {
+.messages--status, .messages.status {
   border-color: $lightblue;
 }
 
@@ -615,12 +615,12 @@ ul.pager {
   background-image: url(../images/esd_warning.png);
 }
 
-.messages.error {
+.messages--error, .messages.error {
   border-color: $red;
   background-image: url(../images/esd_error.png);
 }
 
-.messages.instruction {
+.messages--instruction, .messages.instruction {
   border-color: $lightblue;
   background-image: url(../images/esd_review.png);
 }
