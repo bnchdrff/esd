@@ -128,6 +128,14 @@ function esd_preprocess_node(&$vars) {
     // Remove the language link on nodes.
     unset($vars['content']['links']['translation']);
   }
+  // On school profiles, load School term
+  if (isset($vars['field_school'])) {
+    $school_term = taxonomy_term_load($vars['field_school']['und']['0']['tid']);
+    $school_info = taxonomy_term_view($school_term);
+    $school_aside = taxonomy_term_view($school_term, 'aside');
+    $vars['school_info'] = render($school_info);
+    $vars['school_aside'] = render($school_aside, 'aside');
+  }
 }
 
 /**
