@@ -181,14 +181,7 @@ function esd_field_multiple_value_form($variables) {
     $order_class = $element['#field_name'] . '-delta-order';
     $required = !empty($element['#required']) ? theme('form_required_marker', $variables) : '';
 
-    $header = array(
-      array(
-        'data' => '<label>' . t('!title !required', array('!title' => $element['#title'], '!required' => $required)) . "</label>",
-        'colspan' => 2,
-        'class' => array('field-label'),
-      ),
-      t('Order'),
-    );
+    $header = array();
     $rows = array();
 
     // Sort items according to '_weight' (needed when the form comes back after
@@ -226,6 +219,7 @@ function esd_field_multiple_value_form($variables) {
     }
 
     $output = '<div class="form-item">';
+    $output .= '<label>' . t('!title !required', array('!title' => $element['#title'], '!required' => $required)) . "</label>";
     $output .= theme('table', array('header' => $header, 'rows' => $rows, 'attributes' => array('id' => $table_id, 'class' => array('field-multiple-table'))));
     $output .= $element['#description'] ? '<div class="description">' . $element['#description'] . '</div>' : '';
     $output .= '<div class="clearfix">' . drupal_render($add_more_button) . '</div>';
