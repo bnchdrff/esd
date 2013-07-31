@@ -451,6 +451,9 @@ ul.pager {
       background-color: $darkergrey;
     }
   }
+  .pager__ellipsis {
+    display: inline;
+  }
   .pager__item--current {
     padding: 2px 3px;
     color: white;
