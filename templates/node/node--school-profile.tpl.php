@@ -1,14 +1,14 @@
-<?php if (!$teaser): ?>
-<div class="school-aside">
-  <h2>Downloads</h2>
-  <?php print $school_aside; ?>
-</div>
+<?php if (!$teaser && $school_aside): ?>
+  <div class="school-aside">
+    <h2>Downloads</h2>
+    <?php print $school_aside; ?>
+  </div>
 <?php endif; ?>
 
-<?php if (!$teaser): ?>
-<div class="school-info">
-  <?php print $school_info; ?>
-</div>
+<?php if (!$teaser && $school_info): ?>
+  <div class="school-info">
+    <?php print $school_info; ?>
+  </div>
 <?php endif; ?>
 
 <article<?php print $attributes; ?>>
