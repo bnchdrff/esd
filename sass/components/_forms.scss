@@ -20,6 +20,9 @@ form {
       font-size: 14px;
       color: $darkgrey;
     }
+    &.collapsed {
+      height: 3em !important;
+    }
   }
   .form-type-radio {
     input, label {
@@ -32,7 +35,7 @@ form {
       vertical-align: top;
     }
   }
-  label {
+  .form-item label {
     color: $darkergrey;
     font: {
       size: 14px;
@@ -42,10 +45,91 @@ form {
       color: $orange;
     }
   }
+  .description {
+    color: $darkergrey;
+  }
+  @include at-breakpoint($tab_break) {
+    .form-item label {
+      float:left;
+      display: inline-block;
+      text-align: right;
+      width: 150px;
+      padding-right: 10px;
+    }
+    .form-wrapper {
+      margin-bottom: 20px;
+      @include clearfix;
+    }
+   .handle {
+      box-sizing: content-box;
+    }
+    .form-textarea-wrapper {
+      display: inline-block;
+    }
+    table,
+    .form-type-radio,
+    .description,
+    .field-add-more-submit,
+    .form-actions.form-wrapper,
+    .form-type-checkbox {
+      margin-left: 150px;
+    }
+    .description {
+      @include clearfix;
+      font-style: italic;
+      font-size: 12px;
+    }
+    .delta-order.tabledrag-hide,
+    .tabledrag-toggle-weight,
+    .field-multiple-drag {
+      display: none;
+    }
+    // reset label positioning:
+    .form-item label.option,
+    table label {
+      float: none;
+      text-align: left;
+      width: auto !important;
+      padding-right:0;
+    }
+    // reset elements in vertical tabs.
+    .vertical-tabs {
+       table,
+      .form-type-radio,
+      .description,
+      .field-add-more-submit,
+      .form-actions.form-wrapper,
+      .form-type-checkbox {
+        margin-left: 0;
+      }
+    }
+  }
+  @include at-breakpoint($desk_break) {
+    .tabledrag-toggle-weight {
+      display: inline-block;
+    }
+    .delta-order.tabledrag-hide,
+    .field-multiple-drag {
+      display: table-cell;
+    }
+  }
+  .tabledrag-toggle-weight-wrapper {
+    text-align: left;
+    a:link, a:visited {
+      color: $grey;
+      font-size: 11px;
+      font-style: italic;
+    }
+  }
+  .form-actions {
+    input.form-submit {
+      margin-right: 10px;
+    }
+  }
   .action,
   #edit-actions {
     @include blackButton;
-    margin: 10px 0 0;
+    margin-top: 10px 0;
   }
   textarea.error,
   input.error {
