@@ -1,4 +1,11 @@
 <?php if (!$teaser): ?>
+<div class="school-aside">
+  <h2>Downloads</h2>
+  <?php print $school_aside; ?>
+</div>
+<?php endif; ?>
+
+<?php if (!$teaser): ?>
 <div class="school-info">
   <?php print $school_info; ?>
 </div>
@@ -34,9 +41,3 @@
   <?php print render($content['links']); ?>
   <?php print render($content['comments']); ?>
 </article>
-
-<?php if (!$teaser): ?>
-<div class="school-aside">
-  <?php print $school_aside; ?>
-</div>
-<?php endif; ?>
