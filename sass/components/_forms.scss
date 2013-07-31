@@ -66,12 +66,8 @@ form {
     .form-textarea-wrapper {
       display: inline-block;
     }
-    table,
-    .form-type-radio,
-    .description,
-    .field-add-more-submit,
-    .form-actions.form-wrapper,
-    .form-type-checkbox {
+    $pushed_elements: 'table, .form-type-radio, #edit-pass-pass2, .description, .field-add-more-submit, .form-actions.form-wrapper, .form-type-checkbox';
+    #{$pushed_elements} {
       margin-left: 150px;
     }
     .description {
@@ -94,12 +90,7 @@ form {
     }
     // reset elements in vertical tabs.
     .vertical-tabs {
-       table,
-      .form-type-radio,
-      .description,
-      .field-add-more-submit,
-      .form-actions.form-wrapper,
-      .form-type-checkbox {
+      #{$pushed_elements} {
         margin-left: 0;
       }
     }
