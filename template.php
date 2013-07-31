@@ -235,3 +235,16 @@ function esd_field_multiple_value_form($variables) {
 
   return $output;
 }
+
+/**
+ * Implements theme_preprocess_user_profile().
+ * via https://drupal.org/node/1161236#comment-6163514
+ */
+function esd_preprocess_user_profile(&$vars) {
+  $account = $vars['elements']['#account'];
+  foreach (element_children($vars['elements']) as $key) {
+    $vars['user_profile'][$key] = $vars['elements'][$key];
+  }
+  $vars['user_profile']['mail'] = $account->mail;
+  field_attach_preprocess('user', $account, $vars['elements'], $vars);
+}
