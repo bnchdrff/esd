@@ -609,6 +609,7 @@ ul.pager {
 }
 
 // generic field styles
+.school-info,
 .node--school-profile {
   .field {
     padding: .5em 0;
@@ -625,28 +626,41 @@ ul.pager {
 .school-aside {
   float: right;
   width: 220px;
-  padding: 10px;
   margin-top: 25px;
-  background-color: $yellow;
-  h2 {
-    color: black;
-    background: transparent url(../images/download_icon.png) 100% 0 no-repeat;
-    border-bottom: 1px solid black;
-    padding-bottom: 10px;
-    margin-top: 0;
+  .school-downloads {
+    padding: 10px;
+    background-color: $yellow;
+    h2 {
+      color: black;
+      background: transparent url(../images/download_icon.png) 100% 0 no-repeat;
+      border-bottom: 1px solid black;
+      padding-bottom: 10px;
+      margin-top: 0;
+    }
+    img {
+      display: none;
+    }
   }
-  img {
-    display: none;
+  .school-downloads,
+  .school-score {
+    a {
+      display:block;
+      width: 100%;
+      margin-bottom: 10px;
+      color: black;
+    }
+    a:hover, a:focus {
+      color: black;
+      text-decoration: underline;
+    }
   }
-  a {
-    display:block;
-    width: 100%;
+  .school-score {
+    padding: 10px;
     margin-bottom: 10px;
-    color: black;
-  }
-  a:hover, a:focus {
-    color: black;
-    text-decoration: underline;
+    background-color: $yellow;
+    a {
+      margin: 0;
+    }
   }
 }
 
@@ -687,25 +701,37 @@ ul.tabs {
   li {
     float: none;
     display: table-cell;
-    height: 45px;
     width: 100%;
-    padding-right: 5px;
+    height: 100%;
+    margin: 0;
+    border-right: 5px solid white;
+    background-color: $lightgrey;
     a:visited, a:link {
+      background-color: $lightgrey;
       color: #424242;
       border-top: 2px solid #424242;
-      background-color: $lightgrey;
       width: 100%;
+      height: 100%;
       display: block;
       padding: 10px;
+    }
+    &:hover, &:focus {
+      background-color: #eee;
+      a {
+        background-color: #eee;
+      }
     }
     a:hover, a:focus {
       color: black;
       border-top: 2px solid black;
       background-color: #eee;
     }
-    a.active {
+    &.active {
       background-color: white;
-      border-top: 2px solid $lightblue;
+      a {
+        background-color: transparent;
+        border-top: 2px solid $lightblue;
+      }
     }
   }
 }

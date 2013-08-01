@@ -133,6 +133,7 @@ function esd_preprocess_node(&$vars) {
     $school_term = taxonomy_term_load($vars['field_school']['und']['0']['tid']);
     $school_info = taxonomy_term_view($school_term);
     $school_aside = taxonomy_term_view($school_term, 'aside');
+    $vars['school_score_link'] = l('View 2013 Scores', 'schoolscores/' . $school_term->field_bcode['und'][0]['value']);
     $vars['school_info'] = render($school_info);
     if (array_key_exists('field_files', $school_aside) || array_key_exists('field_links', $school_aside)) {
       $vars['school_aside'] = render($school_aside, 'aside');

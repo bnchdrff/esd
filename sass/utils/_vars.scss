@@ -267,6 +267,7 @@ $resp_imgs: ".l-content-right .l-content-main img[src*='/580w']";
   }
   ul {
     li {
+      margin:0;
       a {
         @include linkBlockStyle;
         padding: 10px 40px 10px 10px;

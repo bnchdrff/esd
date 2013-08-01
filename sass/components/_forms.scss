@@ -50,60 +50,91 @@ form {
     font-family: Arial, sans-serif;
     padding: 5px 0;
   }
-  @include at-breakpoint($tab_break) {
-    .form-item label {
-      float:left;
-      display: inline-block;
-      text-align: right;
-      width: 150px;
-      padding-right: 10px;
+  &.node-form, &.user-profile-form {
+    .password-strength,
+    .password-confirm {
+      margin-top: 0;
     }
-    .form-wrapper {
-      margin-bottom: 20px;
-      @include clearfix;
-    }
-   .handle {
-      box-sizing: content-box;
-    }
-    .form-textarea-wrapper {
-      display: inline-block;
-    }
-    $pushed_elements: 'table, .form-type-radio, #edit-pass-pass2, .description, .field-add-more-submit, .form-actions.form-wrapper, .form-type-checkbox';
-    #{$pushed_elements} {
-      margin-left: 150px;
-    }
-    .description {
-      @include clearfix;
-      font-style: italic;
-      font-size: 12px;
-    }
-    .delta-order.tabledrag-hide,
-    .tabledrag-toggle-weight,
-    .field-multiple-drag {
-      display: none;
-    }
-    // reset label positioning:
-    .form-item label.option,
-    table label {
-      float: none;
-      text-align: left;
-      width: auto !important;
-      padding-right:0;
-    }
-    // reset elements in vertical tabs.
-    .vertical-tabs {
-      #{$pushed_elements} {
-        margin-left: 0;
+    fieldset {
+      .fieldset-legend {
+        text-align: right;
+        color: $darkergrey;
+        font-size: 14px;
+        border: 0 none;
       }
     }
-  }
-  @include at-breakpoint($desk_break) {
-    .tabledrag-toggle-weight {
-      display: inline-block;
+    @include at-breakpoint($tab_break) {
+      fieldset {
+        legend {
+          float:left;
+          width: 140px;
+        }
+        .fieldset-wrapper {
+          table {
+            margin: 0;
+          }
+          label {
+            text-align: left;
+          }
+          .description {
+            margin-left: 0;
+          }
+        }
+      }
+      .form-item label {
+        float:left;
+        display: inline-block;
+        text-align: right;
+        width: 150px;
+        padding-right: 10px;
+      }
+      .form-wrapper {
+        margin-bottom: 20px;
+        @include clearfix;
+      }
+     .handle {
+        box-sizing: content-box;
+      }
+      .form-textarea-wrapper {
+        display: inline-block;
+      }
+      $pushed_elements: '.fieldset-wrapper, table, .form-type-radio, .description, .field-add-more-submit, .form-actions.form-wrapper, .form-type-checkbox';
+      #{$pushed_elements} {
+        margin-left: 150px;
+      }
+      .description {
+        @include clearfix;
+        font-style: italic;
+        font-size: 12px;
+      }
+      .delta-order.tabledrag-hide,
+      .tabledrag-toggle-weight,
+      .field-multiple-drag {
+        display: none;
+      }
+      // reset label positioning:
+      .form-item label.option,
+      table label {
+        float: none;
+        text-align: left;
+        width: auto !important;
+        padding-right:0;
+      }
+      // reset elements in vertical tabs.
+      .vertical-tabs {
+        #{$pushed_elements} {
+          margin-left: 0;
+        }
+      }
     }
-    .delta-order.tabledrag-hide,
-    .field-multiple-drag {
-      display: table-cell;
+    @include at-breakpoint($desk_break) {
+      .tabledrag-toggle-weight {
+        display: inline-block;
+      }
+      .delta-order.tabledrag-hide,
+      .field-multiple-drag {
+        display: table-cell;
+      }
     }
   }
   .tabledrag-toggle-weight-wrapper {
@@ -162,6 +193,7 @@ form {
   }
 }
 
+#content-access-page,
 .node-form {
   clear: left;
 }
