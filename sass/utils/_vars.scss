@@ -260,6 +260,7 @@ $resp_imgs: ".l-content-right .l-content-main img[src*='/580w']";
     background: $green url(../images/blackArrowDown.png) 95% 50% no-repeat;
     margin-bottom: 0;
     padding: 20px 10px;
+    text-transform: capitalize;
     a {
       color: white;
     }

@@ -709,3 +709,41 @@ ul.tabs {
     }
   }
 }
+
+// User Dashboard.
+.page-user-dash {
+  dl {
+    @include at-breakpoint($desk_break) {
+      @include span-columns(8, 12);
+    }
+    dt {
+      background-color: #eee;
+      padding: 10px;
+      a {
+        font-size: 18px;
+        color: $darkblue;
+      }
+    }
+    dd {
+      background-color: #eee;
+      padding: 10px;
+      margin: 0 0 20px;
+      a {
+        color: $darkergrey;
+        padding-bottom: 10px;
+        display: inline-block;
+      }
+      a:hover, a:focus {
+        text-decoration: underline;
+      }
+      img {
+        display: none;
+      }
+      .taxonomy-term--schools {
+        padding-top: 15px;
+        margin-top: 5px;
+        border-top: 1px solid #a7a09d;
+      }
+    }
+  }
+}
