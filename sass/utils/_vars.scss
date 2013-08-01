@@ -6,6 +6,7 @@ $orange: #f05A28;
 $lightorange: #f48b68;
 $green: #29b473;
 $lightgreen: #a7d8bf;
+$lightergreen: #c9ecdc;
 $darkblue: #134370;
 $lightblue: #00Aff0;
 $lighterblue: #a6e3fa;
@@ -62,7 +63,6 @@ $resp_imgs: ".l-content-right .l-content-main img[src*='/580w']";
   }
   .l-footer-wrapper .l-region--footer-first {
     margin: 0px;
-    border-right: 1px dotted $grey;
     > div {
       margin-right: $vert-spacing-unit;
     }
@@ -252,6 +252,36 @@ $resp_imgs: ".l-content-right .l-content-main img[src*='/580w']";
   a:hover,
   a:focus {
     background-color: $lightblue;
+  }
+}
+@mixin greenMenu {
+  h2 {
+    color: white;
+    background: $green url(../images/blackArrowDown.png) 95% 50% no-repeat;
+    margin-bottom: 0;
+    padding: 20px 10px;
+    a {
+      color: white;
+    }
+  }
+  ul {
+    li {
+      a {
+        @include linkBlockStyle;
+        padding: 10px 40px 10px 10px;
+        color: black;
+        background: {
+          color: $lightergreen;
+          image: none;
+        }
+      }
+      a.active-trail,
+      a.active,
+      a:hover,
+      a:focus {
+        background-color: $lightgreen;
+      }
+    }
   }
 }
 .icon-sprite {

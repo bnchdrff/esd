@@ -317,10 +317,12 @@ h1,h2,h3,h4,h5,h6 {
   #block-menu-block-3,
   #block-menu-block-4,
   #block-menu-block-5,
+  #block-menu-menu-footer-links,
   .l-region--footer-third .block,
   .l-region--footer-second .block {
     margin: 0 0 20px;
     @include clearListStyles;
+    &.block--menu > ul.menu > li a,
     .menu-block-wrapper > ul.menu > li > a {
       @include footerHeadLink;
       @include linkBlockStyle;
@@ -337,9 +339,15 @@ h1,h2,h3,h4,h5,h6 {
       }
     }
   }
+  #block-menu-menu-footer-links,
   #block-menu-block-5 {
     ul.menu li {
       margin: 0 0 20px;
+    }
+  }
+  #block-menu-menu-footer-links {
+    a {
+      font-size: 18px !important;
     }
   }
 }
@@ -677,11 +685,17 @@ ul.tabs {
     width: 100%;
     padding-right: 5px;
     a:visited, a:link {
-      color: black;
-      border-top: 2px solid black;
+      color: #424242;
+      border-top: 2px solid #424242;
+      background-color: $lightgrey;
       width: 100%;
       display: block;
       padding: 10px;
+    }
+    a:hover, a:focus {
+      color: black;
+      border-top: 2px solid black;
+      background-color: $lightgrey;
     }
     a.active {
       background-color: white;

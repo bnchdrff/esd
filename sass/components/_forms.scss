@@ -47,6 +47,8 @@ form {
   }
   .description {
     color: $darkergrey;
+    font-family: Arial, sans-serif;
+    padding: 5px 0;
   }
   @include at-breakpoint($tab_break) {
     .form-item label {
@@ -158,4 +160,8 @@ form {
   .grippie {
     width: 305px;
   }
+}
+
+.node-form {
+  clear: left;
 }

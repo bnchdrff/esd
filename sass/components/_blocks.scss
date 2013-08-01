@@ -286,5 +286,51 @@
 }
 
 #block-esdportal-dash-my-schools {
- 
+  @include greenMenu;
+}
+
+#block-system-user-menu {
+  @include greenMenu;
+  ul {
+    li.last {
+      margin-top: 10px;
+      @include blackButton;
+      background-color: transparent;
+      display: inline-block;
+    }
+  }
+}
+
+#block-esdportal-str-feedback {
+  h2 {
+    margin-top: 0;
+    font-size: 18px;
+    color: $darkergrey;
+    border-bottom: 2px solid $darkergrey;
+  }
+  form {
+    @include blackButton;
+    .grippie,
+    .form-textarea-wrapper {
+      width: 100%;
+    }
+    textarea {
+      width: 100%;
+      max-width: 100%;
+      margin-top: 10px;
+    }
+    input[type=submit] {
+      float:right;
+      background-color: white;
+    }
+  }
+}
+
+#block-boxes-contact-info {
+  h2 {
+    margin-top: 0;
+    font-size: 18px;
+    color: $darkergrey;
+    border-bottom: 2px solid $darkergrey;
+  }
 }

@@ -99,15 +99,15 @@
   }
 
   .l-footer-left {
-    @include span-columns(6, 16);
+    @include span-columns(4, 16);
   }
 
   .l-footer-middle {
-    @include span-columns(5, 16);
+    @include span-columns(8, 16);
   }
 
   .l-footer-right {
-    @include span-columns(5 omega, 16);
+    @include span-columns(4 omega, 16);
   }
 
 }
