@@ -349,6 +349,12 @@ h1,h2,h3,h4,h5,h6 {
     a {
       font-size: 18px !important;
     }
+    li.first {
+      background: transparent url(../images/esd_scorecard_icon.png) 100% 3px no-repeat;
+    }
+    li.last {
+      background: transparent url(../images/esd_main_icon.png) 100% 1px no-repeat;
+    }
   }
 }
 
@@ -695,7 +701,7 @@ ul.tabs {
     a:hover, a:focus {
       color: black;
       border-top: 2px solid black;
-      background-color: $lightgrey;
+      background-color: #eee;
     }
     a.active {
       background-color: white;
