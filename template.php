@@ -134,7 +134,9 @@ function esd_preprocess_node(&$vars) {
     $school_info = taxonomy_term_view($school_term);
     $school_aside = taxonomy_term_view($school_term, 'aside');
     $vars['school_info'] = render($school_info);
-    $vars['school_aside'] = render($school_aside, 'aside');
+    if (array_key_exists('field_files', $school_aside) || array_key_exists('field_links', $school_aside)) {
+      $vars['school_aside'] = render($school_aside, 'aside');
+    }
   }
 }
 
