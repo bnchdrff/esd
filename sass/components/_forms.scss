@@ -1,5 +1,6 @@
-
 form {
+  @include blackButtonSubmit;
+  @include yellowUnderlineLink;
   fieldset {
     border: 0 none;
     margin: 0 0 35px;
@@ -45,19 +46,22 @@ form {
       color: $orange;
     }
   }
+  .tips,
+  .fieldset-description,
   .description {
     color: $darkergrey;
     font-family: Arial, sans-serif;
+    font-style: italic;
+    font-size: 12px;
     padding: 5px 0;
   }
-  &.node-form, &.user-profile-form {
+  &.taxonomy-form-term, &.node-form, &.user-profile-form {
     .password-strength,
     .password-confirm {
       margin-top: 0;
     }
     fieldset {
       .fieldset-legend {
-        text-align: right;
         color: $darkergrey;
         font-size: 14px;
         border: 0 none;
@@ -65,6 +69,9 @@ form {
     }
     @include at-breakpoint($tab_break) {
       fieldset {
+        .fieldset-legend {
+          text-align: right;
+        }
         legend {
           float:left;
           width: 140px;
@@ -93,7 +100,13 @@ form {
         @include clearfix;
       }
      .handle {
-        box-sizing: content-box;
+       @include box-sizing(content-box);
+      }
+      .tabledrag-toggle-weight-wrapper,
+      .field-multiple-drag {
+        a {
+          border: 0 none;
+        }
       }
       .form-textarea-wrapper {
         display: inline-block;
@@ -104,8 +117,15 @@ form {
       }
       .description {
         @include clearfix;
-        font-style: italic;
-        font-size: 12px;
+      }
+      table .description,
+      .field-widget-link-field table {
+        margin-left: 0;
+        label {
+          text-align: left;
+          float: none;
+          display:block;
+        }
       }
       .delta-order.tabledrag-hide,
       .tabledrag-toggle-weight,
@@ -186,14 +206,22 @@ form {
     outline: none;
   }
   textarea {
-    max-width: 305px;
+    max-width: 460px;
   }
   .grippie {
-    width: 305px;
+    max-width: 460px;
+    width: 100%;
   }
 }
 
 #content-access-page,
 .node-form {
   clear: left;
+}
+.user-login-form {
+  @include clearListStyles;
+  @include yellowUnderlineLink;
+  ul {
+    margin-bottom: 20px;
+  }
 }

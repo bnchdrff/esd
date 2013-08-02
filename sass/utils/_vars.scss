@@ -221,20 +221,34 @@ $resp_imgs: ".l-content-right .l-content-main img[src*='/580w']";
     background-position: -1px -70px;
   }
 }
-
+.button-specs {
+  padding: 2px 3px;
+  border: 1px solid black;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+}
 @mixin blackButton {
   a:link, a:visited,
   input[type=submit] {
-    padding: 2px 3px;
-    border: 1px solid black;
-    background-color: transparent;
-    color: black;
-    cursor: pointer;
+    @extend .button-specs;
   }
   a:hover, a:focus,
   input[type=submit]:focus,
   input[type=submit]:hover {
     color: $darkgrey;
+  }
+}
+@mixin blackButtonSubmit {
+  input[type=submit] {
+    @extend .button-specs;
+  }
+  input[type=submit]:focus,
+  input[type=submit]:hover {
+    color: $darkgrey;
+  }
+  input[type=submit]:active {
+    background-color: transparent;
   }
 }
 @mixin blueMenu {
@@ -257,7 +271,7 @@ $resp_imgs: ".l-content-right .l-content-main img[src*='/580w']";
 @mixin greenMenu {
   h2 {
     color: white;
-    background: $green url(../images/blackArrowDown.png) 95% 50% no-repeat;
+    background-color: $green;
     margin-bottom: 0;
     padding: 20px 10px;
     text-transform: capitalize;
