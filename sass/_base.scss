@@ -52,7 +52,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .l-content {
   h1 {
-    margin: 0;
+    margin: 0 0 25px 0;
     padding: 20px 10px;
     color: white;
     font: {
@@ -617,16 +617,15 @@ ul.pager {
 }
 .node-type-school-profile {
   ul.tabs {
-    float: left;
+    //float: left;
   }
 }
 .school-info {
-  clear:left;
+  clear: left;
 }
 .school-aside {
   float: right;
   width: 220px;
-  margin-top: 25px;
   .school-downloads {
     padding: 10px;
     background-color: $yellow;
@@ -693,7 +692,6 @@ ul.pager {
 
 // tabs.
 ul.tabs {
-  margin-top: 25px;
   border: 0 none;
   display: table;
   table-layout:fixed;
@@ -772,4 +770,10 @@ ul.tabs {
       }
     }
   }
+}
+
+// Remove clearing element from addressfield on school profile page
+.node-type-school-profile div.addressfield-container-inline:after {
+  content: '';
+  clear: none;
 }

@@ -1,14 +1,16 @@
-<?php if (!$teaser && $school_aside): ?>
+<?php if (!$teaser && ($school_aside || $school_score_link)): ?>
   <div class="school-aside">
     <?php if ($school_score_link): ?>
       <div class="school-score">
         <?php print $school_score_link; ?>
       </div>
     <?php endif; ?>
+    <?php if ($school_aside): ?>
     <div class="school-downloads">
       <h2>Downloads</h2>
       <?php print $school_aside; ?>
     </div>
+    <?php endif; ?>
   </div>
 <?php endif; ?>
 

@@ -118,7 +118,9 @@ function esd_preprocess_page(&$vars) {
  */
 function esd_preprocess_node(&$vars) {
   // Re-order the links.
-  $vars['content']['links'] = array_reverse($vars['content']['links']);
+  if (isset($vars['content']['links'])) {
+    $vars['content']['links'] = array_reverse($vars['content']['links']);
+  }
   // Add wrapper & "from" to media outlet field
   if (isset($vars['content']['field_media_outlet'])) {
     $vars['content']['field_media_outlet']['#prefix'] = '<div class="media-hit-outlet-wrapper"><span class="italic">from</span>';
