@@ -6,52 +6,84 @@
       margin: 16px 0 0;
     }
   }
-  .views-table {
-    width: 100%;
+}
+
+.page-schoolscores .l-content-main table,
+.views-table {
+  a:link, a:visited {
+    color: black;
+  }
+  td, th {
+    border-right: 1px dotted $grey;
+  }
+  td:last-child, th:last-child {
+    border: 0 none;
+  }
+  th.views-field {
+    padding: 0 10px;
+    height: 50px;
+    color: white;
+    background-color: $darkblue;
     a:link, a:visited {
-      color: black;
-    }
-    td, th {
-      border-right: 1px dotted $grey;
-    }
-    td:last-child, th:last-child {
-      border: 0 none;
-    }
-    th.views-field {
-      padding: 0 10px;
-      height: 50px;
+      display: block;
       color: white;
-      background-color: $darkblue;
+      padding: 10px 0;
+    }
+    &.active {
+      background-color: black;
       a:link, a:visited {
-        display: block;
-        color: white;
-        padding: 10px 0;
+        color: $lightblue;
       }
-      &.active {
-        background-color: black;
-        a:link, a:visited {
-          color: $lightblue;
-        }
-      }
-    }
-    td.views-field {
-      padding: 10px;
-      font-size: 12px;
-    }
-    td.active {
-      background-color:transparent;
-    }
-    tr:nth-child(even) {
-      background-color: $lighterblue;
-    }
-    .views-field-edit-node {
-      text-align: center;
-      a {
-        text-decoration: underline;
-      }
-    }
-    .sort-arrow {
-      padding: 0 5px;
     }
   }
+  td.views-field {
+    padding: 10px;
+    font-size: 12px;
+  }
+  td.active {
+    background-color:transparent;
+  }
+  tr:nth-child(even) {
+    background-color: $lighterblue;
+  }
+  .views-field-edit-node {
+    text-align: center;
+    a {
+      text-decoration: underline;
+    }
+  }
+  .sort-arrow {
+    padding: 0 5px;
+  }
 }
+
+.views-table {
+  width: 100%;
+}
+
+.page-schoolscores .l-content-main table {
+  margin: 1em 0;
+  td {
+    padding: 10px;
+    font-size: 12px;
+  }
+  th, tr:first-child {
+    padding: 0 10px;
+    height: 50px;
+    color: white;
+    background-color: $darkblue;
+    a:link, a:visited {
+      display: block;
+      color: white;
+      padding: 10px 0;
+    }
+    &.active {
+      background-color: black;
+      a:link, a:visited {
+        color: $lightblue;
+      }
+    }
+  }
+
+}
+
