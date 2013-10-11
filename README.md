@@ -12,6 +12,18 @@ To check out this revision of omega, run:
         cd omega
         git checkout 71d02c9f0d0fd0a251f648ffbb29b23bee1967ce
 
+"Build"
+-------
+
+From the theme directory, run `bundle install` to install the myriad tools required to "build" stylesheets.
+
+To compile the SASS:
+
+Manually: `compass compile` from the theme directory
+
+Automated: `drush omega-guard`
+
+
 Credits
 -------
 
