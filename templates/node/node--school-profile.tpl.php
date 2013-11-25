@@ -1,3 +1,8 @@
+<?php
+if ($view_mode == 'sitevisitask') {
+  $teaser = true;
+}
+?>
 <?php if (!$teaser && (!empty($school_aside) || !empty($school_score_link))): ?>
   <div class="school-aside">
     <?php if (!empty($school_score_link)): ?>
