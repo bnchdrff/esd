@@ -30,7 +30,7 @@ if ($view_mode == 'sitevisitask') {
     <header>
       <?php print render($title_prefix); ?>
       <?php if ($view_mode == 'sitevisitask'): ?>
-        <h2<?php print $title_attributes; ?>>Update site visit status for <?php print $title; ?></h2>
+        <h2<?php print $title_attributes; ?>>Site visit opt-in for <?php print $title; ?></h2>
       <?php elseif (!$page): ?>
         <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>" rel="bookmark"><?php print $title; ?></a></h2>
       <?php endif; ?>
