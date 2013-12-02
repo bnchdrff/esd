@@ -346,4 +346,24 @@
   .field--name-field--site-visit-status .field__label {
     display: none;
   }
+  #edit-field-site-visit-status-und[disabled="disabled"] {
+    display: none;
+  }
+  .field-name-field-site-visit-unavailability {
+    .tabledrag-toggle-weight-wrapper {
+      display: none;
+    }
+    .field-multiple-table {
+      .field-multiple-drag,
+      legend,
+      .fieldset-legend,
+      .description,
+      label {
+        display: none;
+      }
+      fieldset {
+        margin: 0;
+      }
+    }
+  }
 }

@@ -778,3 +778,13 @@ ul.tabs {
   content: '';
   clear: none;
 }
+
+// hacks for sitevisitask
+// hide fields for non-admin users editing pages via regular theme
+#school-profile-node-form {
+  #edit-field-site-visit-status,
+  #field_site_visit_unavailability-date_restrictions_host_entity,
+  #edit-field-site-visit-reuse-reason {
+    display: none;
+  }
+}
