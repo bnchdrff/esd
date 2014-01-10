@@ -1,5 +1,5 @@
 <?php
-if ($view_mode == 'sitevisitask') {
+if ($view_mode == 'sitevisitask' || $view_mode == 'growthdataask') {
   $teaser = true;
 }
 ?>
@@ -31,6 +31,8 @@ if ($view_mode == 'sitevisitask') {
       <?php print render($title_prefix); ?>
       <?php if ($view_mode == 'sitevisitask'): ?>
         <h2<?php print $title_attributes; ?>>Site visit opt-in for <?php print $title; ?></h2>
+      <?php elseif ($view_mode == 'growthdataask'): ?>
+        <h2<?php print $title_attributes; ?>>Growth data for <?php print $title; ?></h2>
       <?php elseif (!$page): ?>
         <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>" rel="bookmark"><?php print $title; ?></a></h2>
       <?php endif; ?>
