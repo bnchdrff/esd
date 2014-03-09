@@ -788,3 +788,54 @@ ul.tabs {
     display: none;
   }
 }
+
+.page-node-1728 {
+  font-size: 1.1em;
+  form .form-item label {
+    font-size: 1.1em;
+  }
+  .branding {
+    display: none;
+  }
+  .webform-client-form {
+    overflow: hidden;
+  }
+  form fieldset legend .fieldset-legend {
+    padding: 10px;
+    border: none;
+  }
+  form fieldset legend {
+    background: $lightblue;
+    color: white;
+  }
+  button, input, select, textarea {
+    padding: .5em;
+  }
+  input[type="radio"] {
+    width: 30px;
+    height: 30px;
+  }
+  .form-radios .form-type-radio {
+    padding-top: .5em;
+  }
+  form .form-actions input.form-submit {
+    padding: 10px;
+  }
+  table {
+    width: 100%;
+  }
+  td {
+    padding: 10px 0;
+  }
+  td:first-child {
+    padding-left: 10px;
+  }
+  #edit-submitted-school {
+    max-width: 90%;
+  }
+  .webform-datepicker {
+    input[type="image"] {
+      height: 42px;
+    }
+  }
+}
