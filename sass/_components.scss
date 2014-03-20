@@ -62,3 +62,15 @@
   z-index: 420;
 }
 
+a#toggle_lang {
+  display: block;
+  height: 31px;
+  width: 75px;
+  overflow: hidden;
+  background: transparent url(../images/translate_sprite.png) no-repeat top center;
+  text-indent: -333em;
+}
+
+.i18n-es a#toggle_lang {
+  background-position: 0 -35px;
+}

@@ -237,6 +237,17 @@ Drupal.behaviors.esdInit = {
     $('#block-menu-block-2 .menu-block-wrapper > ul.menu', context).once('selectnav', function () {
       Drupal.theme('buildSelectnav', $(this), 2);
     });
+
+    // lang selector hack
+    $('.page-node-1728 div[role=main]').prepend('<a href="#" id="toggle_lang">Toggle language</a>')
+    $('#toggle_lang').click(function(ev) {
+      ev.preventDefault();
+      if (window.location.href.match(/\/es\//)) {
+        window.location.href="https://portal.excellentschoolsdetroit.org/node/1728";
+      } else {
+        window.location.href="https://portal.excellentschoolsdetroit.org/es/node/1728";
+      }
+    });
   }
 };
 
