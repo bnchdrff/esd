@@ -794,11 +794,12 @@ ul.tabs {
   form .form-item label {
     font-size: 1.1em;
   }
-  .branding {
+  .l-content-left {
     display: none;
+    width: 0;
   }
-  .webform-client-form {
-    overflow: hidden;
+  .l-content-right {
+    width: 100%;
   }
   form fieldset legend .fieldset-legend {
     padding: 10px;
