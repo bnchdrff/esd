@@ -43,7 +43,7 @@
       <?php print $field_dyk_body[0]['safe_value']; ?>
     </div>
     <?php if (isset($field_dyk_link[0])): ?>
-      <div class="dyk-link-wrap"><a class="dyk-link arrow-link" href="<?php print $field_dyk_link[0]['value']; ?>"></a></div>
+      <div class="dyk-link-wrap"><a class="dyk-link arrow-link" title="Read more" href="<?php print $field_dyk_link[0]['value']; ?>"></a></div>
     <?php endif; ?>
   </div>
 </div>
