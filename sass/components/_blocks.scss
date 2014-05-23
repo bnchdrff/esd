@@ -37,6 +37,36 @@
   }
 }
 
+#block-boxes-topschools,
+#block-boxes-startearly {
+  margin: 20px auto 0 auto;
+  float: none;
+  width: 280px;
+  a {
+    display: block;
+    padding-top: 281px;
+    padding-left: 20px;
+    height: 340px;
+    background: #333 url(../images/excellent_schools_badge-01.png) no-repeat top center;
+    color: white;
+    font-size: 20px;
+    line-height: 22px;
+  }
+  a:active, a:hover {
+    background-color: #4d4d4d;
+  }
+}
+
+#block-boxes-startearly {
+  a {
+    background-image: url(../images/start_early_badge-01.png);
+  }
+}
+
+#block-boxes-school-score-widget {
+  clear: both;
+}
+
 #block-boxes-school-leaders {
   .boxes-box-content {
     p {

@@ -90,9 +90,18 @@ $resp_imgs: ".l-content-right .l-content-main img[src*='/580w']";
     }
   }
 
+  #block-boxes-topschools,
+  #block-boxes-startearly {
+    margin: 20px 0 30px !important;
+    float: left !important;
+  }
+  #block-boxes-startearly {
+    margin-left: 20px !important;
+  }
+
   #block-boxes-school-score-es,
   #block-boxes-school-score-widget {
-    margin-top: 0;
+    gargin-top: 0;
     h2 {
       display: inline-block;
     }
