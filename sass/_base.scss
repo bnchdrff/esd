@@ -284,6 +284,12 @@ h1,h2,h3,h4,h5,h6 {
 .l-footer-wrapper {
   background-color: $lightgrey;
   padding: 20px 0;
+  a:link, a:visited {
+    color: $orange;
+  }
+  a:active, a:hover {
+    color: darken($orange, 30%);
+  }
   .l-region--footer-first {
     h4 {
       margin-top: 0;
