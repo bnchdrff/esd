@@ -780,44 +780,82 @@ ul.tabs {
 }
 
 // general webform styles
-.node-type-webform .node--webform {
-  font-size: 1.1em;
-  form .form-item label {
-    font-size: 1.1em;
+.node-type-webform {
+  .l-content-left {
+    width: 100%;
+    clear: both;
   }
-  form fieldset legend .fieldset-legend {
-    padding: 10px;
-    border: none;
-  }
-  form fieldset legend {
-    background: $lightblue;
-    color: white;
-  }
-  button, input, select, textarea {
-    padding: .5em;
-  }
-  input[type="radio"] {
-    width: 20px;
-    height: 20px;
-  }
-  .form-radios .form-type-radio {
-    padding-top: .5em;
-  }
-  form .form-actions input.form-submit {
-    padding: 10px;
-  }
-  table {
+  .l-content-right {
     width: 100%;
   }
-  td {
-    padding: 10px 0;
-  }
-  td:first-child {
-    padding-left: 10px;
-  }
-  .webform-datepicker {
-    input[type="image"] {
-      height: 42px;
+  .node--webform {
+    font-size: 1.1em;
+    input[type="radio"] {
+      width: 30px;
+      height: 30px;
+    }
+    label.option {
+      line-height: 1.7em;
+      font-family: 'Arial', serif;
+    }
+    form .form-item label {
+      font-size: 1.1em;
+      color: black;
+    }
+    form fieldset legend .fieldset-legend {
+      padding: 10px;
+      border: none;
+    }
+    form fieldset legend {
+      background: $lightblue;
+      color: white;
+    }
+    button, input, select, textarea {
+      padding: .5em;
+    }
+    .form-radios .form-type-radio {
+      padding-top: .5em;
+    }
+    form .form-actions input.form-submit {
+      padding: 10px;
+    }
+    table {
+      width: 100%;
+    }
+    td {
+      padding: 10px 0;
+    }
+    .sticky-header th {
+      background: black;
+      color: white;
+    }
+    td:first-child {
+      padding-left: 10px;
+    }
+    .webform-datepicker {
+      input[type="image"] {
+        height: 42px;
+      }
+    }
+    .webform-component-grid {
+      label {
+        padding-bottom: 5px;
+      }
+      .webform-grid {
+        th {
+          background: black;
+          color: white;
+        }
+        tr.odd {
+          background: #C0EBFC;
+        }
+        tr.even {
+          background: white;
+        }
+        .webform-grid-question {
+          font-family: 'Arial', sans-serif;
+        }
+      }
     }
   }
 }
@@ -833,17 +871,6 @@ ul.tabs {
 }
 
 .page-node-1728 {
-  .l-content-left {
-    display: none;
-    width: 0;
-  }
-  .l-content-right {
-    width: 100%;
-  }
-  input[type="radio"] {
-    width: 30px;
-    height: 30px;
-  }
   #edit-submitted-school {
     max-width: 90%;
   }
