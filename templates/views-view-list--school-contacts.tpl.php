@@ -10,19 +10,16 @@ if (!$res_id) {
   //$res_id = $view->query->pager->get_items_per_page() * $view->query->pager->get_current_page();
   $res_id = 0;
 }
-?>
-phone: <?php
+
 $phone = unserialize($variables['view']->result[$res_id]->taxonomy_term_data_node__field_data_field_address_field_addr);
-print($phone['phone_number']);
-?>
-<?php
+print(t('Phone: ') . $phone['phone_number']);
 
 $names = array();
 
 // do primary contact first
 $first_row = $variables['view']->result[$res_id];
 $names[] = array(
-  'primary',
+  t('Primary'),
   $first_row->field_field_fname_1[0]['rendered']['#markup'],
   $first_row->field_field_lname_1[0]['rendered']['#markup'],
   $first_row->users_node_mail,
@@ -34,7 +31,7 @@ foreach ($rows as $row_number => $columns) {
   if ($this_row->acl_acl_node__acl_node_grant_update == 1
       && isset($this_row->field_field_fname[0])) {
     $names[] = array(
-      'secondary',
+      t('Secondary'),
       $this_row->field_field_fname[0]['rendered']['#markup'],
       $this_row->field_field_lname[0]['rendered']['#markup'],
       $this_row->_field_data['users_acl_user_uid']['entity']->mail,
@@ -43,7 +40,7 @@ foreach ($rows as $row_number => $columns) {
   // superintendent
   if (isset($this_row->field_field_fname_2[0])) {
     $names[] = array(
-      'superintendent',
+      t('System-wide'),
       $this_row->field_field_fname_2[0]['rendered']['#markup'],
       $this_row->field_field_lname_2[0]['rendered']['#markup'],
       $this_row->_field_data['users_field_data_field_superintendents_uid']['entity']->mail,
@@ -53,7 +50,7 @@ foreach ($rows as $row_number => $columns) {
 }
 
 print theme_table(array(
-  'header' => array('Capacity', 'First', 'Last', 'Email'),
+  'header' => array(t('Capacity'), t('First'), t('Last'), t('Email')),
   'rows' => array_map("unserialize", array_unique(array_map("serialize", $names))),
 ));
 ?>
