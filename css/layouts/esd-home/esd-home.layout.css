@@ -1,0 +1,313 @@
+/*******************************************************************************
+ * _layout.scss
+ *
+ * Styling of the "simple" layout demonstrating the Compass grid extension Susy
+ * and building mobile first layouts.
+ ******************************************************************************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/lib\/gems\/1\.8\/gems\/susy-1\.0\.9\/sass\/susy\/_grid\.scss}line{font-family:\0000314}}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/utils\/_vars\.scss}line{font-family:\0000351}}
+#block-menu-block-1 .selectnav-processed, #block-menu-block-2 .selectnav-processed {
+  display: none;
+}
+
+@media (min-width: 740px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/utils\/_vars\.scss}line{font-family:\0000356}}
+  #block-menu-block-1 .selectnav-processed, #block-menu-block-2 .selectnav-processed {
+    display: block;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/utils\/_vars\.scss}line{font-family:\0000359}}
+  #block-menu-block-1 .selectnav, #block-menu-block-2 .selectnav {
+    display: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/utils\/_vars\.scss}line{font-family:\0000362}}
+  .l-footer-wrapper .l-region--footer-first {
+    margin: 0px;
+    border-right: 1px dotted #cccccc;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/utils\/_vars\.scss}line{font-family:\0000365}}
+  .l-footer-wrapper .l-region--footer-first > div {
+    margin-right: 20px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/utils\/_vars\.scss}line{font-family:\0000370}}
+  #block-block-2,
+  #block-locale-language {
+    position: relative;
+    float: none;
+    top: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/utils\/_vars\.scss}line{font-family:\0000375}}
+  .l-region--footer-fourth {
+    position: relative;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/utils\/_vars\.scss}line{font-family:\0000377}}
+  .l-region--footer-fourth #block-boxes-school-leaders {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+@media (min-width: 980px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/utils\/_vars\.scss}line{font-family:\0000386}}
+  .l-region--footer-fourth {
+    margin-left: 38.29787%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/utils\/_vars\.scss}line{font-family:\0000388}}
+  .l-region--footer-fourth > div {
+    margin-left: 3px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/utils\/_vars\.scss}line{font-family:\0000394}}
+  #block-boxes-topschools,
+  #block-boxes-startearly {
+    margin: 20px 0 30px !important;
+    float: left !important;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/utils\/_vars\.scss}line{font-family:\0000398}}
+  #block-boxes-startearly {
+    margin-left: 20px !important;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/utils\/_vars\.scss}line{font-family:\00003103}}
+  #block-boxes-school-score-es,
+  #block-boxes-school-score-widget {
+    gargin-top: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/utils\/_vars\.scss}line{font-family:\00003105}}
+  #block-boxes-school-score-es h2,
+  #block-boxes-school-score-widget h2 {
+    display: inline-block;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/utils\/_vars\.scss}line{font-family:\00003109}}
+  #block-boxes-school-score-es .block__content .score-right,
+  #block-boxes-school-score-widget .block__content .score-right {
+    padding: 0 0 0 180px;
+    background-image: url("../images/schoolscore_icon.png");
+    background-repeat: no-repeat;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/utils\/_vars\.scss}line{font-family:\00003121}}
+  #block-boxes-did-you-know-es h2,
+  #block-boxes-did-you-know h2 {
+    display: inline-block;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/utils\/_vars\.scss}line{font-family:\00003125}}
+  #block-boxes-did-you-know-es .block__content .dyk-image,
+  #block-boxes-did-you-know .block__content .dyk-image {
+    display: block !important;
+    width: 160px;
+    float: left;
+    margin-top: -10px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/utils\/_vars\.scss}line{font-family:\00003131}}
+  #block-boxes-did-you-know-es .block__content .dyk-body,
+  #block-boxes-did-you-know .block__content .dyk-body {
+    margin: 0 20px 0 160px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/utils\/_vars\.scss}line{font-family:\00003136}}
+  .l-region--pre-content {
+    clear: both;
+    top: -20px;
+    position: relative;
+  }
+}
+/* MIXin Mingle */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/utils\/_vars\.scss}line{font-family:\00003265}}
+.icon-sprite {
+  background-image: url(../images/icon_sprite.png);
+  background-repeat: no-repeat;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\0000311}}
+.l-header,
+.l-content,
+.l-footer {
+  *zoom: 1;
+  max-width: 260px;
+  _width: 260px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: auto;
+  max-width: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/lib\/gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+.l-header:after,
+.l-content:after,
+.l-footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\0000319}}
+.l-content-right .l-content-main img[src*='/580w'] {
+  width: 100%;
+  height: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\0000325}}
+.media-youtube-video,
+.media-vimeo-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\0000330}}
+.media-youtube-video iframe,
+.media-vimeo-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 740px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\0000340}}
+  .l-content-right .l-content-main img[src*='/580w'] {
+    width: 340px;
+    height: auto;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\0000346}}
+  .l-header,
+  .l-content,
+  .l-footer {
+    max-width: 740px;
+    width: 740px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\0000352}}
+  .l-topbar {
+    width: 100%;
+    float: left;
+    margin-right: 2.85714%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\0000356}}
+  .l-content-right {
+    width: 48.57143%;
+    float: right;
+    margin-right: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\0000360}}
+  .l-content-left {
+    width: 48.57143%;
+    float: left;
+    margin-right: 2.85714%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\0000364}}
+  .l-footer-left {
+    width: 31.42857%;
+    float: left;
+    margin-right: 2.85714%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\0000368}}
+  .l-footer-middle {
+    width: 31.42857%;
+    float: left;
+    margin-right: 2.85714%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\0000372}}
+  .l-footer-right {
+    width: 31.42857%;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 980px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\0000378}}
+  .l-content-right .l-content-main img[src*='/580w'] {
+    width: 580px;
+    height: auto;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\0000384}}
+  .l-header,
+  .l-content,
+  .l-footer {
+    max-width: 980px;
+    width: 980px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\0000390}}
+  .l-topbar {
+    width: 100%;
+    float: left;
+    margin-right: 2.12766%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\0000394}}
+  .l-content-right {
+    width: 61.70213%;
+    float: right;
+    margin-right: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\0000398}}
+  .l-content-left {
+    width: 36.17021%;
+    float: left;
+    margin-right: 2.12766%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\00003102}}
+  .l-footer-left {
+    width: 36.17021%;
+    float: left;
+    margin-right: 2.12766%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\00003106}}
+  .l-footer-middle {
+    width: 29.78723%;
+    float: left;
+    margin-right: 2.12766%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\00003110}}
+  .l-footer-right {
+    width: 29.78723%;
+    float: right;
+    margin-right: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\00003115}}
+  body.maintenance-page {
+    padding-top: 20px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\00003119}}
+  body.maintenance-page .l-header,
+  body.maintenance-page .l-content,
+  body.maintenance-page .l-footer {
+    width: 580px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\00003125}}
+body.maintenance-page {
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/esd\/distro\/002\/drupal-7\.22\.1-stage\/sites\/www\.excellentschoolsdetroit\.org\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\00003127}}
+body.maintenance-page h1 {
+  padding-bottom: 20px;
+}

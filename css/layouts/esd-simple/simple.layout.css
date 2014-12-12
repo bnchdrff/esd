@@ -1,0 +1,160 @@
+/*******************************************************************************
+ * _layout.scss
+ *
+ * Styling of the "simple" layout demonstrating the Compass grid extension Susy
+ * and building mobile first layouts.
+ ******************************************************************************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/o1\/distro\/001\/drupal-7\.18\.1-dev\/sites\/esd-19mar13\.altissima\.theworkdept\.com\/themes\/esd\/sass\/layouts\/esd-simple\/simple\.layout\.scss}line{font-family:\0000329}}
+.l-main,
+.l-footer {
+  *zoom: 1;
+  max-width: 1190px;
+  _width: 1190px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/lib\/gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+.l-main:after,
+.l-footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/o1\/distro\/001\/drupal-7\.18\.1-dev\/sites\/esd-19mar13\.altissima\.theworkdept\.com\/themes\/esd\/sass\/layouts\/esd-simple\/simple\.layout\.scss}line{font-family:\0000338}}
+.l-region--highlighted,
+.l-region--help,
+.l-region--sidebar-first,
+.l-region--sidebar-second {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 44em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/o1\/distro\/001\/drupal-7\.18\.1-dev\/sites\/esd-19mar13\.altissima\.theworkdept\.com\/themes\/esd\/sass\/layouts\/esd-simple\/simple\.layout\.scss}line{font-family:\0000344}}
+  .l-main,
+  .l-footer {
+    max-width: 1190px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/o1\/distro\/001\/drupal-7\.18\.1-dev\/sites\/esd-19mar13\.altissima\.theworkdept\.com\/themes\/esd\/sass\/layouts\/esd-simple\/simple\.layout\.scss}line{font-family:\0000350}}
+  .l-header,
+  .l-branding {
+    width: 36.70886%;
+    float: left;
+    margin-right: 1.26582%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/o1\/distro\/001\/drupal-7\.18\.1-dev\/sites\/esd-19mar13\.altissima\.theworkdept\.com\/themes\/esd\/sass\/layouts\/esd-simple\/simple\.layout\.scss}line{font-family:\0000353}}
+  .l-region--header {
+    width: 49.15254%;
+    float: right;
+    margin-right: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/o1\/distro\/001\/drupal-7\.18\.1-dev\/sites\/esd-19mar13\.altissima\.theworkdept\.com\/themes\/esd\/sass\/layouts\/esd-simple\/simple\.layout\.scss}line{font-family:\0000356}}
+  .l-region--navigation {
+    clear: both;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/o1\/distro\/001\/drupal-7\.18\.1-dev\/sites\/esd-19mar13\.altissima\.theworkdept\.com\/themes\/esd\/sass\/layouts\/esd-simple\/simple\.layout\.scss}line{font-family:\0000363}}
+  .sidebar-first .l-content,
+  .sidebar-second .l-content,
+  .two-sidebars .l-content {
+    width: 66.10169%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/o1\/distro\/001\/drupal-7\.18\.1-dev\/sites\/esd-19mar13\.altissima\.theworkdept\.com\/themes\/esd\/sass\/layouts\/esd-simple\/simple\.layout\.scss}line{font-family:\0000367}}
+  .sidebar-first .l-region--sidebar-first,
+  .sidebar-first .l-region--sidebar-second,
+  .sidebar-second .l-region--sidebar-first,
+  .sidebar-second .l-region--sidebar-second,
+  .two-sidebars .l-region--sidebar-first,
+  .two-sidebars .l-region--sidebar-second {
+    width: 32.20339%;
+    float: right;
+    margin-right: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/o1\/distro\/001\/drupal-7\.18\.1-dev\/sites\/esd-19mar13\.altissima\.theworkdept\.com\/themes\/esd\/sass\/layouts\/esd-simple\/simple\.layout\.scss}line{font-family:\0000370}}
+  .sidebar-first .l-region--sidebar-second,
+  .sidebar-second .l-region--sidebar-second,
+  .two-sidebars .l-region--sidebar-second {
+    clear: right;
+  }
+}
+@media (min-width: 70em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/o1\/distro\/001\/drupal-7\.18\.1-dev\/sites\/esd-19mar13\.altissima\.theworkdept\.com\/themes\/esd\/sass\/layouts\/esd-simple\/simple\.layout\.scss}line{font-family:\0000378}}
+  .l-main,
+  .l-footer {
+    max-width: 1190px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/o1\/distro\/001\/drupal-7\.18\.1-dev\/sites\/esd-19mar13\.altissima\.theworkdept\.com\/themes\/esd\/sass\/layouts\/esd-simple\/simple\.layout\.scss}line{font-family:\0000383}}
+  .l-branding {
+    width: 36.70886%;
+    float: left;
+    margin-right: 1.26582%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/o1\/distro\/001\/drupal-7\.18\.1-dev\/sites\/esd-19mar13\.altissima\.theworkdept\.com\/themes\/esd\/sass\/layouts\/esd-simple\/simple\.layout\.scss}line{font-family:\0000386}}
+  .l-region--header {
+    width: 62.02532%;
+    float: right;
+    margin-right: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/o1\/distro\/001\/drupal-7\.18\.1-dev\/sites\/esd-19mar13\.altissima\.theworkdept\.com\/themes\/esd\/sass\/layouts\/esd-simple\/simple\.layout\.scss}line{font-family:\0000391}}
+  .sidebar-first .l-content {
+    width: 62.02532%;
+    float: right;
+    margin-right: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/o1\/distro\/001\/drupal-7\.18\.1-dev\/sites\/esd-19mar13\.altissima\.theworkdept\.com\/themes\/esd\/sass\/layouts\/esd-simple\/simple\.layout\.scss}line{font-family:\0000394}}
+  .sidebar-first .l-region--sidebar-first {
+    width: 36.70886%;
+    float: left;
+    margin-right: 1.26582%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/o1\/distro\/001\/drupal-7\.18\.1-dev\/sites\/esd-19mar13\.altissima\.theworkdept\.com\/themes\/esd\/sass\/layouts\/esd-simple\/simple\.layout\.scss}line{font-family:\0000399}}
+  .sidebar-second .l-content {
+    width: 74.68354%;
+    float: left;
+    margin-right: 1.26582%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/o1\/distro\/001\/drupal-7\.18\.1-dev\/sites\/esd-19mar13\.altissima\.theworkdept\.com\/themes\/esd\/sass\/layouts\/esd-simple\/simple\.layout\.scss}line{font-family:\00003102}}
+  .sidebar-second .l-region--sidebar-second {
+    width: 24.05063%;
+    float: right;
+    margin-right: 0;
+    clear: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/o1\/distro\/001\/drupal-7\.18\.1-dev\/sites\/esd-19mar13\.altissima\.theworkdept\.com\/themes\/esd\/sass\/layouts\/esd-simple\/simple\.layout\.scss}line{font-family:\00003109}}
+  .two-sidebars .l-content {
+    width: 49.36709%;
+    float: left;
+    margin-right: 1.26582%;
+    margin-left: 25.31646%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/o1\/distro\/001\/drupal-7\.18\.1-dev\/sites\/esd-19mar13\.altissima\.theworkdept\.com\/themes\/esd\/sass\/layouts\/esd-simple\/simple\.layout\.scss}line{font-family:\00003114}}
+  .two-sidebars .l-region--sidebar-first,
+  .two-sidebars .l-region--sidebar-second {
+    width: 24.05063%;
+    float: left;
+    margin-right: 1.26582%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/o1\/distro\/001\/drupal-7\.18\.1-dev\/sites\/esd-19mar13\.altissima\.theworkdept\.com\/themes\/esd\/sass\/layouts\/esd-simple\/simple\.layout\.scss}line{font-family:\00003117}}
+  .two-sidebars .l-region--sidebar-first {
+    margin-left: -75.94937%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/data\/disk\/o1\/distro\/001\/drupal-7\.18\.1-dev\/sites\/esd-19mar13\.altissima\.theworkdept\.com\/themes\/esd\/sass\/layouts\/esd-simple\/simple\.layout\.scss}line{font-family:\00003120}}
+  .two-sidebars .l-region--sidebar-second {
+    float: right;
+    margin-right: 0;
+    clear: none;
+  }
+}
