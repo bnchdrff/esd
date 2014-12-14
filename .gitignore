@@ -6,4 +6,3 @@
 # Gemfile.lock file is is environemnt specific and therefore should not be
 # commited either.
 Gemfile.lock
-css
