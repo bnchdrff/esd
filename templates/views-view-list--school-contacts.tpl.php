@@ -49,8 +49,20 @@ foreach ($rows as $row_number => $columns) {
   $res_id++;
 }
 
+$rows = array_map("unserialize", array_unique(array_map("serialize", $names)));
+
+/*foreach ($rows as $row) {
+  if (count($row) < 1) {
+    xdebug_break();
+  }
+  if (count($row[0]) != 4) {
+    xdebug_break();
+  }
+}*/
+
 print theme_table(array(
   'header' => array(t('Capacity'), t('First'), t('Last'), t('Email')),
-  'rows' => array_map("unserialize", array_unique(array_map("serialize", $names))),
+  'rows' => $rows,
+  'attributes' => array(),
 ));
 ?>
