@@ -595,7 +595,8 @@ ul.pager {
 
 /* Blog and Weekly Updates Views */
 .view-weekly-email-updates,
-.view-blog.view-display-id-page_2 {
+.view-blog.view-display-id-page_2,
+.view-blog.view-display-id-page_3{
   article {
     @include viewRow;
     .links li {
