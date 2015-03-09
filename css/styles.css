@@ -1253,16 +1253,18 @@ ul.pager .pager__item--last a {
 }
 
 /* Blog and Weekly Updates Views */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003599}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003600}}
 .view-weekly-email-updates article,
-.view-blog.view-display-id-page_2 article {
+.view-blog.view-display-id-page_2 article,
+.view-blog.view-display-id-page_3 article {
   margin: 20px 0 0;
   padding: 0 0 20px;
   border-bottom: 2px dotted #666;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003601}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003602}}
 .view-weekly-email-updates article .links li,
-.view-blog.view-display-id-page_2 article .links li {
+.view-blog.view-display-id-page_2 article .links li,
+.view-blog.view-display-id-page_3 article .links li {
   display: block;
   clear: both;
 }
