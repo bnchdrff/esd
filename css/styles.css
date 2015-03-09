@@ -902,9 +902,13 @@ h1, h2, h3, h4, h5, h6 {
 .l-footer-wrapper #block-menu-block-5 ul.menu li {
   margin: 0 0 20px;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003360}}
+.l-footer-wrapper #block-menu-block-3 .menu-block-wrapper > ul.menu > li > a {
+  margin-bottom: 20px;
+}
 
 /* Take ACtion & Learn Pages */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003368}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003372}}
 .section-tomar-medidas .l-region--branding ul.menu ul.menu,
 .section-aprenda .l-region--branding ul.menu ul.menu,
 .section-take-action .l-region--branding ul.menu ul.menu,
@@ -928,7 +932,7 @@ h1, h2, h3, h4, h5, h6 {
   list-style-type: none !important;
   list-style-image: none !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003374}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003378}}
 .section-tomar-medidas .l-content-right ul.menu li,
 .section-aprenda .l-content-right ul.menu li,
 .section-take-action .l-content-right ul.menu li,
@@ -967,7 +971,7 @@ h1, h2, h3, h4, h5, h6 {
 .section-learn .l-content-right ul.menu li a:focus {
   background-color: #00Aff0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003377}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003381}}
 .section-tomar-medidas .l-content-right ul.menu li a,
 .section-aprenda .l-content-right ul.menu li a,
 .section-take-action .l-content-right ul.menu li a,
@@ -975,18 +979,18 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 25px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003388}}
 .section-learn .l-content-right h1 {
   background-position: 102% 15px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003387}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003391}}
 .section-take-action .l-content-right h1 {
   background-position: right -85px;
 }
 
 /* Search */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003392}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003396}}
 #search-form #edit-basic,
 #search-block-form {
   margin: 10px 0 0;
@@ -1022,13 +1026,13 @@ h1, h2, h3, h4, h5, h6 {
   border: 0 !important;
   background-position: -1px -70px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003396}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003400}}
 #search-form #edit-basic div,
 #search-block-form div {
   display: inline-block;
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003399}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003403}}
 #search-form #edit-basic div input.form-text,
 #search-block-form div input.form-text {
   width: 190px;
@@ -1039,67 +1043,67 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Search Results Page */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003414}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003418}}
 .page-search .search-form #edit-basic div, .page-search .search-form #edit-basic input {
   display: inline-block !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003417}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003421}}
 .page-search .search-form #edit-basic label {
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003422}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003426}}
 .page-search .search-results .search-result {
   margin: 0 0 35px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003424}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003428}}
 .page-search .search-results .search-result .search-result__snippet {
   color: #4d4d4d;
   padding: 0;
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003428}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003432}}
 .page-search .search-results .search-result .search-result__snippet strong {
   color: black;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003432}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003436}}
 .page-search .search-results .search-result .search-result__info {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003440}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003444}}
 .lang-indicator span {
   padding: 1px 2px 0;
   font-size: 13px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003444}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003448}}
 .lang-indicator .es {
   background-color: #ffd300;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003447}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003451}}
 .lang-indicator .en {
   background-color: #29b473;
 }
 
 /* Pagers */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003453}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003457}}
 ul.pager {
   text-align: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003455}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003459}}
 ul.pager li {
   font-size: 18px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003459}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003463}}
 ul.pager li a {
   padding: 2px 3px;
   color: black;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003463}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003467}}
 ul.pager li a:hover, ul.pager li a:focus {
   color: white;
   background-color: #4d4d4d;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003468}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003472}}
 ul.pager .pager__item--current, ul.pager .pager__item--pager-next a,
 ul.pager .pager__item--previous a,
 ul.pager .pager__item--first a,
@@ -1108,14 +1112,14 @@ ul.pager .pager__item--last a {
   color: white;
   background-color: black;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003473}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003477}}
 ul.pager .pager__item--pager-next,
 ul.pager .pager__item--previous,
 ul.pager .pager__item--first,
 ul.pager .pager__item--last {
   font-size: 14px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003480}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003484}}
 ul.pager .pager__item--pager-next a,
 ul.pager .pager__item--previous a,
 ul.pager .pager__item--first a,
@@ -1124,7 +1128,7 @@ ul.pager .pager__item--last a {
 }
 
 /* Nodes */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003494}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003498}}
 .node--media-hit .field--media-hit-date,
 .node--media-hit .field--blog-date,
 .node--blog-entry .field--media-hit-date,
@@ -1133,19 +1137,19 @@ ul.pager .pager__item--last a {
   margin: 10px 0 5px;
   display: block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003500}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003504}}
 .node--media-hit .node__title,
 .node--blog-entry .node__title {
   margin: 5px 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003503}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003507}}
 .node--media-hit .submitted,
 .node--blog-entry .submitted {
   display: inline;
   color: #666;
   font-style: italic;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003507}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003511}}
 .node--media-hit .submitted .field--media-author,
 .node--media-hit .submitted .field--author,
 .node--media-hit .submitted .field--author a:link,
@@ -1163,17 +1167,17 @@ ul.pager .pager__item--last a {
   font-style: normal;
   color: #4d4d4d;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003519}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003523}}
 .node--media-hit .node__content,
 .node--blog-entry .node__content {
   margin: 20px 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003521}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003525}}
 .node--media-hit .node__content .field--blog-tags,
 .node--blog-entry .node__content .field--blog-tags {
   display: inline-block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003523}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003527}}
 .node--media-hit .node__content .field--blog-tags a:link, .node--media-hit .node__content .field--blog-tags a:visited,
 .node--blog-entry .node__content .field--blog-tags a:link,
 .node--blog-entry .node__content .field--blog-tags a:visited {
@@ -1183,14 +1187,14 @@ ul.pager .pager__item--last a {
   font-size: 25px;
   border-bottom: 0 none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003532}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003536}}
 .node--media-hit .node__content .field--blog-tags a:active, .node--media-hit .node__content .field--blog-tags a:hover, .node--media-hit .node__content .field--blog-tags a:focus,
 .node--blog-entry .node__content .field--blog-tags a:active,
 .node--blog-entry .node__content .field--blog-tags a:hover,
 .node--blog-entry .node__content .field--blog-tags a:focus {
   background-color: #4d4d4d;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003537}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003541}}
 .node--media-hit .field--external-url,
 .node--blog-entry .field--external-url {
   padding: 10px 0 30px 70px;
@@ -1198,62 +1202,62 @@ ul.pager .pager__item--last a {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003539}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003543}}
 .node--media-hit .field--external-url a,
 .node--blog-entry .field--external-url a {
   padding: 5px 0 5px 0;
   border-bottom: 2px solid #ffd300;
   color: #666;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003551}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003555}}
 .node--media-hit .field--file img,
 .node--blog-entry .field--file img {
   vertical-align: middle;
   padding: 10px 10px 10px 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003555}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003559}}
 .node--media-hit .field--file a,
 .node--blog-entry .field--file a {
   padding: 5px 0 5px 0;
   border-bottom: 2px solid #ffd300;
   color: #666;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003561}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003565}}
 .node--media-hit .field-label,
 .node--blog-entry .field-label {
   margin: 10px 0;
 }
 
 /* View's Row */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003572}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003576}}
 .media-hit-outlet-wrapper {
   color: #4d4d4d;
   text-transform: uppercase;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003575}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003579}}
 .media-hit-outlet-wrapper .italic {
   color: #666;
   text-transform: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003579}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003583}}
 .media-hit-outlet-wrapper div {
   display: inline-block;
 }
 
 /* Media Hit View */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003586}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003590}}
 .view-media-archive .media-hit {
   margin: 20px 0 0;
   padding: 0 0 20px;
   border-bottom: 2px dotted #666;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003588}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003592}}
 .view-media-archive .media-hit .media-hit-title {
   margin: 5px 0;
 }
 
 /* Blog and Weekly Updates Views */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003600}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003604}}
 .view-weekly-email-updates article,
 .view-blog.view-display-id-page_2 article,
 .view-blog.view-display-id-page_3 article {
@@ -1261,7 +1265,7 @@ ul.pager .pager__item--last a {
   padding: 0 0 20px;
   border-bottom: 2px dotted #666;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003602}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/harmoniousmystery\/Sites\/esd\/theme\/esd\/sass\/_base\.scss}line{font-family:\00003606}}
 .view-weekly-email-updates article .links li,
 .view-blog.view-display-id-page_2 article .links li,
 .view-blog.view-display-id-page_3 article .links li {
