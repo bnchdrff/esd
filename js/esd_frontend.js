@@ -237,7 +237,23 @@ Drupal.behaviors.esdInit = {
     $('#block-menu-block-2 .menu-block-wrapper > ul.menu', context).once('selectnav', function () {
       Drupal.theme('buildSelectnav', $(this), 2);
     });
+    $('#block-menu-block-10 .menu-block-wrapper > ul.menu', context).once('selectnav', function () {
+      Drupal.theme('buildSelectnav', $(this), 3);
+    });
   }
+};
+
+/**
+ * Toggle main navigation menu
+ */
+ Drupal.behaviors.mainnav = {
+  attach: function (context, settings) {
+    $(".l-region--branding .menu-block-wrapper ul.menu li:has(span)").click(function() {
+          $( this ).toggleClass( "open" );
+          $(this).find( "ul" ).slideToggle( "fast", function() {
+          });
+      });
+}
 };
 
 Drupal.behaviors.vimeoReady = {

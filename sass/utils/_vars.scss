@@ -1,4 +1,4 @@
-@import "susy";
+@import "susyone";
 @include border-box-sizing;
 
 // colors
@@ -42,8 +42,8 @@ $grid-padding: $gutter-width;
 $container-style: magic;
 
 // responsive bits
-$hide_in_mobile: "#block-menu-block-1 .selectnav-processed, #block-menu-block-2 .selectnav-processed";
-$show_in_mobile: "#block-menu-block-1 .selectnav, #block-menu-block-2 .selectnav";
+$hide_in_mobile: "#block-menu-block-1 .selectnav-processed, #block-menu-block-10 .selectnav-processed, .selectnav-processed ";
+$show_in_mobile: "#block-menu-block-1 .selectnav, #block-menu-block-2 .selectnav, #block-menu-block-10 .selectnav";
 
 // responsive images: should mirror what is specified in esd_frontend.js
 $resp_imgs: ".l-content-right .l-content-main img[src*='/580w']";

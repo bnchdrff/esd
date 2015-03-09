@@ -149,9 +149,21 @@ h1,h2,h3,h4,h5,h6 {
 
 @mixin orangeBlockLink {
   @include rightWhiteArrowBig;
-  padding: 10px 10px;
+  padding: 10px 20px 10px 10px;
   font: {
-    size: 45px;
+    size: 14px;
+
+  }
+  color: white;
+  background: {
+    color: $orange;
+  }
+}
+
+@mixin orangeBlockLinkNoArrow {
+  padding: 10px 20px 10px 10px;
+  font: {
+    size: 14px;
 
   }
   color: white;
@@ -200,14 +212,26 @@ h1,h2,h3,h4,h5,h6 {
     display: block;
   }
   // Learn & Take Action  menu items
-  .menu-block-wrapper > ul.menu > li > a {
-    @include orangeBlockLink;
+  .menu-block-wrapper > ul.menu > li > a{
+      @include orangeBlockLinkNoArrow;
+          width:340px;
   }
+  .menu-block-wrapper ul.menu span {
+    @include orangeBlockLink;
+    display:block;
+    cursor: pointer;
+    width:340px;
+  }
+
   .menu-block-wrapper > ul.menu > li > a:hover,
-  .menu-block-wrapper > ul.menu > li > a:focus {
+  .menu-block-wrapper > ul.menu > li > a:focus,
+  .menu-block-wrapper ul.menu span:hover,
+  .menu-block-wrapper ul.menu span:focus {
     background-color: $lightorange;
   }
-  .menu-block-wrapper > ul.menu > li > a.active-trail {
+  .menu-block-wrapper > ul.menu > li > a.active-trail,
+  .menu-block-wrapper > ul.menu > li > span.active-trail,
+  .menu-block-wrapper > ul.menu > li.open > span{
     @include downBlackArrowBig;
   }
   select {
