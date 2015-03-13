@@ -151,7 +151,7 @@ h1,h2,h3,h4,h5,h6 {
   @include rightWhiteArrowBig;
   padding: 10px 20px 10px 10px;
   font: {
-    size: 14px;
+    size: 16px;
 
   }
   color: white;
@@ -163,7 +163,7 @@ h1,h2,h3,h4,h5,h6 {
 @mixin orangeBlockLinkNoArrow {
   padding: 10px 20px 10px 10px;
   font: {
-    size: 14px;
+    size: 16px;
 
   }
   color: white;
@@ -227,12 +227,15 @@ h1,h2,h3,h4,h5,h6 {
   .menu-block-wrapper > ul.menu > li > a:focus,
   .menu-block-wrapper ul.menu span:hover,
   .menu-block-wrapper ul.menu span:focus {
-    background-color: $lightorange;
+    background-color: $orangered;
   }
-  .menu-block-wrapper > ul.menu > li > a.active-trail,
   .menu-block-wrapper > ul.menu > li > span.active-trail,
   .menu-block-wrapper > ul.menu > li.open > span{
     @include downBlackArrowBig;
+  }
+
+  .menu-block-wrapper > ul.menu > li > a.active-trail{
+    background: $orangered;
   }
   select {
     @include orangeBlockLink;
@@ -253,7 +256,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .l-region--branding ul.menu li > ul.menu > li.expanded.active-trail > a {
-  background: $lightblue url(../images/blackArrowDown.png) no-repeat 98% center !important;
+  background: $lightblue !important;
 }
 
 

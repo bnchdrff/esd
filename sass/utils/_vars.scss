@@ -16,6 +16,7 @@ $darkgrey: #666;
 $darkergrey: #4d4d4d;
 $greyblack: #1a1a1a;
 $red: #d82e31;
+$orangered: #ce3e27; 
 
 // margins and paddings
 $internal_block_margin: 10px;
@@ -248,7 +249,6 @@ $resp_imgs: ".l-content-right .l-content-main img[src*='/580w']";
 @mixin blueMenu {
   a {
     @include linkBlockStyle;
-    @include rightWhiteArrow;
     padding: 10px 40px 10px 10px;
     color: black;
     background: {
@@ -300,5 +300,6 @@ $resp_imgs: ".l-content-right .l-content-main img[src*='/580w']";
     image: url(../images/heavyBlackArrowDown.png);
     repeat: no-repeat;
     position: 98% center;
+    color: $orangered;
   }
 }
