@@ -18,9 +18,7 @@ regions[footer_third] = Footer Third
 regions[footer_fourth] = Footer Fourth
 
 settings[omega_toggle_front_page_content] = 1
-settings[default_logo] = 0
-settings[logo_path] = public://esd_logo.png
-settings[logo_upload] = ''
+settings[default_logo] = 1
 settings[default_favicon] = 0
 settings[favicon_path] = ''
 settings[favicon_upload] = ''
