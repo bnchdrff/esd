@@ -64,9 +64,7 @@ Drupal.theme.prototype.schoolScoreForms = function() {
 Drupal.theme.prototype.buildSelectnav = function($menuUl, menuNum) {
   var menuID = 'navtoselect-' + menuNum;
   $menuUl.attr('id', menuID);
-  selectnav(menuID, {label:false});
-  // Hide the label...
-  $('#selectnav' + menuNum + ' option:eq(0)').remove();
+  selectnav(menuID, {label:'Select page'});
 };
 
 /**
@@ -230,12 +228,12 @@ Drupal.behaviors.imgBits = {
  */
 Drupal.behaviors.esdInit = {
   attach: function (context, settings) {
-    // Add the navigation select.
-    $('#block-menu-block-1 .menu-block-wrapper > ul.menu', context).once('selectnav', function () {
-      Drupal.theme('buildSelectnav', $(this), 1);
-    });
-    $('#block-menu-block-2 .menu-block-wrapper > ul.menu', context).once('selectnav', function () {
-      Drupal.theme('buildSelectnav', $(this), 2);
+    // All the menus!
+    var menu_count = 1;
+    $('.branding .block--menu > ul.menu', context).each(function() {
+      $(this).once('selectnav', function() {
+        Drupal.theme('buildSelectnav', $(this), menu_count++);
+      });
     });
 
     // lang selector hack
