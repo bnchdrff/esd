@@ -498,7 +498,7 @@ p {
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bc\/Desktop\/codez\/esd\/3mhev6qb5ihtc\/builds\/2015-10-12--09-38-19--31-mobile_niceties\/public\/profiles\/esdportal_profile\/themes\/esd\/sass\/utils\/_vars\.scss}line{font-family:\0000361}}
-  #block-menu-block-1 .selectnav, #block-menu-block-2 .selectnav {
+  #block-menu-block-1 .selectnav, #block-menu-block-2 .selectnav, nav .selectnav {
     display: none;
   }
 
@@ -1793,7 +1793,7 @@ ul.tabs li.active a {
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bc\/Desktop\/codez\/esd\/3mhev6qb5ihtc\/builds\/2015-10-12--09-38-19--31-mobile_niceties\/public\/profiles\/esdportal_profile\/themes\/esd\/sass\/utils\/_vars\.scss}line{font-family:\0000361}}
-  #block-menu-block-1 .selectnav, #block-menu-block-2 .selectnav {
+  #block-menu-block-1 .selectnav, #block-menu-block-2 .selectnav, nav .selectnav {
     display: none;
   }
 

@@ -45,7 +45,7 @@ $container-style: magic;
 
 // responsive bits
 $hide_in_mobile: "#block-menu-block-1 .selectnav-processed, #block-menu-block-2 .selectnav-processed, nav .selectnav-processed";
-$show_in_mobile: "#block-menu-block-1 .selectnav, #block-menu-block-2 .selectnav";
+$show_in_mobile: "#block-menu-block-1 .selectnav, #block-menu-block-2 .selectnav, nav .selectnav";
 
 // responsive images: should mirror what is specified in esd_frontend.js
 $resp_imgs: ".l-content-right .l-content-main img[src*='/580w']";
