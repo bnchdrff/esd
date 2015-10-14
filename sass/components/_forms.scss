@@ -212,6 +212,10 @@ form {
     max-width: 460px;
     width: 100%;
   }
+
+  .form-type-checkboxes > label {
+    font-weight: bold;
+  }
 }
 
 #content-access-page,

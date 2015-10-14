@@ -4,39 +4,32 @@
  * Styling of the "simple" layout demonstrating the Compass grid extension Susy
  * and building mobile first layouts.
  ******************************************************************************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/lib\/gems\/1\.9\.1\/gems\/susy-1\.0\.9\/sass\/susy\/_grid\.scss}line{font-family:\0000314}}
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bc\/Desktop\/codez\/esd\/3mhev6qb5ihtc\/builds\/2015-10-12--09-38-19--31-mobile_niceties\/public\/profiles\/esdportal_profile\/themes\/esd\/sass\/utils\/_vars\.scss}line{font-family:\0000353}}
 #block-menu-block-1 .selectnav-processed, #block-menu-block-2 .selectnav-processed, nav .selectnav-processed {
   display: none;
 }
 
 @media (min-width: 740px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bc\/Desktop\/codez\/esd\/3mhev6qb5ihtc\/builds\/2015-10-12--09-38-19--31-mobile_niceties\/public\/profiles\/esdportal_profile\/themes\/esd\/sass\/utils\/_vars\.scss}line{font-family:\0000358}}
   #block-menu-block-1 .selectnav-processed, #block-menu-block-2 .selectnav-processed, nav .selectnav-processed {
     display: block;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bc\/Desktop\/codez\/esd\/3mhev6qb5ihtc\/builds\/2015-10-12--09-38-19--31-mobile_niceties\/public\/profiles\/esdportal_profile\/themes\/esd\/sass\/utils\/_vars\.scss}line{font-family:\0000361}}
   #block-menu-block-1 .selectnav, #block-menu-block-2 .selectnav, nav .selectnav {
     display: none;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bc\/Desktop\/codez\/esd\/3mhev6qb5ihtc\/builds\/2015-10-12--09-38-19--31-mobile_niceties\/public\/profiles\/esdportal_profile\/themes\/esd\/sass\/utils\/_vars\.scss}line{font-family:\0000364}}
   .l-footer-wrapper .l-region--footer-first {
     margin: 0px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bc\/Desktop\/codez\/esd\/3mhev6qb5ihtc\/builds\/2015-10-12--09-38-19--31-mobile_niceties\/public\/profiles\/esdportal_profile\/themes\/esd\/sass\/utils\/_vars\.scss}line{font-family:\0000366}}
   .l-footer-wrapper .l-region--footer-first > div {
     margin-right: 20px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bc\/Desktop\/codez\/esd\/3mhev6qb5ihtc\/builds\/2015-10-12--09-38-19--31-mobile_niceties\/public\/profiles\/esdportal_profile\/themes\/esd\/sass\/utils\/_vars\.scss}line{font-family:\0000371}}
   #block-block-2,
   #block-locale-language {
     position: relative;
@@ -44,11 +37,9 @@
     top: 0;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bc\/Desktop\/codez\/esd\/3mhev6qb5ihtc\/builds\/2015-10-12--09-38-19--31-mobile_niceties\/public\/profiles\/esdportal_profile\/themes\/esd\/sass\/utils\/_vars\.scss}line{font-family:\0000376}}
   .l-region--footer-fourth {
     position: relative;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bc\/Desktop\/codez\/esd\/3mhev6qb5ihtc\/builds\/2015-10-12--09-38-19--31-mobile_niceties\/public\/profiles\/esdportal_profile\/themes\/esd\/sass\/utils\/_vars\.scss}line{font-family:\0000378}}
   .l-region--footer-fourth #block-boxes-school-leaders {
     position: absolute;
     right: 0;
@@ -56,26 +47,21 @@
   }
 }
 @media (min-width: 980px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bc\/Desktop\/codez\/esd\/3mhev6qb5ihtc\/builds\/2015-10-12--09-38-19--31-mobile_niceties\/public\/profiles\/esdportal_profile\/themes\/esd\/sass\/utils\/_vars\.scss}line{font-family:\0000387}}
   .l-region--footer-fourth {
     margin-left: 38.29787%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bc\/Desktop\/codez\/esd\/3mhev6qb5ihtc\/builds\/2015-10-12--09-38-19--31-mobile_niceties\/public\/profiles\/esdportal_profile\/themes\/esd\/sass\/utils\/_vars\.scss}line{font-family:\0000389}}
   .l-region--footer-fourth > div {
     margin-left: 3px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bc\/Desktop\/codez\/esd\/3mhev6qb5ihtc\/builds\/2015-10-12--09-38-19--31-mobile_niceties\/public\/profiles\/esdportal_profile\/themes\/esd\/sass\/utils\/_vars\.scss}line{font-family:\0000395}}
   #block-boxes-school-score-es,
   #block-boxes-school-score-widget {
     margin-top: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bc\/Desktop\/codez\/esd\/3mhev6qb5ihtc\/builds\/2015-10-12--09-38-19--31-mobile_niceties\/public\/profiles\/esdportal_profile\/themes\/esd\/sass\/utils\/_vars\.scss}line{font-family:\0000397}}
   #block-boxes-school-score-es h2,
   #block-boxes-school-score-widget h2 {
     display: inline-block;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bc\/Desktop\/codez\/esd\/3mhev6qb5ihtc\/builds\/2015-10-12--09-38-19--31-mobile_niceties\/public\/profiles\/esdportal_profile\/themes\/esd\/sass\/utils\/_vars\.scss}line{font-family:\00003101}}
   #block-boxes-school-score-es .block__content .score-right,
   #block-boxes-school-score-widget .block__content .score-right {
     padding: 0 0 0 180px;
@@ -83,12 +69,10 @@
     background-repeat: no-repeat;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bc\/Desktop\/codez\/esd\/3mhev6qb5ihtc\/builds\/2015-10-12--09-38-19--31-mobile_niceties\/public\/profiles\/esdportal_profile\/themes\/esd\/sass\/utils\/_vars\.scss}line{font-family:\00003113}}
   #block-boxes-did-you-know-es h2,
   #block-boxes-did-you-know h2 {
     display: inline-block;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bc\/Desktop\/codez\/esd\/3mhev6qb5ihtc\/builds\/2015-10-12--09-38-19--31-mobile_niceties\/public\/profiles\/esdportal_profile\/themes\/esd\/sass\/utils\/_vars\.scss}line{font-family:\00003117}}
   #block-boxes-did-you-know-es .block__content .dyk-image,
   #block-boxes-did-you-know .block__content .dyk-image {
     display: block !important;
@@ -96,13 +80,11 @@
     float: left;
     margin-top: -10px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bc\/Desktop\/codez\/esd\/3mhev6qb5ihtc\/builds\/2015-10-12--09-38-19--31-mobile_niceties\/public\/profiles\/esdportal_profile\/themes\/esd\/sass\/utils\/_vars\.scss}line{font-family:\00003123}}
   #block-boxes-did-you-know-es .block__content .dyk-body,
   #block-boxes-did-you-know .block__content .dyk-body {
     margin: 0 20px 0 160px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bc\/Desktop\/codez\/esd\/3mhev6qb5ihtc\/builds\/2015-10-12--09-38-19--31-mobile_niceties\/public\/profiles\/esdportal_profile\/themes\/esd\/sass\/utils\/_vars\.scss}line{font-family:\00003128}}
   .l-region--pre-content {
     clear: both;
     top: -20px;
@@ -110,7 +92,6 @@
   }
 }
 /* MIXin Mingle */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bc\/Desktop\/codez\/esd\/3mhev6qb5ihtc\/builds\/2015-10-12--09-38-19--31-mobile_niceties\/public\/profiles\/esdportal_profile\/themes\/esd\/sass\/utils\/_vars\.scss}line{font-family:\00003224}}
 .button-specs {
   padding: 2px 3px;
   border: 1px solid black;
@@ -119,13 +100,11 @@
   cursor: pointer;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bc\/Desktop\/codez\/esd\/3mhev6qb5ihtc\/builds\/2015-10-12--09-38-19--31-mobile_niceties\/public\/profiles\/esdportal_profile\/themes\/esd\/sass\/utils\/_vars\.scss}line{font-family:\00003303}}
 .icon-sprite {
   background-image: url(../images/icon_sprite.png);
   background-repeat: no-repeat;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bc\/Desktop\/codez\/esd\/3mhev6qb5ihtc\/builds\/2015-10-12--09-38-19--31-mobile_niceties\/public\/profiles\/esdportal_profile\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\0000311}}
 .l-header,
 .l-content,
 .l-footer {
@@ -140,7 +119,6 @@
   width: auto;
   max-width: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/lib\/gems\/1\.9\.1\/gems\/compass-0\.12\.7\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
 .l-header:after,
 .l-content:after,
 .l-footer:after {
@@ -149,13 +127,11 @@
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bc\/Desktop\/codez\/esd\/3mhev6qb5ihtc\/builds\/2015-10-12--09-38-19--31-mobile_niceties\/public\/profiles\/esdportal_profile\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\0000319}}
 .l-content-right .l-content-main img[src*='/580w'] {
   width: 100%;
   height: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bc\/Desktop\/codez\/esd\/3mhev6qb5ihtc\/builds\/2015-10-12--09-38-19--31-mobile_niceties\/public\/profiles\/esdportal_profile\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\0000324}}
 .media-youtube-video {
   position: relative;
   padding-bottom: 56.25%;
@@ -163,7 +139,6 @@
   padding-top: 25px;
   height: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bc\/Desktop\/codez\/esd\/3mhev6qb5ihtc\/builds\/2015-10-12--09-38-19--31-mobile_niceties\/public\/profiles\/esdportal_profile\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\0000329}}
 .media-youtube-video iframe {
   position: absolute;
   top: 0;
@@ -173,13 +148,11 @@
 }
 
 @media (min-width: 740px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bc\/Desktop\/codez\/esd\/3mhev6qb5ihtc\/builds\/2015-10-12--09-38-19--31-mobile_niceties\/public\/profiles\/esdportal_profile\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\0000339}}
   .l-content-right .l-content-main img[src*='/580w'] {
     width: 340px;
     height: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bc\/Desktop\/codez\/esd\/3mhev6qb5ihtc\/builds\/2015-10-12--09-38-19--31-mobile_niceties\/public\/profiles\/esdportal_profile\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\0000345}}
   .l-header,
   .l-content,
   .l-footer {
@@ -187,42 +160,36 @@
     width: 740px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bc\/Desktop\/codez\/esd\/3mhev6qb5ihtc\/builds\/2015-10-12--09-38-19--31-mobile_niceties\/public\/profiles\/esdportal_profile\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\0000351}}
   .l-topbar {
     width: 100%;
     float: left;
     margin-right: 2.85714%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bc\/Desktop\/codez\/esd\/3mhev6qb5ihtc\/builds\/2015-10-12--09-38-19--31-mobile_niceties\/public\/profiles\/esdportal_profile\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\0000355}}
   .l-content-right {
     width: 65.71429%;
     float: right;
     margin-right: 0;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bc\/Desktop\/codez\/esd\/3mhev6qb5ihtc\/builds\/2015-10-12--09-38-19--31-mobile_niceties\/public\/profiles\/esdportal_profile\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\0000359}}
   .l-content-left {
     width: 31.42857%;
     float: left;
     margin-right: 2.85714%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bc\/Desktop\/codez\/esd\/3mhev6qb5ihtc\/builds\/2015-10-12--09-38-19--31-mobile_niceties\/public\/profiles\/esdportal_profile\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\0000363}}
   .l-footer-left {
     width: 31.42857%;
     float: left;
     margin-right: 2.85714%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bc\/Desktop\/codez\/esd\/3mhev6qb5ihtc\/builds\/2015-10-12--09-38-19--31-mobile_niceties\/public\/profiles\/esdportal_profile\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\0000367}}
   .l-footer-middle {
     width: 31.42857%;
     float: left;
     margin-right: 2.85714%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bc\/Desktop\/codez\/esd\/3mhev6qb5ihtc\/builds\/2015-10-12--09-38-19--31-mobile_niceties\/public\/profiles\/esdportal_profile\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\0000371}}
   .l-footer-right {
     width: 31.42857%;
     float: right;
@@ -230,13 +197,11 @@
   }
 }
 @media (min-width: 980px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bc\/Desktop\/codez\/esd\/3mhev6qb5ihtc\/builds\/2015-10-12--09-38-19--31-mobile_niceties\/public\/profiles\/esdportal_profile\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\0000377}}
   .l-content-right .l-content-main img[src*='/580w'] {
     width: 580px;
     height: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bc\/Desktop\/codez\/esd\/3mhev6qb5ihtc\/builds\/2015-10-12--09-38-19--31-mobile_niceties\/public\/profiles\/esdportal_profile\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\0000383}}
   .l-header,
   .l-content,
   .l-footer {
@@ -244,42 +209,36 @@
     width: 980px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bc\/Desktop\/codez\/esd\/3mhev6qb5ihtc\/builds\/2015-10-12--09-38-19--31-mobile_niceties\/public\/profiles\/esdportal_profile\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\0000389}}
   .l-topbar {
     width: 100%;
     float: left;
     margin-right: 2.12766%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bc\/Desktop\/codez\/esd\/3mhev6qb5ihtc\/builds\/2015-10-12--09-38-19--31-mobile_niceties\/public\/profiles\/esdportal_profile\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\0000393}}
   .l-content-right {
     width: 74.46809%;
     float: right;
     margin-right: 0;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bc\/Desktop\/codez\/esd\/3mhev6qb5ihtc\/builds\/2015-10-12--09-38-19--31-mobile_niceties\/public\/profiles\/esdportal_profile\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\0000397}}
   .l-content-left {
     width: 23.40426%;
     float: left;
     margin-right: 2.12766%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bc\/Desktop\/codez\/esd\/3mhev6qb5ihtc\/builds\/2015-10-12--09-38-19--31-mobile_niceties\/public\/profiles\/esdportal_profile\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\00003101}}
   .l-footer-left {
     width: 23.40426%;
     float: left;
     margin-right: 2.12766%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bc\/Desktop\/codez\/esd\/3mhev6qb5ihtc\/builds\/2015-10-12--09-38-19--31-mobile_niceties\/public\/profiles\/esdportal_profile\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\00003105}}
   .l-footer-middle {
     width: 48.93617%;
     float: left;
     margin-right: 2.12766%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/bc\/Desktop\/codez\/esd\/3mhev6qb5ihtc\/builds\/2015-10-12--09-38-19--31-mobile_niceties\/public\/profiles\/esdportal_profile\/themes\/esd\/sass\/layouts\/esd-home\/esd-home\.layout\.scss}line{font-family:\00003109}}
   .l-footer-right {
     width: 23.40426%;
     float: right;
