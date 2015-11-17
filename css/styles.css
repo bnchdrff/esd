@@ -2705,11 +2705,15 @@ form .form-type-checkboxes > label {
 .views-table tr:nth-child(even) {
   background-color: #a6e3fa;
 }
+.page-schoolscores .l-content-main table td.views-field,
 .page-schoolscores .l-content-main table .views-field-edit-node,
+.views-table td.views-field,
 .views-table .views-field-edit-node {
   text-align: center;
 }
+.page-schoolscores .l-content-main table td.views-field a,
 .page-schoolscores .l-content-main table .views-field-edit-node a,
+.views-table td.views-field a,
 .views-table .views-field-edit-node a {
   text-decoration: underline;
 }

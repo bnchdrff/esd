@@ -46,6 +46,7 @@
   tr:nth-child(even) {
     background-color: $lighterblue;
   }
+  td.views-field,
   .views-field-edit-node {
     text-align: center;
     a {
